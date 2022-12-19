@@ -68,7 +68,16 @@ exports.getArt = (req, res, next) => {
   selectArt(queries)
   .then((response) => {
     let stockArray = []
-    response.forEach((item) => stockArray.push(item.stock_id))
+    if (queries.colour) {     
+      response.forEach((item) => {
+        const coloursArray = item.colours.split(', ');
+        if (coloursArray.indexOf(queries.colour) !== -1) {
+          stockArray.push(item.stock_id);
+        }
+      });
+    } else {
+      response.forEach((item) => stockArray.push(item.stock_id))
+    };
     if (stockArray.length < 1) {
       res.status(404).send({ msg: "Art not found" })
     } else {

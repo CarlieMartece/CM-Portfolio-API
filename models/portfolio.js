@@ -75,11 +75,13 @@ INNER JOIN books ON art.book_id = books.book_id`;
 
 exports.selectArt = (queries) => {
   let filter = " ";
+  let plusColour = " ";
   let array = [];
+  if (queries.category && !Number(queries.category) || Number(queries.subject) || Number(queries.colour)) {
+    return Promise.reject({ status: 400, msg: "Non-valid search criteria" });
+  }
   if (queries.category) {
-    if (!Number(queries.category)) {
-      return Promise.reject({ status: 400, msg: "Category not valid" });
-    } else if (queries.category === '13' || queries.category === '46') {
+    if (queries.category === '13' || queries.category === '46') {
       const clause = ` art.category_id = `;
       filter = ` WHERE${clause}$1 OR${clause}$2 OR${clause}$3 `;
       for (let i = Number(queries.category.charAt(0)); i < Number(queries.category.charAt(1)) + 1; i++) { array.push(i) }
@@ -92,13 +94,13 @@ exports.selectArt = (queries) => {
     }
   };
   if (queries.subject) {
-    if (Number(queries.subject)) {
-      return Promise.reject({ status: 400, msg: "Subject not valid" });
-    }
     filter = ` WHERE art.subject = $1 `;
     array.push(queries.subject);
   };
-  const queryString = `SELECT art.stock_id FROM art${filter}ORDER BY art.stock_id ASC;`;
+  if (queries.colour) {
+    plusColour = `, art.colours `;
+  }
+  const queryString = `SELECT art.stock_id${plusColour}FROM art${filter}ORDER BY art.stock_id ASC;`;
   return db.query(queryString, array).then((result) => result.rows);
 };
 

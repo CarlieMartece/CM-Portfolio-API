@@ -258,12 +258,22 @@ describe("/api/art", () => {
         expect(response.body).toHaveLength(4);
       });
   });
+  test("GET: 200, Responds with an array of art stock_ids filtered by colour", () => {
+    return request(app)
+      .get("/api/art?colour=purple")
+      .expect(200)
+      .then((response) => {
+        expect(response.body).toEqual(expect.any(Array));
+        expect(response.body[0]).toBe('2002');
+        expect(response.body).toHaveLength(4);
+      });
+  });
   test("GET: 400, Sends error response for invalid category input", () => {
     return request(app)
       .get("/api/art?category=kale-smoothie")
       .expect(400)
       .then((response) => {
-        expect(response.body.msg).toBe("Category not valid")
+        expect(response.body.msg).toBe("Non-valid search criteria")
       });
   });
   test("GET: 400, Sends error response for invalid subject input", () => {
@@ -271,7 +281,15 @@ describe("/api/art", () => {
       .get("/api/art?subject=666")
       .expect(400)
       .then((response) => {
-        expect(response.body.msg).toBe("Subject not valid")
+        expect(response.body.msg).toBe("Non-valid search criteria")
+      });
+  });
+  test("GET: 404, Sends error response for invalid colour input", () => {
+    return request(app)
+      .get("/api/art?colour=666")
+      .expect(400)
+      .then((response) => {
+        expect(response.body.msg).toBe("Non-valid search criteria")
       });
   });
   test("GET: 404, Sends error response for valid but non-existent category", () => {
@@ -285,6 +303,14 @@ describe("/api/art", () => {
   test("GET: 404, Sends error response for valid but non-existent subject", () => {
     return request(app)
       .get("/api/art?subject=yoga")
+      .expect(404)
+      .then((response) => {
+        expect(response.body.msg).toBe("Art not found")
+      });
+  });
+  test("GET: 404, Sends error response for valid but non-existent subject", () => {
+    return request(app)
+      .get("/api/art?colour=i-dont-see-colour")
       .expect(404)
       .then((response) => {
         expect(response.body.msg).toBe("Art not found")
