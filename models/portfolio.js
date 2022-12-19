@@ -89,7 +89,11 @@ exports.selectArt = (queries) => {
       array.push(queries.category);
     }
   };
-  const queryString = `SELECT art.stock_id FROM art${filter}ORDER BY art.stock_id ASC;`
+  if (queries.subject) {
+    filter = ` WHERE art.subject = $1 `;
+    array.push(queries.subject);
+  }
+  const queryString = `SELECT art.stock_id FROM art${filter}ORDER BY art.stock_id ASC;`;
   return db.query(queryString, array).then((result) => result.rows);
 };
 

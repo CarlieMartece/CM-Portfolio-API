@@ -227,7 +227,7 @@ describe("/api/art", () => {
         expect(response.body[0]).toBe('1001');
       });
   });
-  test("GET: 200, Responds with an array of all traditional art stock_ids for category 16", () => {
+  test("GET: 200, Responds with an array of all digital art stock_ids for category 46", () => {
     return request(app)
       .get("/api/art?category=46")
       .expect(200)
@@ -235,6 +235,15 @@ describe("/api/art", () => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(5);
         expect(response.body[0]).toBe('4115');
+      });
+  });
+  test("GET: 200, Responds with an array of art stock_ids filtered by subject", () => {
+    return request(app)
+      .get("/api/art?subject=toys")
+      .expect(200)
+      .then((response) => {
+        expect(response.body).toEqual(expect.any(Array));
+        expect(response.body).toHaveLength(4);
       });
   });
 });
