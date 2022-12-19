@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS portfolio;
+CREATE DATABASE portfolio;
+
+DROP DATABASE IF EXISTS portfolio_test;
+CREATE DATABASE portfolio_test;
