@@ -268,6 +268,34 @@ describe("/api/art", () => {
         expect(response.body).toHaveLength(4);
       });
   });
+  test("GET: 200, Responds with an array of art objects, each item for sale, price ascending", () => {
+    return request(app)
+      .get("/api/art?sort_by=price")
+      .expect(200)
+      .then(({ body }) => {
+        const art = body;
+        expect(art).toEqual(expect.any(Array));
+        expect(art).toHaveLength(3);
+        expect(art[0]).toEqual(artObj);
+        expect(art).toBeSortedBy('price', {
+          ascending: true,
+        });
+      });
+  });
+  test("GET: 200, Responds with an array of art objects, each item for sale, price descending", () => {
+    return request(app)
+      .get("/api/art?sort_by=price&order_by=desc")
+      .expect(200)
+      .then(({ body }) => {
+        const art = body;
+        expect(art).toEqual(expect.any(Array));
+        expect(art).toHaveLength(3);
+        expect(art[0]).toEqual(artObj);
+        expect(art).toBeSortedBy('price', {
+          descending: true,
+        });
+      });
+  });
   test("GET: 400, Sends error response for invalid category input", () => {
     return request(app)
       .get("/api/art?category=kale-smoothie")
@@ -279,6 +307,22 @@ describe("/api/art", () => {
   test("GET: 400, Sends error response for invalid subject input", () => {
     return request(app)
       .get("/api/art?subject=666")
+      .expect(400)
+      .then((response) => {
+        expect(response.body.msg).toBe("Non-valid search criteria")
+      });
+  });
+  test("GET: 400, Sends error response for invalid sort input", () => {
+    return request(app)
+    .get("/api/art?sort_by=sickle&order_by=desc")
+      .expect(400)
+      .then((response) => {
+        expect(response.body.msg).toBe("Non-valid search criteria")
+      });
+  });
+  test("GET: 400, Sends error response for invalid order input", () => {
+    return request(app)
+    .get("/api/art?sort_by=price&order_by=nary")
       .expect(400)
       .then((response) => {
         expect(response.body.msg).toBe("Non-valid search criteria")

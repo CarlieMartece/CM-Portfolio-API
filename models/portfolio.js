@@ -8,19 +8,15 @@ exports.selectCategories = () => {
 
 const seriesQuery = `SELECT series.series_id, series.series_name, categories.category_name
 FROM series
-INNER JOIN categories ON series.category_id=categories.category_id`
+INNER JOIN categories ON series.category_id=categories.category_id`;
 
 exports.selectSeries = () => {
-  return db
-    .query(`${seriesQuery};`)
-    .then((result) => result.rows);
+  return db.query(`${seriesQuery};`).then((result) => result.rows);
 };
 
 exports.selectSeriesById = (series_id) => {
   return db
-    .query(`${seriesQuery} WHERE series.series_id = $1;`,
-      [series_id]
-    )
+    .query(`${seriesQuery} WHERE series.series_id = $1;`, [series_id])
     .then(({ rows: [series] }) => {
       if (!series) {
         return Promise.reject({
@@ -40,7 +36,9 @@ INNER JOIN series ON books.series_id = series.series_id
 INNER JOIN book_cover_ref ON books.book_id = book_cover_ref.book_id`;
 
 exports.selectBooks = () => {
-  return db.query(`${bookQuery} ORDER BY books.release_date DESC;`).then((result) => result.rows);
+  return db
+    .query(`${bookQuery} ORDER BY books.release_date DESC;`)
+    .then((result) => result.rows);
 };
 
 exports.selectBookById = (book_id) => {
@@ -59,9 +57,12 @@ exports.selectBookById = (book_id) => {
 
 exports.selectBooksBySeries = (series_id) => {
   return db
-    .query(`${bookQuery} WHERE books.series_id = $1 ORDER BY books.sequence_no ASC;`, [series_id])
+    .query(
+      `${bookQuery} WHERE books.series_id = $1 ORDER BY books.sequence_no ASC;`,
+      [series_id]
+    )
     .then(({ rows: items }) => {
-        return items;
+      return items;
     });
 };
 
@@ -74,34 +75,55 @@ INNER JOIN series ON art.series_id = series.series_id
 INNER JOIN books ON art.book_id = books.book_id`;
 
 exports.selectArt = (queries) => {
+  let selectQuery = `SELECT art.stock_id FROM art`;
   let filter = " ";
-  let plusColour = " ";
+  let orderQuery = `ORDER BY art.stock_id `;
+  let ascOrDesc = queries.order_by || `ASC`;
   let array = [];
-  if (queries.category && !Number(queries.category) || Number(queries.subject) || Number(queries.colour)) {
+  if (queries.sort_by === "price") {
+    selectQuery = artQuery;
+    filter = ` WHERE art.price != $1 `;
+    orderQuery = `ORDER BY art.price `;
+    array.push(-1);
+  }
+  if (
+    (queries.category && !Number(queries.category)) ||
+    Number(queries.subject) ||
+    Number(queries.colour) ||
+    (queries.sort_by && queries.sort_by !== "price") ||
+    (queries.order_by && queries.order_by !== "desc")
+  ) {
     return Promise.reject({ status: 400, msg: "Non-valid search criteria" });
   }
   if (queries.category) {
-    if (queries.category === '13' || queries.category === '46') {
+    if (queries.category === "13" || queries.category === "46") {
       const clause = ` art.category_id = `;
       filter = ` WHERE${clause}$1 OR${clause}$2 OR${clause}$3 `;
-      for (let i = Number(queries.category.charAt(0)); i < Number(queries.category.charAt(1)) + 1; i++) { array.push(i) }
-    } else if (queries.category === '16') {
-      filter = ` WHERE art.category_id != $1 `;
-      array.push(7);
+      for (
+        let i = Number(queries.category.charAt(0));
+        i < Number(queries.category.charAt(1)) + 1;
+        i++
+      ) {
+        array.push(i);
+      }
+    } else if (queries.category === "16") {
+      filter = ` WHERE art.category_id != 7 `;
     } else {
       filter = ` WHERE art.category_id = $1 `;
       array.push(queries.category);
     }
-  };
+  }
   if (queries.subject) {
     filter = ` WHERE art.subject = $1 `;
     array.push(queries.subject);
-  };
-  if (queries.colour) {
-    plusColour = `, art.colours `;
   }
-  const queryString = `SELECT art.stock_id${plusColour}FROM art${filter}ORDER BY art.stock_id ASC;`;
-  return db.query(queryString, array).then((result) => result.rows);
+  if (queries.colour) {
+    selectQuery = `SELECT art.stock_id, art.colours FROM art`;
+  }
+  const queryString = `${selectQuery}${filter}${orderQuery}${ascOrDesc};`;
+  return db.query(queryString, array).then((result) => {
+    return result.rows;
+  });
 };
 
 exports.selectArtById = (art_id) => {
@@ -117,7 +139,9 @@ exports.selectArtById = (art_id) => {
 
 exports.selectArtBySeries = (series_id) => {
   return db
-    .query(`${artQuery} WHERE art.series_id = $1 ORDER BY art.stock_id ASC;`, [series_id])
+    .query(`${artQuery} WHERE art.series_id = $1 ORDER BY art.stock_id ASC;`, [
+      series_id,
+    ])
     .then(({ rows: items }) => {
       return items;
     });

@@ -67,6 +67,9 @@ exports.getArt = (req, res, next) => {
   const queries = req.query;
   selectArt(queries)
   .then((response) => {
+    if (queries.sort_by === 'price') {
+      res.status(200).send(response);
+    };
     let stockArray = []
     if (queries.colour) {     
       response.forEach((item) => {
