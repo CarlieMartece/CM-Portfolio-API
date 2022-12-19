@@ -39,6 +39,18 @@ afterAll(() => {
 });
 
 
+describe('handles all bad URLs', () => {
+  test('GET:404 sends bad path response for all bad urls', () => {
+      return request(app)
+          .get('/api/wellness-guru')
+          .expect(404)
+          .then(({body}) => {
+              expect(body.msg).toBe('You must be lost.');
+          });
+  });
+});
+
+
 describe("/api/categories", () => {
   test("GET: 200, Responds with a formatted array of category objects", () => {
     return request(app)
@@ -244,6 +256,38 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(4);
+      });
+  });
+  test("GET: 400, Sends error response for invalid category input", () => {
+    return request(app)
+      .get("/api/art?category=kale-smoothie")
+      .expect(400)
+      .then((response) => {
+        expect(response.body.msg).toBe("Category not valid")
+      });
+  });
+  test("GET: 400, Sends error response for invalid subject input", () => {
+    return request(app)
+      .get("/api/art?subject=666")
+      .expect(400)
+      .then((response) => {
+        expect(response.body.msg).toBe("Subject not valid")
+      });
+  });
+  test("GET: 404, Sends error response for valid but non-existent category", () => {
+    return request(app)
+      .get("/api/art?category=666")
+      .expect(404)
+      .then((response) => {
+        expect(response.body.msg).toBe("Art not found")
+      });
+  });
+  test("GET: 404, Sends error response for valid but non-existent subject", () => {
+    return request(app)
+      .get("/api/art?subject=yoga")
+      .expect(404)
+      .then((response) => {
+        expect(response.body.msg).toBe("Art not found")
       });
   });
 });

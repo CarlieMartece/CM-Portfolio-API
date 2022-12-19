@@ -63,12 +63,20 @@ exports.getBookById = (req, res, next) => {
     });
 };
 
-exports.getArt = (req, res) => {
+exports.getArt = (req, res, next) => {
   const queries = req.query;
-  selectArt(queries).then((response) => {
+  selectArt(queries)
+  .then((response) => {
     let stockArray = []
     response.forEach((item) => stockArray.push(item.stock_id))
-    res.status(200).send(stockArray);
+    if (stockArray.length < 1) {
+      res.status(404).send({ msg: "Art not found" })
+    } else {
+      res.status(200).send(stockArray);
+    }
+  })
+  .catch((err) => {
+    next(err);
   });
 };
 

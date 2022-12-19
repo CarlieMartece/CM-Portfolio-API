@@ -77,7 +77,9 @@ exports.selectArt = (queries) => {
   let filter = " ";
   let array = [];
   if (queries.category) {
-    if (queries.category === '13' || queries.category === '46') {
+    if (!Number(queries.category)) {
+      return Promise.reject({ status: 400, msg: "Category not valid" });
+    } else if (queries.category === '13' || queries.category === '46') {
       const clause = ` art.category_id = `;
       filter = ` WHERE${clause}$1 OR${clause}$2 OR${clause}$3 `;
       for (let i = Number(queries.category.charAt(0)); i < Number(queries.category.charAt(1)) + 1; i++) { array.push(i) }
@@ -90,9 +92,12 @@ exports.selectArt = (queries) => {
     }
   };
   if (queries.subject) {
+    if (Number(queries.subject)) {
+      return Promise.reject({ status: 400, msg: "Subject not valid" });
+    }
     filter = ` WHERE art.subject = $1 `;
     array.push(queries.subject);
-  }
+  };
   const queryString = `SELECT art.stock_id FROM art${filter}ORDER BY art.stock_id ASC;`;
   return db.query(queryString, array).then((result) => result.rows);
 };
@@ -102,10 +107,7 @@ exports.selectArtById = (art_id) => {
     .query(`${artQuery} WHERE art.art_id = $1;`, [art_id])
     .then(({ rows: [art] }) => {
       if (!art) {
-        return Promise.reject({
-          status: 404,
-          msg: "Art not found",
-        });
+        return Promise.reject({ status: 404, msg: "Art not found" });
       }
       return art;
     });

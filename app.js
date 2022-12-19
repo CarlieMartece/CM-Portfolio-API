@@ -23,6 +23,10 @@ app.get('/api/books/:book_id', getBookById);
 app.get('/api/art', getArt);
 app.get('/api/art/:art_id', getArtById);
 
+app.all('*', (req, res) => {
+    res.status(404).send({ msg: 'You must be lost.' });
+});
+
 
 
 //////////////
@@ -31,7 +35,7 @@ app.use((err, req, res, next) => {
     if (err.code === '22P02') {
         res.status(400).send({ msg: 'Are you lost?' })
     } else {
-        res.status(404).send({ msg: err.msg })
+        res.status(err.status).send({ msg: err.msg })
     };
 });
 
