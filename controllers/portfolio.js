@@ -35,11 +35,7 @@ exports.getSeriesById = (req, res, next) => {
         }
         return Promise.all([series, selectItems])
     }).then(([series, selectItems]) => {
-        if (series.category_name === "Book") {
-            series.items = createFilteredList(selectItems);
-        } else {
-            series.items = selectItems;
-        }
+        series.items = createFilteredList(selectItems);
         res.status(200).send({ series });
     }).catch((err) => {
         next(err);

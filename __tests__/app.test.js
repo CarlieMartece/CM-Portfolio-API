@@ -95,7 +95,7 @@ describe("/api/series", () => {
 });
 
 describe("/api/series/:series_id", () => {
-  test("GET: 200, Responds with requested series object plus array of linked artwork", () => {
+  test("GET: 200, Responds with requested series object plus array of linked artwork with close-ups removed", () => {
     return request(app)
       .get("/api/series/1")
       .expect(200)
@@ -109,6 +109,7 @@ describe("/api/series/:series_id", () => {
             items: expect.any(Object)
           })
         );
+        expect(series.items).toHaveLength(2);
         expect(series.items[0]).toEqual(artObj);
         expect(series.items).toBeSortedBy('stock_id', {
           ascending: true,

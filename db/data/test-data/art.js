@@ -1,24 +1,5 @@
 module.exports = [
   {
-    stock_id: "3101a",
-    art_title: "ClaireyTale",
-    three_word_description: "disturbing-childhood-dreamscape",
-    colours: "pink, peach",
-    subject: "toys",
-    completion: "2005-08-09",
-    category_id: 3,
-    series_id: 1,
-    alt_text:
-      "Weird collage with dripping paint and disturbing childhood imagery.",
-    quote: "Honeysuckle said the imagery was creepy...",
-    book_id: 1,
-    made_from: "61cm by 61cm by 3.5cm boxed canvas, watercolour paints...",
-    price: 950,
-    self_ref: "TBC",
-    close_ups: "6",
-    link: "TBC",
-  },
-  {
     stock_id: "2002",
     art_title: "Mute Fairy",
     three_word_description: "sad-fairy-painting",
@@ -57,7 +38,7 @@ module.exports = [
   },
   {
     stock_id: "3101f",
-    art_title: "ClaireyTale",
+    art_title: "Claireytale",
     three_word_description: "bonfire-witch-watercolour",
     colours: "peach, purple",
     subject: "",
@@ -72,6 +53,25 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    link: "TBC",
+  },
+  {
+    stock_id: "3101a",
+    art_title: "Claireytale",
+    three_word_description: "disturbing-childhood-dreamscape",
+    colours: "pink, peach",
+    subject: "toys",
+    completion: "2005-08-09",
+    category_id: 3,
+    series_id: 1,
+    alt_text:
+      "Weird collage with dripping paint and disturbing childhood imagery.",
+    quote: "Honeysuckle said the imagery was creepy...",
+    book_id: 1,
+    made_from: "61cm by 61cm by 3.5cm boxed canvas, watercolour paints...",
+    price: 950,
+    self_ref: "TBC",
+    close_ups: "6",
     link: "TBC",
   },
   {
@@ -94,7 +94,7 @@ module.exports = [
   },
   {
     stock_id: "3101d",
-    art_title: "ClaireyTale",
+    art_title: "Claireytale",
     three_word_description: "",
     colours: "fairy-sketch-collaged",
     subject: "fairies",

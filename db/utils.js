@@ -44,9 +44,14 @@ exports.createFilteredList = (array) => {
   let collectObj = {};
   let filteredItems = [];
   array.forEach((item) => {
-    if (!collectObj.hasOwnProperty(item.book_title) ||
-      collectObj[item.book_title].edition_no < item.edition_no) {
-      collectObj[item.book_title] = item;
+    let searchKey = "";
+    item.blurb ? searchKey = "book_title" : searchKey = "art_title";
+    const searchItem = item[searchKey]
+    if (!collectObj.hasOwnProperty(searchItem) ||
+    collectObj[searchItem].edition_no < item.edition_no ||
+    collectObj[searchItem].stock_id > item.stock_id  
+      ){
+      collectObj[searchItem] = item;
     }
   });
   for (item in collectObj) {

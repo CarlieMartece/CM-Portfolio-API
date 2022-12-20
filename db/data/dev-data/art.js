@@ -404,7 +404,7 @@ module.exports = [
   },
   {
     stock_id: "3101f",
-    art_title: "ClaireyTale",
+    art_title: "Claireytale",
     three_word_description: "bonfire-witch-watercolour",
     colours: "peach, purple",
     completion: "2003-02-14",
@@ -443,7 +443,7 @@ module.exports = [
   },
   {
     stock_id: "3101d",
-    art_title: "ClaireyTale",
+    art_title: "Claireytale",
     three_word_description: "fairy-sketch-collaged",
     colours: "yellow, grey",
     completion: "2005-04-15",
@@ -501,7 +501,7 @@ module.exports = [
   },
   {
     stock_id: "3101a",
-    art_title: "ClaireyTale",
+    art_title: "Claireytale",
     three_word_description: "disturbing-childhood-dreamscape",
     colours: "pink, peach",
     completion: "2005-08-09",
