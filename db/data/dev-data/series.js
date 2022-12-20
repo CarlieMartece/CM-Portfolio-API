@@ -46,18 +46,23 @@ module.exports = [
     quote: null,
   },
   {
+    series_name: "Hexas and Elementals",
+    category_id: 1,
+    quote: null,
+  },
+  {
     series_name: "The NookaBet",
     category_id: 1,
     quote: null,
   },
   {
-    series_name: "Hexas and Elementals",
-    category_id: 8,
+    series_name: "The Second Deal",
+    category_id: 3,
     quote: null,
   },
   {
-    series_name: "The Second Deal",
-    category_id: 3,
+    series_name: "Shamless Self-Promotion",
+    category_id: 9,
     quote: null,
   },
   {
