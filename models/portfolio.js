@@ -79,21 +79,9 @@ exports.selectArt = (queries) => {
   let filter = " ";
   let orderQuery = `ORDER BY art.stock_id `;
   let ascOrDesc = queries.order_by || `ASC`;
-  let array = [];
-  if (queries.sort_by === "price") {
-    selectQuery = artQuery;
-    filter = ` WHERE art.price != $1 `;
-    orderQuery = `ORDER BY art.price `;
-    array.push(-1);
-  }
-  if (
-    (queries.category && !Number(queries.category)) ||
-    Number(queries.subject) ||
-    Number(queries.colour) ||
-    (queries.sort_by && queries.sort_by !== "price") ||
-    (queries.order_by && queries.order_by !== "desc")
-  ) {
-    return Promise.reject({ status: 400, msg: "Non-valid search criteria" });
+  let queryValues = [];
+  if (queries.colour) {
+    selectQuery = `SELECT art.stock_id, art.colours FROM art`;
   }
   if (queries.category) {
     if (queries.category === "13" || queries.category === "46") {
@@ -104,24 +92,36 @@ exports.selectArt = (queries) => {
         i < Number(queries.category.charAt(1)) + 1;
         i++
       ) {
-        array.push(i);
+        queryValues.push(i);
       }
     } else if (queries.category === "16") {
       filter = ` WHERE art.category_id != 7 `;
     } else {
       filter = ` WHERE art.category_id = $1 `;
-      array.push(queries.category);
+      queryValues.push(queries.category);
     }
   }
   if (queries.subject) {
-    filter = ` WHERE art.subject = $1 `;
-    array.push(queries.subject);
+    filter = ` WHERE art.subject ILIKE $1 `;
+    queryValues.push(queries.subject);
   }
-  if (queries.colour) {
-    selectQuery = `SELECT art.stock_id, art.colours FROM art`;
+  if (queries.sort_by === "price") {
+    selectQuery = artQuery;
+    filter = ` WHERE art.price != $1 `;
+    orderQuery = `ORDER BY art.price `;
+    queryValues.push(-1);
+  }
+  if (
+    (queries.category && !Number(queries.category)) ||
+    Number(queries.subject) ||
+    Number(queries.colour) ||
+    (queries.sort_by && queries.sort_by !== "price") ||
+    (queries.order_by && queries.order_by !== "desc")
+  ) {
+    return Promise.reject({ status: 400, msg: "Non-valid search criteria" });
   }
   const queryString = `${selectQuery}${filter}${orderQuery}${ascOrDesc};`;
-  return db.query(queryString, array).then((result) => {
+  return db.query(queryString, queryValues).then((result) => {
     return result.rows;
   });
 };
