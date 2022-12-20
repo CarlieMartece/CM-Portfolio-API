@@ -1,72 +1,5 @@
 const db = require("../db/index.js");
 
-exports.selectCategories = () => {
-  return db.query("SELECT * FROM categories;").then((result) => result.rows);
-};
-
-//////////////
-
-const seriesQuery = `SELECT series.series_id, series.series_name, categories.category_name
-FROM series
-INNER JOIN categories ON series.category_id=categories.category_id`;
-
-exports.selectSeries = () => {
-  return db.query(`${seriesQuery};`).then((result) => result.rows);
-};
-
-exports.selectSeriesById = (series_id) => {
-  return db
-    .query(`${seriesQuery} WHERE series.series_id = $1;`, [series_id])
-    .then(({ rows: [series] }) => {
-      if (!series) {
-        return Promise.reject({
-          status: 404,
-          msg: "Series not found",
-        });
-      }
-      return series;
-    });
-};
-
-//////////////
-
-const bookQuery = `SELECT books.book_id, books.book_title, books.edition_no, books.cover_stock_id, book_cover_ref.art_id, books.release_date, series.series_name, books.sequence_no, books.sales_url, books.blurb  
-FROM books
-INNER JOIN series ON books.series_id = series.series_id
-INNER JOIN book_cover_ref ON books.book_id = book_cover_ref.book_id`;
-
-exports.selectBooks = () => {
-  return db
-    .query(`${bookQuery} ORDER BY books.release_date DESC;`)
-    .then((result) => result.rows);
-};
-
-exports.selectBookById = (book_id) => {
-  return db
-    .query(`${bookQuery} WHERE books.book_id = $1;`, [book_id])
-    .then(({ rows: [book] }) => {
-      if (!book) {
-        return Promise.reject({
-          status: 404,
-          msg: "Book not found",
-        });
-      }
-      return book;
-    });
-};
-
-exports.selectBooksBySeries = (series_id) => {
-  return db
-    .query(
-      `${bookQuery} WHERE books.series_id = $1 ORDER BY books.sequence_no ASC;`,
-      [series_id]
-    )
-    .then(({ rows: items }) => {
-      return items;
-    });
-};
-
-//////////////
 
 const artQuery = `SELECT art.art_id, art.stock_id, art.art_title, art.three_word_description, art.colours, art.completion, categories.category_name, series.series_name, art.alt_text, art.quote, books.book_title, art.made_from, art.price, art.self_ref, art.close_ups, art.link  
 FROM art
@@ -144,5 +77,82 @@ exports.selectArtBySeries = (series_id) => {
     ])
     .then(({ rows: items }) => {
       return items;
+    });
+};
+
+//////////////
+
+const bookQuery = `SELECT books.book_id, books.book_title, books.edition_no, books.cover_stock_id, book_cover_ref.art_id, books.release_date, series.series_name, books.sequence_no, books.sales_url, books.blurb  
+FROM books
+INNER JOIN series ON books.series_id = series.series_id
+INNER JOIN book_cover_ref ON books.book_id = book_cover_ref.book_id`;
+
+exports.selectBooks = () => {
+  return db
+    .query(`${bookQuery} ORDER BY books.release_date DESC;`)
+    .then((result) => result.rows);
+};
+
+exports.selectBookById = (book_id) => {
+  return db
+    .query(`${bookQuery} WHERE books.book_id = $1;`, [book_id])
+    .then(({ rows: [book] }) => {
+      if (!book) {
+        return Promise.reject({
+          status: 404,
+          msg: "Book not found",
+        });
+      }
+      return book;
+    });
+};
+
+exports.selectBooksBySeries = (series_id) => {
+  return db
+    .query(
+      `${bookQuery} WHERE books.series_id = $1 ORDER BY books.sequence_no ASC;`,
+      [series_id]
+    )
+    .then(({ rows: items }) => {
+      return items;
+    });
+};
+
+//////////////
+
+exports.selectCategories = () => {
+  return db.query("SELECT * FROM categories;").then((result) => result.rows);
+};
+
+//////////////
+
+const seriesQuery = `SELECT series.series_id, series.series_name, categories.category_name
+FROM series
+INNER JOIN categories ON series.category_id=categories.category_id`;
+
+exports.selectSeries = () => {
+  return db.query(`${seriesQuery};`).then((result) => result.rows);
+};
+
+exports.selectSeriesById = (series_id) => {
+  return db
+    .query(`${seriesQuery} WHERE series.series_id = $1;`, [series_id])
+    .then(({ rows: [series] }) => {
+      if (!series) {
+        return Promise.reject({
+          status: 404,
+          msg: "Series not found",
+        });
+      }
+      return series;
+    });
+};
+
+//////////////
+
+exports.countSubjects = () => {
+  return db
+    .query(`SELECT subject, count(subject) FROM art GROUP by subject ORDER BY count DESC`).then((result) => {
+      return result.rows;
     });
 };

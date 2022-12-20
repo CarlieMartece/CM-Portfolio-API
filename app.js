@@ -1,27 +1,32 @@
 const express = require('express');
 const app = express();
 const {
-    getCategories,
-    getSeries,
-    getBooks, 
-    getBookById,
     getArt,
     getArtById,
-    getSeriesById
+    getBookById,
+    getBooks, 
+    getCategories,
+    getSeries,
+    getSeriesById,
+    getSubjects
 } = require('./controllers/portfolio.js');
 
 app.use(express.json());
+
+
+app.get('/api/art', getArt);
+app.get('/api/art/:art_id', getArtById);
+
+app.get('/api/books', getBooks);
+app.get('/api/books/:book_id', getBookById);
 
 app.get('/api/categories', getCategories);
 
 app.get('/api/series', getSeries);
 app.get('/api/series/:series_id', getSeriesById);
 
-app.get('/api/books', getBooks);
-app.get('/api/books/:book_id', getBookById);
+app.get('/api/subjects', getSubjects);
 
-app.get('/api/art', getArt);
-app.get('/api/art/:art_id', getArtById);
 
 app.all('*', (req, res) => {
     res.status(404).send({ msg: 'You must be lost.' });
