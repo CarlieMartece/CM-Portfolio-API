@@ -61,7 +61,7 @@ module.exports = [
     quote: null,
   },
   {
-    series_name: "Shamless Self-Promotion",
+    series_name: "Shameless Self-Promotion",
     category_id: 9,
     quote: null,
   },
@@ -88,6 +88,11 @@ module.exports = [
   {
     series_name: "Ghexa Canyon",
     category_id: 7,
+    quote: null,
+  },
+  {
+    series_name: "Web Development",
+    category_id: 10,
     quote: null,
   }
 ];
