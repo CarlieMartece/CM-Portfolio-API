@@ -128,6 +128,24 @@ const art = [
     close_ups: null,
     link: "TBC",
   },
+  {
+    stock_id: "913-130314a",
+    art_title: "Toxic Nursery promo shoot with Under Your Skin Photography",
+    three_word_description: "purple-wigged-aspiration",
+    colours: "purple",
+    completion: "2013-03-14",
+    subject: "Carlie Martece",
+    category_id: 9,
+    series_id: 13,
+    alt_text: "Carlie Martece in purple wig and sunglasses. I don't know what they're smiling about.",
+    quote: "\"Everybody's enslaved by something,\"",
+    book_id: 5,
+    made_from: "Modelling and dreams of a brighter tomorrow.",
+    price: -1,
+    self_ref: "TBC",
+    close_ups: "8",
+    link: "TBC",
+  },
 ];
 
 describe("multi-purpose createRef function", () => {
@@ -186,6 +204,11 @@ describe("formatArt function", () => {
     const expected = "3101b,3101c,3101d,3101e,3101f,3101g";
     expect(actual[1].close_ups).toEqual(expected);
   });
+  test("Function also works with model shots", () => {
+    const actual = formatArt(art);
+    const expected = "913-130314b,913-130314c,913-130314d,913-130314e,913-130314f,913-130314g,913-130314h,913-130314i";
+    expect(actual[3].close_ups).toEqual(expected);
+  });
 });
 
 describe("createCoverRef", () => {
@@ -219,7 +242,7 @@ describe("createFilteredList", () => {
   });
   test("Function returns list with duplicate art shots filtered, showing only first shots", () => {
     const actual = createFilteredList(art);
-    expect(actual).toHaveLength(2);
+    expect(actual).toHaveLength(3);
     expect(actual[0].stock_id).toBe('3101a');
   });
 });

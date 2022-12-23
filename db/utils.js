@@ -14,7 +14,8 @@ exports.formatArt = (array) => {
     const close_ups_count = Number(newArt.close_ups);
     if (newArt.close_ups !== 0) {
       let closeUpsArray = [];
-      const stockCropped = newArt.stock_id.slice(0, 4);
+      const index = newArt.stock_id.length-1;
+      const stockCropped = newArt.stock_id.slice(0, index);
       for (let i = 1; i <= close_ups_count; i++) {
         let letter = String.fromCharCode(97 + i);
         closeUpsArray.push(`${stockCropped}${letter}`);
