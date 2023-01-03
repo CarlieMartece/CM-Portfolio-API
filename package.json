@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "start": "node listen.js",
-    "seed-prod": "NODE_ENV=production npm run seed"
+    "seed-prod": "NODE_ENV=production npm run seed",
+    "seed": "node db/run-seed.js"
   },
   "repository": {
     "type": "git",
