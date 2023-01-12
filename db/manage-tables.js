@@ -2,7 +2,10 @@ const db = require('.');
 
 exports.dropTables = () => {
     return db
-        .query('DROP TABLE IF EXISTS book_cover_ref;')
+        .query('DROP TABLE IF EXISTS code;')
+        .then(() => {
+            return db.query('DROP TABLE IF EXISTS book_cover_ref;');
+        })
         .then(() => {
             return db.query('DROP TABLE IF EXISTS art;');
         })
@@ -66,6 +69,18 @@ exports.createTables = () => {
             ref_id SERIAL PRIMARY KEY,
             book_id SMALLINT REFERENCES books(book_id),
             art_id SMALLINT REFERENCES art(art_id)
+        );`);
+    }).then(() => {
+        return db.query(`CREATE TABLE code (
+            ref_id SERIAL PRIMARY KEY,
+            stock_id VARCHAR NOT NULL,
+            name VARCHAR NOT NULL,
+            location VARCHAR NOT NULL,
+            first_launched DATE NOT NULL,
+            last_update DATE,
+            tech_stack VARCHAR NOT NULL,
+            description VARCHAR NOT NULL,
+            further_info VARCHAR
         );`);
     });
 };

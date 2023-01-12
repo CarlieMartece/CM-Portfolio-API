@@ -3,7 +3,7 @@ const format = require('pg-format');
 const { dropTables, createTables } = require('./manage-tables');
 const { createRef, formatArt, createCoverRef } = require('./utils');
 
-function seed({categoriesData, seriesData, bookData, artData}) {
+function seed({categoriesData, seriesData, bookData, artData, codeData}) {
     return dropTables()
         .then(() => {
             return createTables();
@@ -78,7 +78,20 @@ function seed({categoriesData, seriesData, bookData, artData}) {
             );
             return db.query(bookCoverRefQuery)
         }).then(() => {
-            
+            const codeQuery = format(
+                `INSERT INTO code (stock_id, name, location, first_launched, last_update, tech_stack, description, further_info) VALUES %L RETURNING*;`,
+                codeData.map((project) => [
+                    project.stock_id,
+                    project.name,
+                    project.location,
+                    project.first_launched,
+                    project.last_update,
+                    project.tech_stack,
+                    project.description,
+                    project.further_info
+                ])
+            );
+            return db.query(codeQuery)
         });
 };
 

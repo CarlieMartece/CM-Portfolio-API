@@ -308,6 +308,15 @@ describe("/api/categories", () => {
 });
 
 
+describe("./api/code", () => {
+  test("GET: 200, Responds with an array of code objects", () => {
+    return request(app)
+      .get("/api/code")
+      .expect(200)
+  });
+});
+
+
 describe("/api/series", () => {
   test("GET: 200, Responds with a formatted array of series objects", () => {
     return request(app)
