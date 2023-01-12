@@ -222,7 +222,7 @@ describe("createCoverRef", () => {
     const lookUp = createRef(art, "stock_id", "art_id");
     const coverRef = createCoverRef(books, lookUp);
     expect(coverRef[1].art_id).toBe(2);
-    expect(coverRef[2].art_id).toBe(1);
+    expect(coverRef[2].art_id).toBe(3);
   });
 });
 

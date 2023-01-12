@@ -32,7 +32,7 @@ exports.createCoverRef = (array, lookUp) => {
   array.forEach((book) => {
     const bookObj = {};
     bookObj.book_id = book.book_id;
-    let artId = 1;
+    let artId = 3;
     if (lookUp[book.cover_stock_id] !== undefined)
       artId = lookUp[book.cover_stock_id];
     bookObj.art_id = artId;

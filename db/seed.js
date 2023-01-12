@@ -25,7 +25,7 @@ function seed({categoriesData, seriesData, bookData, artData, codeData}) {
             );
             return db.query(seriesQuery)
         }).then((seriesResult) => {
-            //console.log(createRef(seriesResult.rows, 'series_id', 'series_name'))
+            console.log(createRef(seriesResult.rows, 'series_id', 'series_name'))
             const bookQuery = format(
                 `INSERT INTO books (book_title, edition_no, cover_stock_id, release_date, series_id, sequence_no, sales_url, blurb) VALUES %L RETURNING*;`,
                 bookData.map((book) => [
