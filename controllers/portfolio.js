@@ -7,6 +7,8 @@ const {
   selectBookById,
   selectBooksBySeries,
   selectCategories,
+  selectCode,
+  selectCodeById,
   selectSeries,
   selectSeriesById,
   countSubjects
@@ -75,6 +77,19 @@ exports.getCategories = (req, res) => {
     const categories = createRef(result, "category_id", "category_name");
     res.status(200).send({ categories });
   });
+};
+
+exports.getCode = (req, res) => {
+  selectCode().then((code) => {
+    res.status(200).send({ code });
+  });
+};
+
+exports.getCodeById = (req, res) => {
+  const { project_id } = req.params;
+  selectCodeById(project_id).then((project) => {
+    res.status(200).send({ project });
+  })
 };
 
 exports.getSeries = (req, res) => {

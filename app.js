@@ -6,6 +6,8 @@ const {
     getBookById,
     getBooks, 
     getCategories,
+    getCode,
+    getCodeById,
     getSeries,
     getSeriesById,
     getSubjects
@@ -19,6 +21,9 @@ app.get('/api/art/:art_id', getArtById);
 
 app.get('/api/books', getBooks);
 app.get('/api/books/:book_id', getBookById);
+
+app.get('/api/code', getCode);
+app.get('/api/code/:project_id', getCodeById);
 
 app.get('/api/categories', getCategories);
 

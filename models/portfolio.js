@@ -126,6 +126,20 @@ exports.selectCategories = () => {
 
 //////////////
 
+exports.selectCode = () => {
+  return db.query("SELECT stock_id, name, tech_stack FROM code;").then((result) => result.rows);
+};
+
+exports.selectCodeById = (project_id) => {
+  return db
+    .query("SELECT * FROM code WHERE project_id=$1;", [project_id])
+    .then(({ rows: [project] }) => {
+      return project;
+    });
+};
+
+//////////////
+
 const seriesQuery = `SELECT series.series_id, series.series_name, categories.category_name
 FROM series
 INNER JOIN categories ON series.category_id=categories.category_id`;

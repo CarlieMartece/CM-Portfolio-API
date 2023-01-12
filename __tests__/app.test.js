@@ -12,7 +12,7 @@ const bookObj = expect.objectContaining({
   series_name: expect.any(String),
   sequence_no: expect.any(Number),
   sales_url: expect.any(String),
-  blurb: expect.any(String)
+  blurb: expect.any(String),
 });
 
 const artObj = expect.objectContaining({
@@ -38,18 +38,16 @@ afterAll(() => {
   if (db.end) db.end();
 });
 
-
-describe('handles all bad URLs', () => {
-  test('GET:404 sends bad path response for all bad urls', () => {
-      return request(app)
-          .get('/api/wellness-guru')
-          .expect(404)
-          .then(({body}) => {
-              expect(body.msg).toBe('You must be lost.');
-          });
+describe("handles all bad URLs", () => {
+  test("GET:404 sends bad path response for all bad urls", () => {
+    return request(app)
+      .get("/api/wellness-guru")
+      .expect(404)
+      .then(({ body }) => {
+        expect(body.msg).toBe("You must be lost.");
+      });
   });
 });
-
 
 describe("/api/art", () => {
   test("GET: 200, Responds with an array of art stock_ids", () => {
@@ -59,7 +57,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(14);
-        expect(response.body[0]).toBe('1001');
+        expect(response.body[0]).toBe("1001");
       });
   });
   test("GET: 200, Responds with an array of art stock_ids for selected category", () => {
@@ -68,7 +66,7 @@ describe("/api/art", () => {
       .expect(200)
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
-        expect(response.body[0]).toBe('3101a');
+        expect(response.body[0]).toBe("3101a");
       });
   });
   test("GET: 200, Responds with an array of all visual art stock_ids (filtering out book refs) for category 16", () => {
@@ -78,7 +76,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(13);
-        expect(response.body[0]).toBe('1001');
+        expect(response.body[0]).toBe("1001");
       });
   });
   test("GET: 200, Responds with an array of all traditional art stock_ids for category 13", () => {
@@ -88,7 +86,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(8);
-        expect(response.body[0]).toBe('1001');
+        expect(response.body[0]).toBe("1001");
       });
   });
   test("GET: 200, Responds with an array of all digital art stock_ids for category 46", () => {
@@ -98,7 +96,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(5);
-        expect(response.body[0]).toBe('4115');
+        expect(response.body[0]).toBe("4115");
       });
   });
   test("GET: 200, Responds with an array of art stock_ids filtered by subject", () => {
@@ -116,7 +114,7 @@ describe("/api/art", () => {
       .expect(200)
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
-        expect(response.body[0]).toBe('2002');
+        expect(response.body[0]).toBe("2002");
         expect(response.body).toHaveLength(4);
       });
   });
@@ -129,7 +127,7 @@ describe("/api/art", () => {
         expect(art).toEqual(expect.any(Array));
         expect(art).toHaveLength(3);
         expect(art[0]).toEqual(artObj);
-        expect(art).toBeSortedBy('price', {
+        expect(art).toBeSortedBy("price", {
           ascending: true,
         });
       });
@@ -143,7 +141,7 @@ describe("/api/art", () => {
         expect(art).toEqual(expect.any(Array));
         expect(art).toHaveLength(3);
         expect(art[0]).toEqual(artObj);
-        expect(art).toBeSortedBy('price', {
+        expect(art).toBeSortedBy("price", {
           descending: true,
         });
       });
@@ -153,7 +151,7 @@ describe("/api/art", () => {
       .get("/api/art?category=kale-smoothie")
       .expect(400)
       .then((response) => {
-        expect(response.body.msg).toBe("Non-valid search criteria")
+        expect(response.body.msg).toBe("Non-valid search criteria");
       });
   });
   test("GET: 400, Sends error response for invalid subject input", () => {
@@ -161,23 +159,23 @@ describe("/api/art", () => {
       .get("/api/art?subject=666")
       .expect(400)
       .then((response) => {
-        expect(response.body.msg).toBe("Non-valid search criteria")
+        expect(response.body.msg).toBe("Non-valid search criteria");
       });
   });
   test("GET: 400, Sends error response for invalid sort input", () => {
     return request(app)
-    .get("/api/art?sort_by=sickle&order_by=desc")
+      .get("/api/art?sort_by=sickle&order_by=desc")
       .expect(400)
       .then((response) => {
-        expect(response.body.msg).toBe("Non-valid search criteria")
+        expect(response.body.msg).toBe("Non-valid search criteria");
       });
   });
   test("GET: 400, Sends error response for invalid order input", () => {
     return request(app)
-    .get("/api/art?sort_by=price&order_by=nary")
+      .get("/api/art?sort_by=price&order_by=nary")
       .expect(400)
       .then((response) => {
-        expect(response.body.msg).toBe("Non-valid search criteria")
+        expect(response.body.msg).toBe("Non-valid search criteria");
       });
   });
   test("GET: 404, Sends error response for invalid colour input", () => {
@@ -185,7 +183,7 @@ describe("/api/art", () => {
       .get("/api/art?colour=666")
       .expect(400)
       .then((response) => {
-        expect(response.body.msg).toBe("Non-valid search criteria")
+        expect(response.body.msg).toBe("Non-valid search criteria");
       });
   });
   test("GET: 404, Sends error response for valid but non-existent category", () => {
@@ -193,7 +191,7 @@ describe("/api/art", () => {
       .get("/api/art?category=666")
       .expect(404)
       .then((response) => {
-        expect(response.body.msg).toBe("Art not found")
+        expect(response.body.msg).toBe("Art not found");
       });
   });
   test("GET: 404, Sends error response for valid but non-existent subject", () => {
@@ -201,7 +199,7 @@ describe("/api/art", () => {
       .get("/api/art?subject=yoga")
       .expect(404)
       .then((response) => {
-        expect(response.body.msg).toBe("Art not found")
+        expect(response.body.msg).toBe("Art not found");
       });
   });
   test("GET: 404, Sends error response for valid but non-existent subject", () => {
@@ -209,7 +207,7 @@ describe("/api/art", () => {
       .get("/api/art?colour=i-dont-see-colour")
       .expect(404)
       .then((response) => {
-        expect(response.body.msg).toBe("Art not found")
+        expect(response.body.msg).toBe("Art not found");
       });
   });
 });
@@ -241,7 +239,6 @@ describe("/api/art/:art_id", () => {
   });
 });
 
-
 describe("/api/books", () => {
   test("GET: 200, Responds with an array of book objects", () => {
     return request(app)
@@ -251,7 +248,7 @@ describe("/api/books", () => {
         const { books } = body;
         expect(books).toEqual(expect.any(Array));
         expect(books[0]).toEqual(bookObj);
-        expect(books).toBeSortedBy('release_date', {
+        expect(books).toBeSortedBy("release_date", {
           descending: true,
         });
       });
@@ -285,7 +282,6 @@ describe("/api/books/:book_id", () => {
   });
 });
 
-
 describe("/api/categories", () => {
   test("GET: 200, Responds with a category object", () => {
     return request(app)
@@ -307,18 +303,49 @@ describe("/api/categories", () => {
   });
 });
 
-
 describe("./api/code", () => {
   test("GET: 200, Responds with an array of code objects", () => {
     return request(app)
       .get("/api/code")
       .expect(200)
+      .then(({ body }) => {
+        const { code } = body;
+        expect(code).toEqual(expect.any(Array));
+        expect(code[0]).toEqual({
+          stock_id: "10x001",
+          name: "Carlie Martece",
+          tech_stack: "[JavaScript, React, CSS, HTML, PostgreSQL]",
+        });
+      });
   });
 });
 
+describe("./api/code/:project_id", () => {
+  test("GET: 200, Responds with requested project object", () => {
+    return request(app)
+      .get("/api/code/1")
+      .expect(200)
+      .then(({ body }) => {
+        const { project } = body;
+        expect(project).toEqual(
+          expect.objectContaining({
+            project_id: 1,
+            stock_id: "10x001",
+            name: "Carlie Martece",
+            location: "carliemartece.com",
+            first_launched: expect.any(String),
+            last_update: expect.any(String),
+            tech_stack: "[JavaScript, React, CSS, HTML, PostgreSQL]",
+            description: "Artist, writer and coder portfolio",
+            further_info: expect.any(String),
+          })
+        );
+      });
+  });
+});
 
 describe("/api/series", () => {
-  test("GET: 200, Responds with a formatted array of series objects", () => {
+  test("GET: 200, Responds with a series object", () => {
     return request(app)
       .get("/api/series")
       .expect(200)
@@ -331,7 +358,7 @@ describe("/api/series", () => {
             3: expect.any(String),
             4: expect.any(String),
             5: expect.any(String),
-            6: expect.any(String)
+            6: expect.any(String),
           })
         );
       });
@@ -350,12 +377,12 @@ describe("/api/series/:series_id", () => {
             series_id: expect.any(Number),
             series_name: expect.any(String),
             category_name: expect.any(String),
-            items: expect.any(Object)
+            items: expect.any(Object),
           })
         );
         expect(series.items).toHaveLength(2);
         expect(series.items[0]).toEqual(artObj);
-        expect(series.items).toBeSortedBy('stock_id', {
+        expect(series.items).toBeSortedBy("stock_id", {
           ascending: true,
         });
       });
@@ -371,12 +398,12 @@ describe("/api/series/:series_id", () => {
             series_id: expect.any(Number),
             series_name: expect.any(String),
             category_name: expect.any(String),
-            items: expect.any(Object)
+            items: expect.any(Object),
           })
         );
         expect(series.items[0]).toEqual(bookObj);
         expect(series.items).toHaveLength(3);
-        expect(series.items).toBeSortedBy('sequence_no', {
+        expect(series.items).toBeSortedBy("sequence_no", {
           ascending: true,
         });
       });
@@ -399,7 +426,6 @@ describe("/api/series/:series_id", () => {
   });
 });
 
-
 describe("/api/subjects", () => {
   test("GET: 200, Responds with a subjects object", () => {
     return request(app)
@@ -408,11 +434,11 @@ describe("/api/subjects", () => {
       .then(({ body }) => {
         const { subjects } = body;
         expect(subjects).toEqual([
-          { subject: 'toys', count: '4' },
-          { subject: 'fairies', count: '4' },
-          { subject: '', count: '3' },
-          { subject: 'nails', count: '2' },
-          { subject: 'eyes', count: '1' }
+          { subject: "toys", count: "4" },
+          { subject: "fairies", count: "4" },
+          { subject: "", count: "3" },
+          { subject: "nails", count: "2" },
+          { subject: "eyes", count: "1" },
         ]);
       });
   });

@@ -72,7 +72,7 @@ exports.createTables = () => {
         );`);
     }).then(() => {
         return db.query(`CREATE TABLE code (
-            ref_id SERIAL PRIMARY KEY,
+            project_id SERIAL PRIMARY KEY,
             stock_id VARCHAR NOT NULL,
             name VARCHAR NOT NULL,
             location VARCHAR NOT NULL,
