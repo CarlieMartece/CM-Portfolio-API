@@ -134,6 +134,12 @@ exports.selectCodeById = (project_id) => {
   return db
     .query("SELECT * FROM code WHERE project_id=$1;", [project_id])
     .then(({ rows: [project] }) => {
+      if (!project) {
+        return Promise.reject({
+          status: 404,
+          msg: "Project not found",
+        });
+      }
       return project;
     });
 };

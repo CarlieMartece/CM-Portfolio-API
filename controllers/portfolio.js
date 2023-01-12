@@ -85,11 +85,14 @@ exports.getCode = (req, res) => {
   });
 };
 
-exports.getCodeById = (req, res) => {
+exports.getCodeById = (req, res, next) => {
   const { project_id } = req.params;
   selectCodeById(project_id).then((project) => {
     res.status(200).send({ project });
   })
+  .catch((err) => {
+    next(err);
+  });
 };
 
 exports.getSeries = (req, res) => {

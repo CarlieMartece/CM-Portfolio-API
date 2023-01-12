@@ -342,6 +342,22 @@ describe("./api/code/:project_id", () => {
         );
       });
   });
+  test("GET: 400, Sends error message for invalid ID", () => {
+    return request(app)
+      .get("/api/code/banana")
+      .expect(400)
+      .then((response) => {
+        expect(response.body.msg).toBe("Are you lost?");
+      });
+  });
+  test("GET: 404, Sends error message for valid but non-existent ID", () => {
+    return request(app)
+      .get("/api/code/3141")
+      .expect(404)
+      .then((response) => {
+        expect(response.body.msg).toBe("Project not found");
+      });
+  });
 });
 
 describe("/api/series", () => {
