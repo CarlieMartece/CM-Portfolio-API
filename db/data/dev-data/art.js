@@ -4651,7 +4651,7 @@ module.exports = [
     art_title: "DarkStar Vale, First Draft",
     three_word_description: "farming-game-aliens",
     colours: "green?",
-    completion: "",
+    completion: "2021-10-31",
     subject: "aliens",
     category_id: 7,
     series_id: 18,
