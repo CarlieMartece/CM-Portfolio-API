@@ -2,7 +2,7 @@ module.exports = [
   {
     stock_id: "10x001",
     name: "Carlie Martece",
-    location: "carliemartece.com",
+    location: "https://carliemartece.com",
     first_launched: "2013-03-14",
     last_update: "2023-01-12",
     tech_stack: "[JavaScript, React, CSS3, HTML5, PostgreSQL]",
