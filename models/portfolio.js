@@ -90,7 +90,9 @@ INNER JOIN book_cover_ref ON books.book_id = book_cover_ref.book_id`;
 exports.selectBooks = () => {
   return db
     .query(`${bookQuery} ORDER BY books.release_date DESC;`)
-    .then((result) => result.rows);
+    .then((result) => {
+      return result.rows;
+    });
 };
 
 exports.selectBookById = (book_id) => {
@@ -127,7 +129,7 @@ exports.selectCategories = () => {
 //////////////
 
 exports.selectCode = () => {
-  return db.query("SELECT stock_id, name, tech_stack FROM code;").then((result) => result.rows);
+  return db.query("SELECT project_id, stock_id, name, tech_stack FROM code;").then((result) => result.rows);
 };
 
 exports.selectCodeById = (project_id) => {

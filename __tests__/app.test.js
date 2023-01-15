@@ -312,6 +312,7 @@ describe("./api/code", () => {
         const { code } = body;
         expect(code).toEqual(expect.any(Array));
         expect(code[0]).toEqual({
+          project_id: 1,
           stock_id: "10x001",
           name: "Carlie Martece",
           tech_stack: "[JavaScript, React, CSS, HTML, PostgreSQL]",
