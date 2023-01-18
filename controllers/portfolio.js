@@ -87,6 +87,8 @@ exports.getCode = (req, res) => {
         project.last_update = project.first_launched;
       }
       delete project.first_launched;
+      const stackArray = project.tech_stack.split(', ');
+      project.tech_stack = stackArray;
     })
     res.status(200).send({ code });
   });
@@ -96,6 +98,8 @@ exports.getCodeById = (req, res, next) => {
   const { project_id } = req.params;
   selectCodeById(project_id)
   .then((project) => {
+    const stackArray = project.tech_stack.split(', ');
+    project.tech_stack = stackArray;
     res.status(200).send({ project });
   })
   .catch((err) => {

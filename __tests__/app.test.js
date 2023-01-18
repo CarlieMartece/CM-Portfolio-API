@@ -316,7 +316,7 @@ describe("./api/code", () => {
           stock_id: "10x002",
           name: "NC News",
           last_update: "2022-08-25T23:00:00.000Z",
-          tech_stack: "[JavaScript, Node.js, React, CSS3, HTML5, PostgreSQL]",
+          tech_stack: ["JavaScript", "Node.js", "React.js", "CSS3", "HTML5", "PostgreSQL"],
         });
       });
   });
@@ -338,7 +338,7 @@ describe("./api/code/:project_id", () => {
             view: "hybrid",
             first_launched: expect.any(String),
             last_update: expect.any(String),
-            tech_stack: "[JavaScript, Node.js, React, CSS3, HTML5, PostgreSQL]",
+            tech_stack: ["JavaScript", "Node.js", "React.js", "CSS3", "HTML5", "PostgreSQL"],
             description: "Artist, writer and coder portfolio",
             further_info: expect.any(String),
           })
