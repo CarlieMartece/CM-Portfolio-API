@@ -76,6 +76,7 @@ exports.createTables = () => {
             stock_id VARCHAR NOT NULL,
             name VARCHAR NOT NULL,
             location VARCHAR NOT NULL,
+            view VARCHAR NOT NULL,
             first_launched DATE NOT NULL,
             last_update DATE,
             tech_stack VARCHAR NOT NULL,

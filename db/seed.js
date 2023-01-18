@@ -24,8 +24,7 @@ function seed({categoriesData, seriesData, bookData, artData, codeData}) {
                 ])
             );
             return db.query(seriesQuery)
-        }).then((seriesResult) => {
-            console.log(createRef(seriesResult.rows, 'series_id', 'series_name'))
+        }).then(() => {
             const bookQuery = format(
                 `INSERT INTO books (book_title, edition_no, cover_stock_id, release_date, series_id, sequence_no, sales_url, blurb) VALUES %L RETURNING*;`,
                 bookData.map((book) => [
@@ -79,11 +78,12 @@ function seed({categoriesData, seriesData, bookData, artData, codeData}) {
             return db.query(bookCoverRefQuery)
         }).then(() => {
             const codeQuery = format(
-                `INSERT INTO code (stock_id, name, location, first_launched, last_update, tech_stack, description, further_info) VALUES %L RETURNING*;`,
+                `INSERT INTO code (stock_id, name, location, view, first_launched, last_update, tech_stack, description, further_info) VALUES %L RETURNING*;`,
                 codeData.map((project) => [
                     project.stock_id,
                     project.name,
                     project.location,
+                    project.view,
                     project.first_launched,
                     project.last_update,
                     project.tech_stack,

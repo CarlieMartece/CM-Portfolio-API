@@ -311,11 +311,12 @@ describe("./api/code", () => {
       .then(({ body }) => {
         const { code } = body;
         expect(code).toEqual(expect.any(Array));
-        expect(code[0]).toEqual({
-          project_id: 1,
-          stock_id: "10x001",
-          name: "Carlie Martece",
-          tech_stack: "[JavaScript, React, CSS, HTML, PostgreSQL]",
+        expect(code[1]).toEqual({
+          project_id: 2,
+          stock_id: "10x002",
+          name: "NC News",
+          last_update: "2022-08-25T23:00:00.000Z",
+          tech_stack: "[JavaScript, Node.js, React, CSS3, HTML5, PostgreSQL]",
         });
       });
   });
@@ -333,10 +334,11 @@ describe("./api/code/:project_id", () => {
             project_id: 1,
             stock_id: "10x001",
             name: "Carlie Martece",
-            location: "carliemartece.com",
+            location: "https://carliemartece.com",
+            view: "hybrid",
             first_launched: expect.any(String),
             last_update: expect.any(String),
-            tech_stack: "[JavaScript, React, CSS, HTML, PostgreSQL]",
+            tech_stack: "[JavaScript, Node.js, React, CSS3, HTML5, PostgreSQL]",
             description: "Artist, writer and coder portfolio",
             further_info: expect.any(String),
           })

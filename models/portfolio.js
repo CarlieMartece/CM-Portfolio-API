@@ -129,7 +129,7 @@ exports.selectCategories = () => {
 //////////////
 
 exports.selectCode = () => {
-  return db.query("SELECT project_id, stock_id, name, tech_stack FROM code;").then((result) => result.rows);
+  return db.query("SELECT project_id, stock_id, name, first_launched, last_update, tech_stack FROM code;").then((result) => result.rows);
 };
 
 exports.selectCodeById = (project_id) => {
