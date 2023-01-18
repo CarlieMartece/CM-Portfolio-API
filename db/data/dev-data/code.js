@@ -28,7 +28,7 @@ module.exports = [
     view: "mobile",
     first_launched: "2022-09-16",
     last_update: null,
-    tech_stack: "JavaScript, Node, React_Native, Expo Camera, CSS3, HTML5",
+    tech_stack: "JavaScript, Node, React_Native, Expo_Camera, CSS3, HTML5",
     description: "Gameified dog matching app",
     further_info: "My first group coding project. We were encouraged to use new tech, so I quickly learned React Native and Expo Camera. React Native took some adjustment with the differences in styling, but I overcame this to craft the navigation bar and Gallery screen. The contribution I'm most proud of is the Camera screen. I was ecstatic once I got a picture taken my my phone's camera held in state. After I pushed this code, my colleagues working on the image recognition could stop running hardcoded pictures and now run photos direct from the app. We were pleased with how it all came together."
   },
