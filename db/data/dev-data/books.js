@@ -57,7 +57,7 @@ module.exports = [
     edition_no: 1,
     cover_stock_id: "TBC",
     release_date: "2022-12-26",
-    series_id: 16,
+    series_id: 17,
     sequence_no: 1,
     sales_url: "TBC",
     blurb: "TBC",

@@ -8,7 +8,7 @@ module.exports = [
     last_update: "2023-01-12",
     tech_stack: "JavaScript, Node, React, CSS3, HTML5, PostgreSQL",
     description: "Artist, writer and coder portfolio",
-    further_info: "This is where my coding journey began. I created an online artist portfolio using HTML and CSS. With my visual art skills, I made the site look good, but with my lack of programming ability, it didn't do anything. About once a year I'd try to teach myself code, but it wouldn't click. Then I did a software engineering bootcamp that changed everything. Since graduating, I've gone back through the course notes, finishing uncompleted tasks, then applying new skills to what is now an artist, writer and coder portfolio. Code is my art now, and my favourite thing to write. I couldn't be more pleased with my creative journey's progression."
+    further_info: "This is where my coding journey began. I first created an online artist portfolio using HTML and CSS. With my visual art skills, I made the site look good, but with my lack of programming ability, it didn't do anything. About once a year I'd try to teach myself code, but it wouldn't click. Then I did a software engineering bootcamp that changed everything. Since graduating, I've gone back through the course notes, finishing uncompleted tasks, then applying new skills to what is now an artist, writer and coder portfolio. Code is my art now, and my favourite thing to write. I couldn't be more pleased with my creative journey's progression."
   },
   {
     stock_id: "10x002",
