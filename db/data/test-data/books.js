@@ -27,7 +27,7 @@ module.exports = [
     series_id: 4,
     sequence_no: 2,
     sales_url: "https://mybook.to/vipdile-key",
-    blurb: "DHVK Blurb",
+    blurb: "Leah lies in a coma, a victim of the evil Poisoner. Only Ash can save her. But Ash is a hunted criminal in the high-surveillance metropolis of Deragon Hex. Their three most useful allies are a night porter, a mutilated vagrant and a creepy dominatrix.\nThis tale begins at the blood-drenched site of a mass murder, then rewinds to play the toxic events that brought the killer to this point. One of Leah's four biggest enemies is hellbent on her demise. And only one sinister observer can reveal her true nemesis.\nAfter leaving the ruined hotel suite in Blue Five Nine, the story careens through narcotised festivals, disastrous relationships, vulture trials, prison fights, televised violence and surreal dream sequences, with frequent social commentary from two voyeuristic alcoholics. The six-sided setting is populated by mentally vacant consumers and insidious social climbers, but also a helpful prison clerk, a mysterious night porter and a cat that drinks vodka.\nCan Ash save Leah before the vultures strike?",
   },
   {
     book_title: "Chroma: Calanooka",

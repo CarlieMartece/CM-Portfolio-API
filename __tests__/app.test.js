@@ -12,7 +12,7 @@ const bookObj = expect.objectContaining({
   series_name: expect.any(String),
   sequence_no: expect.any(Number),
   sales_url: expect.any(String),
-  blurb: expect.any(String),
+  blurb: expect.any(Object),
 });
 
 const artObj = expect.objectContaining({
@@ -262,6 +262,7 @@ describe("/api/books/:book_id", () => {
       .expect(200)
       .then((response) => {
         expect(response.body.book).toEqual(bookObj);
+        expect(response.body.book.blurb).toHaveLength(4)
       });
   });
   test("GET: 400, Sends error message for invalid ID", () => {

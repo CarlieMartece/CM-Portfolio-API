@@ -59,6 +59,8 @@ exports.getBookById = (req, res, next) => {
   const { book_id } = req.params;
   selectBookById(book_id)
     .then((book) => {
+      const blurbArray = book.blurb.split('\n')
+      book.blurb = blurbArray;
       res.status(200).send({ book });
     })
     .catch((err) => {
@@ -68,6 +70,10 @@ exports.getBookById = (req, res, next) => {
 
 exports.getBooks = (req, res) => {
   selectBooks().then((books) => {
+    books.forEach((book) => {
+      const blurbArray = book.blurb.split('\n')
+      book.blurb = blurbArray;
+    })
     res.status(200).send({ books });
   });
 };
@@ -125,6 +131,12 @@ exports.getSeriesById = (req, res, next) => {
         return Promise.all([series, selectItems])
     }).then(([series, selectItems]) => {
         series.items = createFilteredList(selectItems);
+        if (series.category_name === "Book") {
+          series.items.forEach((item) => {
+            const blurbArray = item.blurb.split('\n')
+          item.blurb = blurbArray;
+          });
+        }
         res.status(200).send({ series });
     }).catch((err) => {
         next(err);
