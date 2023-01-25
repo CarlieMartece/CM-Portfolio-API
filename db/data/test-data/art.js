@@ -24,7 +24,7 @@ module.exports = [
     three_word_description: "lamplit-brown-bear",
     colours: "brown, orange",
     subject: "toys",
-    completion: "2021-09-26",
+    completion: "2001-09-26",
     category_id: 3,
     series_id: 1,
     alt_text: "Photo of brown bear toy.",

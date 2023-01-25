@@ -10,8 +10,8 @@ INNER JOIN books ON art.book_id = books.book_id`;
 exports.selectArt = (queries) => {
   let selectQuery = `SELECT art.stock_id FROM art`;
   let filter = " ";
-  let orderQuery = `ORDER BY art.stock_id `;
-  let ascOrDesc = queries.order_by || `ASC`;
+  let orderQuery = `ORDER BY art.completion `;
+  let ascOrDesc = queries.order_by || `DESC`;
   let queryValues = [];
   if (queries.colour) {
     selectQuery = `SELECT art.stock_id, art.colours FROM art`;
@@ -49,7 +49,7 @@ exports.selectArt = (queries) => {
     Number(queries.subject) ||
     Number(queries.colour) ||
     (queries.sort_by && queries.sort_by !== "price") ||
-    (queries.order_by && queries.order_by !== "desc")
+    (queries.order_by && queries.order_by !== "asc")
   ) {
     return Promise.reject({ status: 400, msg: "Non-valid search criteria" });
   }

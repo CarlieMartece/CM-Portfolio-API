@@ -50,14 +50,14 @@ describe("handles all bad URLs", () => {
 });
 
 describe("/api/art", () => {
-  test("GET: 200, Responds with an array of art stock_ids", () => {
+  test("GET: 200, Responds with an array of art stock_ids, most recent first", () => {
     return request(app)
       .get("/api/art")
       .expect(200)
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(14);
-        expect(response.body[0]).toBe("1001");
+        expect(response.body[0]).toBe("4122");
       });
   });
   test("GET: 200, Responds with an array of art stock_ids for selected category", () => {
@@ -76,7 +76,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(13);
-        expect(response.body[0]).toBe("1001");
+        expect(response.body[0]).toBe("4122");
       });
   });
   test("GET: 200, Responds with an array of all traditional art stock_ids for category 13", () => {
@@ -86,7 +86,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(8);
-        expect(response.body[0]).toBe("1001");
+        expect(response.body[0]).toBe("3101a");
       });
   });
   test("GET: 200, Responds with an array of all digital art stock_ids for category 46", () => {
@@ -96,7 +96,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(5);
-        expect(response.body[0]).toBe("4115");
+        expect(response.body[0]).toBe("4122");
       });
   });
   test("GET: 200, Responds with an array of art stock_ids filtered by subject", () => {
@@ -114,13 +114,13 @@ describe("/api/art", () => {
       .expect(200)
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
-        expect(response.body[0]).toBe("2002");
+        expect(response.body[0]).toBe("4122");
         expect(response.body).toHaveLength(4);
       });
   });
   test("GET: 200, Responds with an array of art objects, each item for sale, price ascending", () => {
     return request(app)
-      .get("/api/art?sort_by=price")
+      .get("/api/art?sort_by=price&order_by=asc")
       .expect(200)
       .then(({ body }) => {
         const art = body;
@@ -134,7 +134,7 @@ describe("/api/art", () => {
   });
   test("GET: 200, Responds with an array of art objects, each item for sale, price descending", () => {
     return request(app)
-      .get("/api/art?sort_by=price&order_by=desc")
+      .get("/api/art?sort_by=price")
       .expect(200)
       .then(({ body }) => {
         const art = body;
