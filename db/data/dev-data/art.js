@@ -58,7 +58,7 @@ module.exports = [
     link: "TBC",
   },
   {
-    stock_id: "3012c",
+    stock_id: "3102c",
     art_title: "A Book Stole My Name",
     three_word_description: "artist-glowbug-painting",
     colours: "yellow, blue",
@@ -3765,7 +3765,7 @@ module.exports = [
     link: "TBC",
   },
   {
-    stock_id: "913-160924",
+    stock_id: "913-160924a",
     art_title: "Vipdile Promotion Photoshoot by Derrick Foster",
     three_word_description: "writer-artist-bint",
     colours: "black",
@@ -3981,7 +3981,7 @@ module.exports = [
     link: "TBC",
   },
   {
-    stock_id: "913-171203",
+    stock_id: "913-171203a",
     art_title: "Random Shoot by Head Full of Photos",
     three_word_description: "writer-model-poser",
     colours: "purple",
