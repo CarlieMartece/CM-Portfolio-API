@@ -60,7 +60,27 @@ describe("/api/art", () => {
         expect(response.body[0]).toEqual({ art_id: 14, stock_id: '4122'});
       });
   });
-  test("GET: 200, Responds with an array of art stock_ids for selected category", () => {
+  test("GET: 200, Responds with an array of objects for selected year", () => {
+    return request(app)
+      .get("/api/art?year=2005")
+      .expect(200)
+      .then((response) => {
+        expect(response.body).toEqual(expect.any(Array));
+        expect(response.body).toHaveLength(4);
+        expect(response.body[0]).toEqual({ art_id: 4, stock_id: '3101a'});
+      });
+  });
+  test("GET: 200, Responds with an array of objects for this year", () => {
+    return request(app)
+      .get("/api/art?year=now")
+      .expect(200)
+      .then((response) => {
+        expect(response.body).toEqual(expect.any(Array));
+        expect(response.body).toHaveLength(3);
+        expect(response.body[0]).toEqual({ art_id: 14, stock_id: '4122'});
+      });
+  });
+  test("GET: 200, Responds with an array of objects for selected category", () => {
     return request(app)
       .get("/api/art?category=3")
       .expect(200)
@@ -86,7 +106,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(8);
-        expect(response.body[0]).toEqual({"art_id": 4, "stock_id": "3101a"});
+        expect(response.body[0]).toEqual({"art_id": 13, "stock_id": "2001"});
       });
   });
   test("GET: 200, Responds with an array of all digital art stock_ids for category 46", () => {

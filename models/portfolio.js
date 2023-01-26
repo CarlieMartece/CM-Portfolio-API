@@ -44,6 +44,14 @@ exports.selectArt = (queries) => {
     orderQuery = `ORDER BY art.price `;
     queryValues.push(-1);
   }
+  if (queries.year) {
+    filter = ` WHERE date_part('year', art.completion) = $1 `;
+    if (queries.year === 'now') {
+      queryValues.push(new Date().getFullYear());
+    } else {
+      queryValues.push(queries.year);
+    }
+  }
   if (
     (queries.category && !Number(queries.category)) ||
     Number(queries.subject) ||
