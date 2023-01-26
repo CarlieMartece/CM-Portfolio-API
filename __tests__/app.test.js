@@ -50,14 +50,14 @@ describe("handles all bad URLs", () => {
 });
 
 describe("/api/art", () => {
-  test("GET: 200, Responds with an array of art stock_ids, most recent first", () => {
+  test("GET: 200, Responds with an array of objects with art ids and stock_ids, most recent first", () => {
     return request(app)
       .get("/api/art")
       .expect(200)
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(14);
-        expect(response.body[0]).toBe("4122");
+        expect(response.body[0]).toEqual({ art_id: 14, stock_id: '4122'});
       });
   });
   test("GET: 200, Responds with an array of art stock_ids for selected category", () => {
@@ -66,7 +66,7 @@ describe("/api/art", () => {
       .expect(200)
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
-        expect(response.body[0]).toBe("3101a");
+        expect(response.body[0]).toEqual({"art_id": 4, "stock_id": "3101a"});
       });
   });
   test("GET: 200, Responds with an array of all visual art stock_ids (filtering out book refs) for category 16", () => {
@@ -76,7 +76,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(13);
-        expect(response.body[0]).toBe("4122");
+        expect(response.body[0]).toEqual({ art_id: 14, stock_id: '4122'});
       });
   });
   test("GET: 200, Responds with an array of all traditional art stock_ids for category 13", () => {
@@ -86,7 +86,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(8);
-        expect(response.body[0]).toBe("3101a");
+        expect(response.body[0]).toEqual({"art_id": 4, "stock_id": "3101a"});
       });
   });
   test("GET: 200, Responds with an array of all digital art stock_ids for category 46", () => {
@@ -96,7 +96,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(5);
-        expect(response.body[0]).toBe("4122");
+        expect(response.body[0]).toEqual({ art_id: 14, stock_id: '4122'});
       });
   });
   test("GET: 200, Responds with an array of art stock_ids filtered by subject", () => {

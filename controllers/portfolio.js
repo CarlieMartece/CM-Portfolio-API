@@ -31,7 +31,9 @@ exports.getArt = (req, res, next) => {
         }
       });
     } else {
-      response.forEach((item) => stockArray.push(item.stock_id))
+      response.forEach((item) => {
+        stockArray.push(item)
+      })
     };
     if (stockArray.length < 1) {
       res.status(404).send({ msg: "Art not found" })

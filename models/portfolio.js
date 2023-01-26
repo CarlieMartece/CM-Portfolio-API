@@ -8,7 +8,7 @@ INNER JOIN series ON art.series_id = series.series_id
 INNER JOIN books ON art.book_id = books.book_id`;
 
 exports.selectArt = (queries) => {
-  let selectQuery = `SELECT art.stock_id FROM art`;
+  let selectQuery = `SELECT art.art_id, art.stock_id FROM art`;
   let filter = " ";
   let orderQuery = `ORDER BY art.completion `;
   let ascOrDesc = queries.order_by || `DESC`;
