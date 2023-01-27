@@ -10,6 +10,7 @@ INNER JOIN books ON art.book_id = books.book_id`;
 exports.selectArt = (queries) => {
   let selectQuery = `SELECT art.art_id, art.stock_id FROM art`;
   let filter = " ";
+  let filterPlus = "";
   let orderQuery = `ORDER BY art.completion `;
   let ascOrDesc = queries.order_by || `DESC`;
   let queryValues = [];
@@ -17,9 +18,11 @@ exports.selectArt = (queries) => {
     selectQuery = `SELECT art.stock_id, art.colours FROM art`;
   }
   if (queries.category) {
+    let value = "$2"
     if (queries.category === "13" || queries.category === "46") {
       const clause = ` art.category_id = `;
       filter = ` WHERE${clause}$1 OR${clause}$2 OR${clause}$3 `;
+      value = "$4"
       for (
         let i = Number(queries.category.charAt(0));
         i < Number(queries.category.charAt(1)) + 1;
@@ -29,9 +32,18 @@ exports.selectArt = (queries) => {
       }
     } else if (queries.category === "16") {
       filter = ` WHERE art.category_id != 7 AND art.category_id != 9 AND art.category_id != 10 `;
+      value = '$1'
     } else {
       filter = ` WHERE art.category_id = $1 `;
       queryValues.push(queries.category);
+    }
+    if (queries.year) {
+      filterPlus = `AND date_part('year', art.completion) = ${value} `;
+      if (queries.year === 'now') {
+        queryValues.push(new Date().getFullYear());
+      } else {
+        queryValues.push(queries.year);
+      }
     }
   }
   if (queries.subject) {
@@ -44,7 +56,7 @@ exports.selectArt = (queries) => {
     orderQuery = `ORDER BY art.price `;
     queryValues.push(-1);
   }
-  if (queries.year) {
+  if (queries.year && !queries.category) {
     filter = ` WHERE date_part('year', art.completion) = $1 `;
     if (queries.year === 'now') {
       queryValues.push(new Date().getFullYear());
@@ -61,7 +73,8 @@ exports.selectArt = (queries) => {
   ) {
     return Promise.reject({ status: 400, msg: "Non-valid search criteria" });
   }
-  const queryString = `${selectQuery}${filter}${orderQuery}${ascOrDesc};`;
+  const queryString = `${selectQuery}${filter}${filterPlus}${orderQuery}${ascOrDesc};`;
+  console.log(queryString)
   return db.query(queryString, queryValues).then((result) => {
     return result.rows;
   });

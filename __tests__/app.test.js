@@ -99,6 +99,16 @@ describe("/api/art", () => {
         expect(response.body[0]).toEqual({ art_id: 14, stock_id: '4122'});
       });
   });
+  test("GET: 200, Responds with an array of all visual art stock_ids filtered by year", () => {
+    return request(app)
+      .get("/api/art?category=16&year=2005")
+      .expect(200)
+      .then((response) => {
+        expect(response.body).toEqual(expect.any(Array));
+        expect(response.body).toHaveLength(3);
+        expect(response.body[0]).toEqual({ art_id: 4, stock_id: '3101a'});
+      });
+  });
   test("GET: 200, Responds with an array of all traditional art stock_ids for category 13", () => {
     return request(app)
       .get("/api/art?category=13")
