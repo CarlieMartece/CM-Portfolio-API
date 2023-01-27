@@ -56,7 +56,7 @@ describe("/api/art", () => {
       .expect(200)
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
-        expect(response.body).toHaveLength(14);
+        expect(response.body).toHaveLength(16);
         expect(response.body[0]).toEqual({ art_id: 14, stock_id: '4122'});
       });
   });
@@ -89,7 +89,7 @@ describe("/api/art", () => {
         expect(response.body[0]).toEqual({"art_id": 4, "stock_id": "3101a"});
       });
   });
-  test("GET: 200, Responds with an array of all visual art stock_ids (filtering out book refs) for category 16", () => {
+  test("GET: 200, Responds with an array of all visual art stock_ids (filtering out book, model, code) for category 16", () => {
     return request(app)
       .get("/api/art?category=16")
       .expect(200)
@@ -135,7 +135,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body[0]).toBe("4122");
-        expect(response.body).toHaveLength(4);
+        expect(response.body).toHaveLength(5);
       });
   });
   test("GET: 200, Responds with an array of art objects, each item for sale, price ascending", () => {
@@ -319,6 +319,8 @@ describe("/api/categories", () => {
           6: "Film",
           7: "Book",
           8: "Mixed",
+          9: "Model",
+          10: "Code",
         });
       });
   });
@@ -476,9 +478,11 @@ describe("/api/subjects", () => {
         expect(subjects).toEqual([
           { subject: "toys", count: "4" },
           { subject: "fairies", count: "4" },
-          { subject: "", count: "3" },
           { subject: "nails", count: "2" },
-          { subject: "eyes", count: "1" },
+          { subject: "bpd", count: "2" },
+          { subject: "dissociative identity", count: "2" },
+          { subject: "Carlie Martece", count: "1" },
+          { subject: "eyes", count: "1" }
         ]);
       });
   });

@@ -28,7 +28,7 @@ exports.selectArt = (queries) => {
         queryValues.push(i);
       }
     } else if (queries.category === "16") {
-      filter = ` WHERE art.category_id != 7 `;
+      filter = ` WHERE art.category_id != 7 AND art.category_id != 9 AND art.category_id != 10 `;
     } else {
       filter = ` WHERE art.category_id = $1 `;
       queryValues.push(queries.category);

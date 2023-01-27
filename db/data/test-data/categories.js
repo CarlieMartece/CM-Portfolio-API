@@ -6,5 +6,7 @@ module.exports = [
   { category_name: "Digital" },
   { category_name: "Film" },
   { category_name: "Book" },
-  { category_name: "Mixed" }
+  { category_name: "Mixed" },
+  { category_name: "Model" },
+  { category_name: "Code" }
 ];
