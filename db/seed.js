@@ -43,7 +43,7 @@ function seed({categoriesData, seriesData, bookData, artData, codeData}) {
             const bookList = bookResult.rows;
             const formattedArt = formatArt(artData);         
             const artQuery = format(
-                `INSERT INTO art (stock_id, art_title, three_word_description, colours, completion, subject, category_id, series_id, alt_text, quote, book_id, made_from, price, self_ref, close_ups, link) VALUES %L RETURNING*;`,
+                `INSERT INTO art (stock_id, art_title, three_word_description, colours, completion, subject, category_id, series_id, alt_text, quote, book_id, made_from, price, self_ref, close_ups, link, shape) VALUES %L RETURNING*;`,
                 formattedArt.map((art) => [
                     art.stock_id,
                     art.art_title,
@@ -60,7 +60,8 @@ function seed({categoriesData, seriesData, bookData, artData, codeData}) {
                     art.price,
                     art.self_ref,
                     art.close_ups,
-                    art.link
+                    art.link,
+                    art.shape
                 ])
             );
             return Promise.all([db.query(artQuery), bookList]) 

@@ -32,6 +32,7 @@ const artObj = expect.objectContaining({
   self_ref: expect.any(String),
   close_ups: expect.any(String),
   link: expect.any(String),
+  shape: expect.any(String)
 });
 
 afterAll(() => {

@@ -62,7 +62,8 @@ exports.createTables = () => {
             price MONEY,
             self_ref VARCHAR,
             close_ups VARCHAR,
-            link VARCHAR
+            link VARCHAR,
+            shape VARCHAR
         );`);
     }).then(() => {
         return db.query(`CREATE TABLE book_cover_ref (

@@ -1,7 +1,7 @@
 const db = require("../db/index.js");
 
 
-const artQuery = `SELECT art.art_id, art.stock_id, art.art_title, art.three_word_description, art.colours, art.completion, categories.category_name, series.series_name, art.alt_text, art.quote, books.book_title, art.made_from, art.price, art.self_ref, art.close_ups, art.link  
+const artQuery = `SELECT art.art_id, art.stock_id, art.art_title, art.three_word_description, art.colours, art.completion, categories.category_name, series.series_name, art.alt_text, art.quote, books.book_title, art.made_from, art.price, art.self_ref, art.close_ups, art.link, art.shape  
 FROM art
 INNER JOIN categories ON art.category_id = categories.category_id
 INNER JOIN series ON art.series_id = series.series_id
@@ -74,7 +74,6 @@ exports.selectArt = (queries) => {
     return Promise.reject({ status: 400, msg: "Non-valid search criteria" });
   }
   const queryString = `${selectQuery}${filter}${filterPlus}${orderQuery}${ascOrDesc};`;
-  console.log(queryString)
   return db.query(queryString, queryValues).then((result) => {
     return result.rows;
   });

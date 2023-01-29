@@ -17,6 +17,7 @@ module.exports = [
     self_ref: "5001",
     close_ups: "0",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "3101g",
@@ -35,6 +36,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "3101f",
@@ -54,6 +56,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "3101a",
@@ -73,6 +76,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "6",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "5001",
@@ -91,6 +95,7 @@ module.exports = [
     self_ref: "2002",
     close_ups: 0,
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "3101d",
@@ -110,6 +115,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "3106f",
@@ -129,6 +135,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "6001",
@@ -149,6 +156,7 @@ module.exports = [
     self_ref: "3000b",
     close_ups: "0",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "4115",
@@ -170,6 +178,7 @@ module.exports = [
     self_ref: "5115",
     close_ups: "0",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "5301b",
@@ -189,6 +198,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "1001",
@@ -207,6 +217,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "6002",
@@ -226,6 +237,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "2001",
@@ -244,6 +256,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "4122",
@@ -263,6 +276,7 @@ module.exports = [
     self_ref: "5122",
     close_ups: "0",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "913-130314a",
@@ -281,6 +295,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "5",
     link: "TBC",
+    shape: "L"
   },
   {
     stock_id: "10x001a",
@@ -299,5 +314,6 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "",
     link: "carliemartece.com",
+    shape: "L"
   },
 ];
