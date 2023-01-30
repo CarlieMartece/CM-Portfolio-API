@@ -59,7 +59,7 @@ exports.createTables = () => {
             quote VARCHAR,
             book_id SMALLINT REFERENCES books(book_id),
             made_from VARCHAR,
-            price MONEY,
+            price FLOAT,
             self_ref VARCHAR,
             close_ups VARCHAR,
             link VARCHAR,
