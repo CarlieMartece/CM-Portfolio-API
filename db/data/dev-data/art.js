@@ -1,7 +1,7 @@
 module.exports = [
   {
     stock_id: "3104b",
-    art_title: "Chaos Cumulus",
+    art_title: "Fingernail Sky",
     three_word_description: "leaves-eyes-painting",
     colours: "green",
     completion: "1999-07-09",
@@ -17,7 +17,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3106f",
@@ -38,7 +38,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3104h",
@@ -58,7 +58,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
 
   },
   {
@@ -80,7 +80,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3102b",
@@ -100,7 +100,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3207d",
@@ -119,7 +119,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3103e",
@@ -138,7 +138,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5301a",
@@ -159,7 +159,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/toxic-nursery",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3201c",
@@ -178,7 +178,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3101g",
@@ -198,7 +198,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3110c",
@@ -219,7 +219,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "1001",
@@ -239,7 +239,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "1002",
@@ -259,7 +259,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3001",
@@ -279,7 +279,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "6001",
@@ -300,7 +300,7 @@ module.exports = [
     self_ref: "3000b",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "6002",
@@ -320,7 +320,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "6003",
@@ -340,7 +340,7 @@ module.exports = [
     self_ref: "6900",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "6004",
@@ -360,7 +360,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "6005",
@@ -381,7 +381,7 @@ module.exports = [
     self_ref: "616-02",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "1003",
@@ -400,7 +400,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "2001",
@@ -421,7 +421,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3101f",
@@ -441,7 +441,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "2002",
@@ -462,7 +462,7 @@ module.exports = [
     self_ref: "5001",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3101d",
@@ -482,7 +482,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3109f",
@@ -502,7 +502,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5301b",
@@ -523,7 +523,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3101a",
@@ -545,7 +545,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: 6,
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "6900",
@@ -565,7 +565,7 @@ module.exports = [
     self_ref: "6003",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3102a",
@@ -586,7 +586,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: 6,
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3105c",
@@ -608,7 +608,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3103a",
@@ -629,7 +629,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: 5,
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "2003",
@@ -651,7 +651,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3002a",
@@ -672,7 +672,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "4",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3106d",
@@ -691,7 +691,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "1004",
@@ -710,7 +710,7 @@ module.exports = [
     self_ref: "5002",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1005",
@@ -730,7 +730,7 @@ module.exports = [
     self_ref: "5117",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "2004",
@@ -750,7 +750,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5001",
@@ -769,7 +769,7 @@ module.exports = [
     self_ref: "2002",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5002",
@@ -790,7 +790,7 @@ module.exports = [
     self_ref: "1014",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "2005",
@@ -810,7 +810,7 @@ module.exports = [
     self_ref: "5003",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "2006",
@@ -830,7 +830,7 @@ module.exports = [
     self_ref: "5004",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "2007",
@@ -851,7 +851,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5003",
@@ -870,7 +870,7 @@ module.exports = [
     self_ref: "2005",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5004",
@@ -891,7 +891,7 @@ module.exports = [
     self_ref: "2006",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "2008",
@@ -910,7 +910,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "2009",
@@ -931,7 +931,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3108h",
@@ -952,7 +952,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "2010",
@@ -972,7 +972,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "2011",
@@ -992,7 +992,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "2012",
@@ -1013,7 +1013,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "2013",
@@ -1034,7 +1034,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "2014",
@@ -1053,7 +1053,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "2015",
@@ -1072,7 +1072,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "2016",
@@ -1091,7 +1091,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3106b",
@@ -1110,7 +1110,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "1006",
@@ -1130,7 +1130,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "2017",
@@ -1149,7 +1149,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "1007",
@@ -1168,7 +1168,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "2018",
@@ -1187,7 +1187,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3104a",
@@ -1208,7 +1208,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: 7,
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "1008",
@@ -1228,7 +1228,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "1009",
@@ -1248,7 +1248,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1010",
@@ -1269,7 +1269,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1011",
@@ -1290,7 +1290,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1012",
@@ -1310,7 +1310,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1013",
@@ -1330,7 +1330,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1014",
@@ -1351,7 +1351,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "1015",
@@ -1371,7 +1371,7 @@ module.exports = [
     self_ref: "3211a",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "1016",
@@ -1391,7 +1391,7 @@ module.exports = [
     self_ref: "3211a",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "1017",
@@ -1411,7 +1411,7 @@ module.exports = [
     self_ref: "5005",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3108g",
@@ -1432,7 +1432,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "1018",
@@ -1452,7 +1452,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "1019",
@@ -1471,7 +1471,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "1020",
@@ -1491,7 +1491,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5005",
@@ -1510,7 +1510,7 @@ module.exports = [
     self_ref: "1017",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3105a",
@@ -1531,7 +1531,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: 4,
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "4105",
@@ -1550,7 +1550,7 @@ module.exports = [
     self_ref: "5301",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4108",
@@ -1571,7 +1571,7 @@ module.exports = [
     self_ref: "5108",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4111",
@@ -1591,7 +1591,7 @@ module.exports = [
     self_ref: "5111",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4117",
@@ -1611,7 +1611,7 @@ module.exports = [
     self_ref: "5117",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4123",
@@ -1631,7 +1631,7 @@ module.exports = [
     self_ref: "5123",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4119",
@@ -1651,7 +1651,7 @@ module.exports = [
     self_ref: "5119",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4104",
@@ -1671,7 +1671,7 @@ module.exports = [
     self_ref: "5104",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3106a",
@@ -1692,7 +1692,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "5",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "4113",
@@ -1711,7 +1711,7 @@ module.exports = [
     self_ref: "5113",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4112",
@@ -1732,7 +1732,7 @@ module.exports = [
     self_ref: "5112",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4120",
@@ -1751,7 +1751,7 @@ module.exports = [
     self_ref: "5120",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "2019",
@@ -1771,7 +1771,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4106",
@@ -1792,7 +1792,7 @@ module.exports = [
     self_ref: "5106",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4126",
@@ -1813,7 +1813,7 @@ module.exports = [
     self_ref: "5126",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4103",
@@ -1834,7 +1834,7 @@ module.exports = [
     self_ref: "5103",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4125",
@@ -1856,7 +1856,7 @@ module.exports = [
     self_ref: "5125",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4118",
@@ -1876,7 +1876,7 @@ module.exports = [
     self_ref: "5118",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4101",
@@ -1898,7 +1898,7 @@ module.exports = [
     self_ref: "5101",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4115",
@@ -1920,7 +1920,7 @@ module.exports = [
     self_ref: "5115",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4102",
@@ -1940,7 +1940,7 @@ module.exports = [
     self_ref: "5102",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4109",
@@ -1960,7 +1960,7 @@ module.exports = [
     self_ref: "5109",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4121",
@@ -1981,7 +1981,7 @@ module.exports = [
     self_ref: "5121",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4125",
@@ -2003,7 +2003,7 @@ module.exports = [
     self_ref: "5125",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4122",
@@ -2023,7 +2023,7 @@ module.exports = [
     self_ref: "5122",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4110",
@@ -2044,7 +2044,7 @@ module.exports = [
     self_ref: "5110",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "1021",
@@ -2064,7 +2064,7 @@ module.exports = [
     self_ref: "5007",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "1114",
@@ -2084,7 +2084,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5115",
@@ -2103,7 +2103,7 @@ module.exports = [
     self_ref: "4115",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5105",
@@ -2122,7 +2122,7 @@ module.exports = [
     self_ref: "5301",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5006",
@@ -2141,7 +2141,7 @@ module.exports = [
     self_ref: "1019",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5108",
@@ -2160,7 +2160,7 @@ module.exports = [
     self_ref: "4108",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5117",
@@ -2179,7 +2179,7 @@ module.exports = [
     self_ref: "1005",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5123",
@@ -2198,7 +2198,7 @@ module.exports = [
     self_ref: "4123",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "1022",
@@ -2217,7 +2217,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "2101",
@@ -2236,7 +2236,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5119",
@@ -2255,7 +2255,7 @@ module.exports = [
     self_ref: "4119",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5104",
@@ -2274,7 +2274,7 @@ module.exports = [
     self_ref: "4104",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5126",
@@ -2293,7 +2293,7 @@ module.exports = [
     self_ref: "4126",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3107a",
@@ -2312,7 +2312,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "6",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "2102",
@@ -2331,7 +2331,7 @@ module.exports = [
     self_ref: "5124",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5124",
@@ -2350,7 +2350,7 @@ module.exports = [
     self_ref: "2102",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5109",
@@ -2369,7 +2369,7 @@ module.exports = [
     self_ref: "4109",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5101",
@@ -2388,7 +2388,7 @@ module.exports = [
     self_ref: "4101",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5102",
@@ -2407,7 +2407,7 @@ module.exports = [
     self_ref: "4102",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5122",
@@ -2426,7 +2426,7 @@ module.exports = [
     self_ref: "4122",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "1023",
@@ -2445,7 +2445,7 @@ module.exports = [
     self_ref: "1023",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "2103",
@@ -2464,7 +2464,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3108b",
@@ -2483,7 +2483,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3108c",
@@ -2502,7 +2502,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3108f",
@@ -2521,7 +2521,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3108a",
@@ -2540,7 +2540,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "7",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3003",
@@ -2559,7 +2559,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3004",
@@ -2578,7 +2578,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3109b",
@@ -2597,7 +2597,7 @@ module.exports = [
     self_ref: "5201",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5301c",
@@ -2616,7 +2616,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1101",
@@ -2635,7 +2635,7 @@ module.exports = [
     self_ref: "5202",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5301",
@@ -2654,7 +2654,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1102",
@@ -2673,7 +2673,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5301d",
@@ -2692,7 +2692,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/toxic-nursery",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3109a",
@@ -2711,7 +2711,7 @@ module.exports = [
     self_ref: "5201",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "913-130314a",
@@ -2730,7 +2730,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "5",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "10x001a",
@@ -2749,7 +2749,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "",
     link: "carliemartece.com",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3201a",
@@ -2768,7 +2768,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "3",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3202a",
@@ -2787,7 +2787,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "3",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3210d",
@@ -2806,7 +2806,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3210c",
@@ -2825,7 +2825,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "4114",
@@ -2844,7 +2844,7 @@ module.exports = [
     self_ref: "5114",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4107",
@@ -2863,7 +2863,7 @@ module.exports = [
     self_ref: "5107",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3110a",
@@ -2882,7 +2882,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "5",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "4116",
@@ -2901,7 +2901,7 @@ module.exports = [
     self_ref: "5116",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5103",
@@ -2920,7 +2920,7 @@ module.exports = [
     self_ref: "4103",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5106",
@@ -2939,7 +2939,7 @@ module.exports = [
     self_ref: "4106",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5107",
@@ -2958,7 +2958,7 @@ module.exports = [
     self_ref: "4107",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5110",
@@ -2977,7 +2977,7 @@ module.exports = [
     self_ref: "4110",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5111",
@@ -2996,7 +2996,7 @@ module.exports = [
     self_ref: "4111",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5112",
@@ -3015,7 +3015,7 @@ module.exports = [
     self_ref: "4112",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5113",
@@ -3034,7 +3034,7 @@ module.exports = [
     self_ref: "3108b",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5120",
@@ -3053,7 +3053,7 @@ module.exports = [
     self_ref: "4120",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5121",
@@ -3072,7 +3072,7 @@ module.exports = [
     self_ref: "4121",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "2104",
@@ -3091,7 +3091,7 @@ module.exports = [
     self_ref: "5008",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3005",
@@ -3110,7 +3110,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5201",
@@ -3129,7 +3129,7 @@ module.exports = [
     self_ref: "3109a",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5202",
@@ -3148,7 +3148,7 @@ module.exports = [
     self_ref: "1101",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5008",
@@ -3167,7 +3167,7 @@ module.exports = [
     self_ref: "2104",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5009",
@@ -3186,7 +3186,7 @@ module.exports = [
     self_ref: "3005",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3203b",
@@ -3205,7 +3205,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3203a",
@@ -3224,7 +3224,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "3",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3204a",
@@ -3243,7 +3243,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "3",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1103",
@@ -3262,7 +3262,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5010",
@@ -3281,7 +3281,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5118",
@@ -3300,7 +3300,7 @@ module.exports = [
     self_ref: "4118",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5125",
@@ -3319,7 +3319,7 @@ module.exports = [
     self_ref: "4125",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5114",
@@ -3338,7 +3338,7 @@ module.exports = [
     self_ref: "3204e",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5302a",
@@ -3357,7 +3357,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/vipdile-key",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1108",
@@ -3376,7 +3376,7 @@ module.exports = [
     self_ref: "5203",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5116",
@@ -3395,7 +3395,7 @@ module.exports = [
     self_ref: "1108",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5203",
@@ -3414,7 +3414,7 @@ module.exports = [
     self_ref: "1108",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5011",
@@ -3433,7 +3433,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3111a",
@@ -3452,7 +3452,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "5",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1119",
@@ -3471,7 +3471,7 @@ module.exports = [
     self_ref: "5204",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5204",
@@ -3490,7 +3490,7 @@ module.exports = [
     self_ref: "1119",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3209f",
@@ -3509,7 +3509,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3210b",
@@ -3528,7 +3528,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5012",
@@ -3547,7 +3547,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "913-150622a",
@@ -3566,7 +3566,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "3",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3208a",
@@ -3585,7 +3585,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "4",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "3207e",
@@ -3604,7 +3604,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "1201",
@@ -3623,7 +3623,7 @@ module.exports = [
     self_ref: "5013",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5302b",
@@ -3642,7 +3642,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/vipdile-key",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3209b",
@@ -3661,7 +3661,7 @@ module.exports = [
     self_ref: "5205",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5013",
@@ -3680,7 +3680,7 @@ module.exports = [
     self_ref: "1201",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5302",
@@ -3699,7 +3699,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/vipdile-key",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3209e",
@@ -3718,7 +3718,7 @@ module.exports = [
     self_ref: "5015",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3209d",
@@ -3737,7 +3737,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3209h",
@@ -3756,7 +3756,7 @@ module.exports = [
     self_ref: "5016",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1202",
@@ -3775,7 +3775,7 @@ module.exports = [
     self_ref: "3209c",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5302c",
@@ -3794,7 +3794,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/vipdile-key",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3006",
@@ -3813,7 +3813,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3007",
@@ -3832,7 +3832,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3206b",
@@ -3851,7 +3851,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3209a",
@@ -3870,7 +3870,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "7",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5205",
@@ -3889,7 +3889,7 @@ module.exports = [
     self_ref: "3209b",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3206a",
@@ -3908,7 +3908,7 @@ module.exports = [
     self_ref: "4126",
     close_ups: "4",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5014",
@@ -3927,7 +3927,7 @@ module.exports = [
     self_ref: "3206d",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5015",
@@ -3946,7 +3946,7 @@ module.exports = [
     self_ref: "3209e",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5016",
@@ -3965,7 +3965,7 @@ module.exports = [
     self_ref: "3209h",
     close_ups: "0",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "913-160924a",
@@ -3984,7 +3984,7 @@ module.exports = [
     self_ref: "5302",
     close_ups: "5",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5302d",
@@ -4003,7 +4003,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/vipdile-key",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3211f",
@@ -4022,7 +4022,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3212g",
@@ -4041,7 +4041,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3207b",
@@ -4060,7 +4060,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "913-170304a",
@@ -4079,7 +4079,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "5",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3211d",
@@ -4098,7 +4098,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3212c",
@@ -4117,7 +4117,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3210a",
@@ -4136,7 +4136,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "4",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "913-170608a",
@@ -4155,7 +4155,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "8",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3207a",
@@ -4174,7 +4174,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "4",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "1120",
@@ -4193,7 +4193,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "913-171203a",
@@ -4212,7 +4212,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "5",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "1204",
@@ -4231,7 +4231,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "3211b",
@@ -4250,7 +4250,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3212b",
@@ -4269,7 +4269,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "913-180212a",
@@ -4288,7 +4288,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "5",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3212h",
@@ -4307,7 +4307,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "913-180514a",
@@ -4326,7 +4326,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "8",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3211a",
@@ -4345,7 +4345,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "5",
     link: "TBC",
-    shape: "S"
+    shape: "square"
   },
   {
     stock_id: "5304a",
@@ -4364,7 +4364,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1121",
@@ -4383,7 +4383,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3212f",
@@ -4402,7 +4402,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "614-190216",
@@ -4421,7 +4421,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://vimeo.com/manage/videos/783919713",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "614-190415",
@@ -4440,7 +4440,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://vimeo.com/manage/videos/783922574",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "614-190423",
@@ -4459,7 +4459,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://vimeo.com/manage/videos/783923740",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "615-css0101a",
@@ -4478,7 +4478,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "614-190426",
@@ -4497,7 +4497,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://vimeo.com/manage/videos/783924365",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5304b",
@@ -4516,7 +4516,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/chroma-calanooka",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "614-190509",
@@ -4535,7 +4535,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://vimeo.com/manage/videos/713451654",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "614-190523",
@@ -4554,7 +4554,7 @@ module.exports = [
     self_ref: "4126",
     close_ups: "0",
     link: "https://vimeo.com/manage/videos/707357802",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "614-190529",
@@ -4573,7 +4573,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://vimeo.com/manage/videos/701203621",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "3212a",
@@ -4592,7 +4592,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "7",
     link: "TBC",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "1116",
@@ -4611,7 +4611,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5304c",
@@ -4630,7 +4630,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/chroma-calanooka",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "615-css0101",
@@ -4649,7 +4649,7 @@ module.exports = [
     self_ref: "5305",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "615-css0201",
@@ -4668,7 +4668,7 @@ module.exports = [
     self_ref: "5303",
     close_ups: "0",
     link: "https://vimeo.com/manage/videos/696966466",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5303",
@@ -4687,7 +4687,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/vipdile-key",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "616-01",
@@ -4706,7 +4706,7 @@ module.exports = [
     self_ref: "5303",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "616-02",
@@ -4725,7 +4725,7 @@ module.exports = [
     self_ref: "6005",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5304d",
@@ -4744,7 +4744,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/chroma-calanooka",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "913-130314a",
@@ -4763,7 +4763,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://www.patreon.com/CarlieMartece",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "615-css0355",
@@ -4782,7 +4782,7 @@ module.exports = [
     self_ref: "5304",
     close_ups: "0",
     link: "https://vimeo.com/manage/videos/694022965",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5304",
@@ -4801,7 +4801,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/chroma-calanooka",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5304e",
@@ -4820,7 +4820,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/chroma-calanooka",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "616-03",
@@ -4839,7 +4839,7 @@ module.exports = [
     self_ref: "5305",
     close_ups: "0",
     link: "https://vimeo.com/manage/videos/721975830",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "5305",
@@ -4858,7 +4858,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/toxic-nursery",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5305a",
@@ -4877,7 +4877,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://mybook.to/toxic-nursery",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "5303a",
@@ -4896,7 +4896,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "913-130314a",
@@ -4915,7 +4915,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://www.patreon.com/CarlieMartece",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "1104",
@@ -4934,7 +4934,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "TBC",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "913-130314a",
@@ -4953,7 +4953,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://www.patreon.com/CarlieMartece",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "10x002",
@@ -4972,7 +4972,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://nookasnews.netlify.app/",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "10x003",
@@ -4991,7 +4991,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://gone-for-a-bork.web.app/",
-    shape: "P"
+    shape: "portrait"
   },
   {
     stock_id: "913-130314a",
@@ -5010,7 +5010,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://www.patreon.com/CarlieMartece",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "10x001b",
@@ -5029,7 +5029,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://carliemartece.com",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "913-130314a",
@@ -5048,7 +5048,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://www.patreon.com/CarlieMartece",
-    shape: "L"
+    shape: "landscape"
   },
   {
     stock_id: "10x001",
@@ -5067,7 +5067,7 @@ module.exports = [
     self_ref: "TBC",
     close_ups: "0",
     link: "https://carliemartece.com",
-    shape: "L"
+    shape: "landscape"
   },
   // {
   //   stock_id: "",
