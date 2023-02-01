@@ -98,7 +98,7 @@ exports.selectArtById = (art_id, extra) => {
   let plus = "";
   let queryValues = [art_id];
   if (extra) {
-    plus = " OR art.art_id=$2";
+    plus = " OR art.art_id=$2 ORDER BY art.art_id DESC";
     queryValues.push(extra);
   }
   return db

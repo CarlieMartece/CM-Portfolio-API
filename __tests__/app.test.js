@@ -281,6 +281,9 @@ describe("/api/art/:art_id", () => {
         const { art } = response.body;
         expect(art).toEqual(expect.any(Array));
         expect(art[1]).toEqual(artObj);
+        expect(art).toBeSortedBy("art_id", {
+          descending: true,
+        });
       });
   });
   test("GET: 400, Sends error message for invalid ID", () => {
