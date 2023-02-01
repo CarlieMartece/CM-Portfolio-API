@@ -20,12 +20,6 @@ exports.getArt = (req, res, next) => {
   selectArt(queries)
     .then((response) => {
       if (queries.sort_by === "price") {
-        response.forEach((item) => {
-          // delete item.three_word_description;
-          // delete item.colours;
-          // del
-          // delete item.self_ref;
-        })
         res.status(200).send(response);
       }
       let stockArray = [];
@@ -53,7 +47,8 @@ exports.getArt = (req, res, next) => {
 };
 
 exports.getArtIds = (req, res, next) => {
-  selectArtIds().then((result) => {
+  const { title } = req.query;
+  selectArtIds(title).then((result) => {
     artIds = createRef(result, "stock_id", "art_id");
     res.status(200).send({ artIds });
   });

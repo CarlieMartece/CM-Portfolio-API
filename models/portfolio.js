@@ -79,9 +79,16 @@ exports.selectArt = (queries) => {
   });
 };
 
-exports.selectArtIds = () => {
+exports.selectArtIds = (title) => {
+  let filter = "";
+  let queryValues = [];
+  if (title) {
+    filter = ` WHERE art.art_title=$1`
+    queryValues.push(title);
+  }
+  const queryString = `SELECT art.art_id, art.stock_id FROM art${filter};`
   return db
-    .query(`SELECT art.art_id, art.stock_id FROM art;`)
+    .query(queryString, queryValues)
     .then((result) => {
       return result.rows;
     });

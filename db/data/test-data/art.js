@@ -21,7 +21,7 @@ module.exports = [
   },
   {
     stock_id: "3101g",
-    art_title: "Claireytale",
+    art_title: "CCU",
     three_word_description: "lamplit-brown-bear",
     colours: "brown, orange",
     subject: "toys",
@@ -40,7 +40,7 @@ module.exports = [
   },
   {
     stock_id: "3101f",
-    art_title: "Claireytale",
+    art_title: "CCU",
     three_word_description: "bonfire-witch-watercolour",
     colours: "peach, purple",
     subject: "bpd",
@@ -99,7 +99,7 @@ module.exports = [
   },
   {
     stock_id: "3101d",
-    art_title: "Claireytale",
+    art_title: "CCU",
     three_word_description: "",
     colours: "fairy-sketch-collaged",
     subject: "fairies",
@@ -119,7 +119,7 @@ module.exports = [
   },
   {
     stock_id: "3106f",
-    art_title: "Chaos Cumulus",
+    art_title: "CCU",
     three_word_description: "biro-drawing-glowbug",
     colours: "white, grey, black",
     subject: "toys",

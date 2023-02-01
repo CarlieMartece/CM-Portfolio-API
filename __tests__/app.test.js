@@ -318,6 +318,20 @@ describe("/api/art/ids", () => {
         });
       });
   });
+  test("GET: 200, Responds with an art id object filtered by title", () => {
+    return request(app)
+      .get("/api/art/ids?title=CCU")
+      .expect(200)
+      .then(({ body }) => {
+        const { artIds } = body;
+        expect(artIds).toEqual({
+          "3101g": 2,
+          "3101f": 3,
+          "3101d": 6,
+          "3106f": 7,
+        });
+      });
+  });
 });
 
 describe("/api/books", () => {
