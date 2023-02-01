@@ -29,10 +29,10 @@ const artObj = expect.objectContaining({
   book_title: expect.any(String),
   made_from: expect.any(String),
   price: expect.any(Number),
-  self_ref: expect.any(String),
+  self_ref: expect.any(Number),
   close_ups: expect.any(String),
   link: expect.any(String),
-  shape: expect.any(String)
+  shape: expect.any(String),
 });
 
 afterAll(() => {
@@ -58,7 +58,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(16);
-        expect(response.body[0]).toEqual({ art_id: 14, stock_id: '4122'});
+        expect(response.body[0]).toEqual({ art_id: 14, stock_id: "4122" });
       });
   });
   test("GET: 200, Responds with an array of objects for selected year", () => {
@@ -68,7 +68,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(4);
-        expect(response.body[0]).toEqual({ art_id: 4, stock_id: '3101a'});
+        expect(response.body[0]).toEqual({ art_id: 4, stock_id: "3101a" });
       });
   });
   test("GET: 200, Responds with an array of objects for this year", () => {
@@ -78,7 +78,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(3);
-        expect(response.body[0]).toEqual({ art_id: 14, stock_id: '4122'});
+        expect(response.body[0]).toEqual({ art_id: 14, stock_id: "4122" });
       });
   });
   test("GET: 200, Responds with an array of objects for selected category", () => {
@@ -87,7 +87,7 @@ describe("/api/art", () => {
       .expect(200)
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
-        expect(response.body[0]).toEqual({"art_id": 4, "stock_id": "3101a"});
+        expect(response.body[0]).toEqual({ art_id: 4, stock_id: "3101a" });
       });
   });
   test("GET: 200, Responds with an array of all visual art stock_ids (filtering out book, model, code) for category 16", () => {
@@ -97,7 +97,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(13);
-        expect(response.body[0]).toEqual({ art_id: 14, stock_id: '4122'});
+        expect(response.body[0]).toEqual({ art_id: 14, stock_id: "4122" });
       });
   });
   test("GET: 200, Responds with an array of all visual art stock_ids filtered by year", () => {
@@ -107,7 +107,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(3);
-        expect(response.body[0]).toEqual({ art_id: 4, stock_id: '3101a'});
+        expect(response.body[0]).toEqual({ art_id: 4, stock_id: "3101a" });
       });
   });
   test("GET: 200, Responds with an array of all traditional art stock_ids for category 13", () => {
@@ -117,7 +117,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(8);
-        expect(response.body[0]).toEqual({"art_id": 13, "stock_id": "2001"});
+        expect(response.body[0]).toEqual({ art_id: 13, stock_id: "2001" });
       });
   });
   test("GET: 200, Responds with an array of all digital art stock_ids for category 46", () => {
@@ -127,7 +127,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(5);
-        expect(response.body[0]).toEqual({ art_id: 14, stock_id: '4122'});
+        expect(response.body[0]).toEqual({ art_id: 14, stock_id: "4122" });
       });
   });
   test("GET: 200, Responds with an array of art stock_ids filtered by subject", () => {
@@ -157,7 +157,17 @@ describe("/api/art", () => {
         const art = body;
         expect(art).toEqual(expect.any(Array));
         expect(art).toHaveLength(3);
-        expect(art[0]).toEqual(artObj);
+        expect(art[0]).toEqual({
+          art_id: 1,
+          stock_id: "2002",
+          art_title: "Mute Fairy",
+          category_id: 2,
+          alt_text:
+            "Depressed fairy with no mouth holding flowers that look like grapes.",
+          made_from: "Lovely watercolours...",
+          price: 314,
+          shape: "L",
+        });
         expect(art).toBeSortedBy("price", {
           ascending: true,
         });
@@ -171,7 +181,18 @@ describe("/api/art", () => {
         const art = body;
         expect(art).toEqual(expect.any(Array));
         expect(art).toHaveLength(3);
-        expect(art[0]).toEqual(artObj);
+        expect(art[0]).toEqual({
+          alt_text:
+            "Weird collage with dripping paint and disturbing childhood imagery.",
+          art_id: 4,
+          art_title: "Claireytale",
+          category_id: 3,
+          made_from:
+            "61cm by 61cm by 3.5cm boxed canvas, watercolour paints...",
+          price: 950,
+          shape: "L",
+          stock_id: "3101a",
+        });
         expect(art).toBeSortedBy("price", {
           descending: true,
         });
@@ -276,25 +297,24 @@ describe("/api/art/ids", () => {
       .get("/api/art/ids")
       .expect(200)
       .then(({ body }) => {
-        console.log(body)
         const { artIds } = body;
         expect(artIds).toEqual({
-          '1001': 11,
-          '2001': 13,
-          '2002': 1,
-          '4115': 9,
-          '4122': 14,
-          '5001': 5,
-          '6001': 8,
-          '6002': 12,
-          '3101g': 2,
-          '3101f': 3,
-          '3101a': 4,
-          '3101d': 6,
-          '3106f': 7,
-          '5301b': 10,
-          '913-130314a': 15,
-          '10x001a': 16
+          1001: 11,
+          2001: 13,
+          2002: 1,
+          4115: 9,
+          4122: 14,
+          5001: 5,
+          6001: 8,
+          6002: 12,
+          "3101g": 2,
+          "3101f": 3,
+          "3101a": 4,
+          "3101d": 6,
+          "3106f": 7,
+          "5301b": 10,
+          "913-130314a": 15,
+          "10x001a": 16,
         });
       });
   });
@@ -323,7 +343,7 @@ describe("/api/books/:book_id", () => {
       .expect(200)
       .then((response) => {
         expect(response.body.book).toEqual(bookObj);
-        expect(response.body.book.blurb).toHaveLength(4)
+        expect(response.body.book.blurb).toHaveLength(4);
       });
   });
   test("GET: 400, Sends error message for invalid ID", () => {
@@ -380,7 +400,14 @@ describe("./api/code", () => {
           stock_id: "10x002",
           name: "NC News",
           last_update: "2022-08-25T23:00:00.000Z",
-          tech_stack: ["JavaScript", "Node", "React", "CSS3", "HTML5", "PostgreSQL"],
+          tech_stack: [
+            "JavaScript",
+            "Node",
+            "React",
+            "CSS3",
+            "HTML5",
+            "PostgreSQL",
+          ],
         });
       });
   });
@@ -402,7 +429,14 @@ describe("./api/code/:project_id", () => {
             view: "hybrid",
             first_launched: expect.any(String),
             last_update: expect.any(String),
-            tech_stack: ["JavaScript", "Node", "React", "CSS3", "HTML5", "PostgreSQL"],
+            tech_stack: [
+              "JavaScript",
+              "Node",
+              "React",
+              "CSS3",
+              "HTML5",
+              "PostgreSQL",
+            ],
             description: "Artist, writer and coder portfolio",
             further_info: expect.any(String),
           })
@@ -464,7 +498,13 @@ describe("/api/series/:series_id", () => {
           })
         );
         expect(series.items).toHaveLength(2);
-        expect(series.items[0]).toEqual(artObj);
+        expect(series.items[0]).toEqual({
+          alt_text:
+            "Weird collage with dripping paint and disturbing childhood imagery.",
+          art_id: 4,
+          art_title: "Claireytale",
+          stock_id: "3101a",
+        });
         expect(series.items).toBeSortedBy("stock_id", {
           ascending: true,
         });
@@ -523,7 +563,7 @@ describe("/api/subjects", () => {
           { subject: "bpd", count: "2" },
           { subject: "dissociative identity", count: "2" },
           { subject: "Carlie Martece", count: "1" },
-          { subject: "eyes", count: "1" }
+          { subject: "eyes", count: "1" },
         ]);
       });
   });

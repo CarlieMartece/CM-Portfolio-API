@@ -51,7 +51,7 @@ exports.selectArt = (queries) => {
     queryValues.push(queries.subject);
   }
   if (queries.sort_by === "price") {
-    selectQuery = artQuery;
+    selectQuery = `SELECT art.art_id, art.stock_id, art.art_title, art.category_id, art.alt_text, art.made_from, art.price, art.shape FROM art`;
     filter = ` WHERE art.price != $1 `;
     orderQuery = `ORDER BY art.price `;
     queryValues.push(-1);
@@ -100,7 +100,7 @@ exports.selectArtById = (art_id) => {
 
 exports.selectArtBySeries = (series_id) => {
   return db
-    .query(`${artQuery} WHERE art.series_id = $1 ORDER BY art.stock_id ASC;`, [
+    .query(`SELECT art.art_id, art.stock_id, art.art_title, art.alt_text FROM art WHERE art.series_id = $1 ORDER BY art.stock_id ASC;`, [
       series_id,
     ])
     .then(({ rows: items }) => {
