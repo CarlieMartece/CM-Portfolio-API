@@ -244,9 +244,9 @@ describe("/api/art", () => {
 });
 
 describe("/api/art/:art_id", () => {
-  test("GET: 200, Responds with requested art object", () => {
+  test("GET: 200, Responds with requested art object, coverting self_ref to corresponding art_id number", () => {
     return request(app)
-      .get("/api/art/3")
+      .get("/api/art/1")
       .expect(200)
       .then((response) => {
         expect(response.body.art).toEqual(artObj);
@@ -266,6 +266,36 @@ describe("/api/art/:art_id", () => {
       .expect(404)
       .then((response) => {
         expect(response.body.msg).toBe("Art not found");
+      });
+  });
+});
+
+describe("/api/art/ids", () => {
+  test("GET: 200, Responds with an art id object", () => {
+    return request(app)
+      .get("/api/art/ids")
+      .expect(200)
+      .then(({ body }) => {
+        console.log(body)
+        const { artIds } = body;
+        expect(artIds).toEqual({
+          '1001': 11,
+          '2001': 13,
+          '2002': 1,
+          '4115': 9,
+          '4122': 14,
+          '5001': 5,
+          '6001': 8,
+          '6002': 12,
+          '3101g': 2,
+          '3101f': 3,
+          '3101a': 4,
+          '3101d': 6,
+          '3106f': 7,
+          '5301b': 10,
+          '913-130314a': 15,
+          '10x001a': 16
+        });
       });
   });
 });

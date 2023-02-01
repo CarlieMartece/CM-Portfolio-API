@@ -11,7 +11,8 @@ const {
     getCodeById,
     getSeries,
     getSeriesById,
-    getSubjects
+    getSubjects,
+    getArtIds
 } = require('./controllers/portfolio.js');
 
 app.use(cors());
@@ -19,6 +20,7 @@ app.use(express.json());
 
 
 app.get('/api/art', getArt);
+app.get('/api/art/ids', getArtIds);
 app.get('/api/art/:art_id', getArtById);
 
 app.get('/api/books', getBooks);

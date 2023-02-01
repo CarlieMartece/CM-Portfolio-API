@@ -79,6 +79,14 @@ exports.selectArt = (queries) => {
   });
 };
 
+exports.selectArtIds = () => {
+  return db
+    .query(`SELECT art.art_id, art.stock_id FROM art;`)
+    .then((result) => {
+      return result.rows;
+    });
+}
+
 exports.selectArtById = (art_id) => {
   return db
     .query(`${artQuery} WHERE art.art_id = $1;`, [art_id])

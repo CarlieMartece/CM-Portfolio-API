@@ -11,7 +11,8 @@ const {
   selectCodeById,
   selectSeries,
   selectSeriesById,
-  countSubjects
+  countSubjects,
+  selectArtIds
 } = require("../models/portfolio");
 
 
@@ -46,10 +47,24 @@ exports.getArt = (req, res, next) => {
   });
 };
 
+exports.getArtIds = (req, res, next) => {
+  selectArtIds()
+    .then((result) => {
+      artIds = createRef(result, "stock_id", "art_id");
+      res.status(200).send({ artIds });
+    })
+}
+
 exports.getArtById = (req, res, next) => {
   const { art_id } = req.params;
   selectArtById(art_id)
     .then((art) => {
+      // if (art.self_ref === "TBC") {
+      //   art.self_ref = 0
+      // } else {
+      //   console.log(art.self_ref)
+      //   const findRef = createRef(art, "category_id", "category_name");
+      // }
       res.status(200).send({ art });
     })
     .catch((err) => {

@@ -1,7 +1,7 @@
 module.exports = [
   {
     stock_id: "3104b",
-    art_title: "Fingernail Sky",
+    art_title: "CCU",
     three_word_description: "leaves-eyes-painting",
     colours: "green",
     completion: "1999-07-09",
@@ -21,7 +21,7 @@ module.exports = [
   },
   {
     stock_id: "3106f",
-    art_title: "Chaos Cumulus",
+    art_title: "CCU",
     three_word_description: "biro-drawing-glowbug",
     colours: "white, grey, black",
     completion: "1999-10-05",
@@ -42,7 +42,7 @@ module.exports = [
   },
   {
     stock_id: "3104h",
-    art_title: "Fingernail Sky",
+    art_title: "CCU",
     three_word_description: "red-biro-glowbug",
     colours: "red",
     completion: "1999-10-12",
@@ -63,7 +63,7 @@ module.exports = [
   },
   {
     stock_id: "3102c",
-    art_title: "A Book Stole My Name",
+    art_title: "CCU",
     three_word_description: "artist-glowbug-painting",
     colours: "yellow, blue",
     completion: "1999-10-19",
@@ -84,7 +84,7 @@ module.exports = [
   },
   {
     stock_id: "3102b",
-    art_title: "A Book Stole My Name",
+    art_title: "CCU",
     three_word_description: "artist-glowbug-painting",
     colours: "yellow, blue",
     completion: "1999-10-26",
@@ -104,7 +104,7 @@ module.exports = [
   },
   {
     stock_id: "3207d",
-    art_title: "Cold Summer",
+    art_title: "CCU",
     three_word_description: "toy-biro-drawing",
     colours: "blue, white",
     completion: "2000-01-14",
@@ -123,7 +123,7 @@ module.exports = [
   },
   {
     stock_id: "3103e",
-    art_title: "Halloween Daydream",
+    art_title: "CCU",
     three_word_description: "brown-bear-biro",
     colours: "brown",
     completion: "2000-04-15",
@@ -163,7 +163,7 @@ module.exports = [
   },
   {
     stock_id: "3201c",
-    art_title: "Spade #1",
+    art_title: "CCU",
     three_word_description: "disturbed-teenage-photography",
     colours: "peach",
     completion: "2001-06-05",
@@ -182,7 +182,7 @@ module.exports = [
   },
   {
     stock_id: "3101g",
-    art_title: "Claireytale",
+    art_title: "CCU",
     three_word_description: "lamplit-brown-bear",
     colours: "brown, orange",
     completion: "2001-09-26",
@@ -202,7 +202,7 @@ module.exports = [
   },
   {
     stock_id: "3110c",
-    art_title: "Star Craver",
+    art_title: "CCU",
     three_word_description: "biro-bear-head",
     colours: "white, grey",
     completion: "2002-03-01",
@@ -425,7 +425,7 @@ module.exports = [
   },
   {
     stock_id: "3101f",
-    art_title: "Claireytale",
+    art_title: "CCU",
     three_word_description: "bonfire-witch-watercolour",
     colours: "peach, purple",
     completion: "2005-02-14",
@@ -466,7 +466,7 @@ module.exports = [
   },
   {
     stock_id: "3101d",
-    art_title: "Claireytale",
+    art_title: "CCU",
     three_word_description: "fairy-sketch-collaged",
     colours: "yellow, grey",
     completion: "2005-04-15",
@@ -486,7 +486,7 @@ module.exports = [
   },
   {
     stock_id: "3109f",
-    art_title: "Delusia",
+    art_title: "CCU",
     three_word_description: "monkey-in-tree",
     colours: "white, black",
     completion: "2005-05-09",
@@ -590,7 +590,7 @@ module.exports = [
   },
   {
     stock_id: "3105c",
-    art_title: "For A Girl",
+    art_title: "CCU",
     three_word_description: "girl-on-fire",
     colours: "peach, blue, orange",
     completion: "2005-11-05",
@@ -676,7 +676,7 @@ module.exports = [
   },
   {
     stock_id: "3106d",
-    art_title: "Chaos Cumulus",
+    art_title: "CCU",
     three_word_description: "butterfly-blood-breakdown",
     colours: "cream",
     completion: "2006-06-1",
@@ -935,7 +935,7 @@ module.exports = [
   },
   {
     stock_id: "3108h",
-    art_title: "Sunday Shadows",
+    art_title: "CCU",
     three_word_description: "sad-fairy-pills",
     colours: "white, brown",
     completion: "2007-03-14",
@@ -1095,7 +1095,7 @@ module.exports = [
   },
   {
     stock_id: "3106b",
-    art_title: "Chaos Cumulus",
+    art_title: "CCU",
     three_word_description: "colourful-biro-butterfly",
     colours: "rainbow",
     completion: "2007-07-15",
@@ -1415,7 +1415,7 @@ module.exports = [
   },
   {
     stock_id: "3108g",
-    art_title: "Sunday Shadows",
+    art_title: "CCU",
     three_word_description: "",
     colours: "white",
     completion: "2010-04-26",
@@ -2468,7 +2468,7 @@ module.exports = [
   },
   {
     stock_id: "3108b",
-    art_title: "Sunday Shadows",
+    art_title: "CCU",
     three_word_description: "bleeding-eye-doll",
     colours: "redblackwhite",
     completion: "2012-05-09",
@@ -2487,7 +2487,7 @@ module.exports = [
   },
   {
     stock_id: "3108c",
-    art_title: "Sunday Shadows",
+    art_title: "CCU",
     three_word_description: "red-biro-butterfly",
     colours: "redblackwhite",
     completion: "2012-05-16",
@@ -2506,7 +2506,7 @@ module.exports = [
   },
   {
     stock_id: "3108f",
-    art_title: "Sunday Shadows",
+    art_title: "CCU",
     three_word_description: "orange-flower-sunshine",
     colours: "orange",
     completion: "2012-06-01",
@@ -2582,7 +2582,7 @@ module.exports = [
   },
   {
     stock_id: "3109b",
-    art_title: "Delusia",
+    art_title: "CCU",
     three_word_description: "haunted-girl-face",
     colours: "blue, grey",
     completion: "2012-09-10",
@@ -2791,7 +2791,7 @@ module.exports = [
   },
   {
     stock_id: "3210d",
-    art_title: "Diamond #3: Hollow Candy",
+    art_title: "CCU",
     three_word_description: "rainbow-butterfly-daydream",
     colours: "rainbow",
     completion: "2013-05-14",
@@ -2810,7 +2810,7 @@ module.exports = [
   },
   {
     stock_id: "3210c",
-    art_title: "Diamond #3: Hollow Candy",
+    art_title: "CCU",
     three_word_description: "abstract-butterfly-nightmare",
     colours: "red, white",
     completion: "2013-05-21",
@@ -3190,7 +3190,7 @@ module.exports = [
   },
   {
     stock_id: "3203b",
-    art_title: "Club #1: Booka",
+    art_title: "CCU",
     three_word_description: "purple-girl-book",
     colours: "purple, white, grey",
     completion: "2013-11-28",
@@ -3494,7 +3494,7 @@ module.exports = [
   },
   {
     stock_id: "3209f",
-    art_title: "Spade #3: Leah's Dream",
+    art_title: "CCU",
     three_word_description: "cat-moon-collage",
     colours: "white, grey",
     completion: "2015-04-07",
@@ -3513,7 +3513,7 @@ module.exports = [
   },
   {
     stock_id: "3210b",
-    art_title: "Diamond #3: Hollow Candy",
+    art_title: "CCU",
     three_word_description: "cute-dolly-monster",
     colours: "white, grey",
     completion: "2015-05-07",
@@ -3589,7 +3589,7 @@ module.exports = [
   },
   {
     stock_id: "3207e",
-    art_title: "Club #2: Cold Summer",
+    art_title: "CCU",
     three_word_description: "trapped-girl-maze",
     colours: "white, grey",
     completion: "2015-08-31",
@@ -3646,7 +3646,7 @@ module.exports = [
   },
   {
     stock_id: "3209b",
-    art_title: "Spade #3: Leah's Dream",
+    art_title: "CCU",
     three_word_description: "biro-ghost-girl",
     colours: "grey, white",
     completion: "2015-10-31",
@@ -3703,7 +3703,7 @@ module.exports = [
   },
   {
     stock_id: "3209e",
-    art_title: "Spade #3: Leah's Dream ",
+    art_title: "CCU",
     three_word_description: "biro-cat-mushroom",
     colours: "white, grey",
     completion: "2015-12-01",
@@ -3722,7 +3722,7 @@ module.exports = [
   },
   {
     stock_id: "3209d",
-    art_title: "Spade #3: Leah's Dream",
+    art_title: "CCU",
     three_word_description: "cat-mushroom-daydream",
     colours: "redblackwhite",
     completion: "2015-12-14",
@@ -3741,7 +3741,7 @@ module.exports = [
   },
   {
     stock_id: "3209h",
-    art_title: "Spade #3: Leah's Dream",
+    art_title: "CCU",
     three_word_description: "hypnotic-cat-spirit",
     colours: "redblackwhite",
     completion: "2016-01-07",
@@ -3836,7 +3836,7 @@ module.exports = [
   },
   {
     stock_id: "3206b",
-    art_title: "Diamond #2: Red Zero (OwlCat)",
+    art_title: "CCU",
     three_word_description: "owl-cat-thing",
     colours: "grey",
     completion: "2016-05-14",
@@ -4007,7 +4007,7 @@ module.exports = [
   },
   {
     stock_id: "3211f",
-    art_title: "Club #3: Downfall",
+    art_title: "CCU",
     three_word_description: "demonic-biro-nonsense",
     colours: "grey",
     completion: "2016-10-31",
@@ -4026,7 +4026,7 @@ module.exports = [
   },
   {
     stock_id: "3212g",
-    art_title: "Heart #3: Kero's Nightmare",
+    art_title: "CCU",
     three_word_description: "weird-biro-demon",
     colours: "redblackwhite",
     completion: "2017-01-14",
@@ -4045,7 +4045,7 @@ module.exports = [
   },
   {
     stock_id: "3207b",
-    art_title: "Club #2: Cold Summer",
+    art_title: "CCU",
     three_word_description: "jackalope-biro-drawing",
     colours: "grey, blue",
     completion: "2017-01-28",
@@ -4083,7 +4083,7 @@ module.exports = [
   },
   {
     stock_id: "3211d",
-    art_title: "Club #3: Downfall",
+    art_title: "CCU",
     three_word_description: "demon-biro-drawing",
     colours: "white, grey",
     completion: "2017-04-15",
@@ -4102,7 +4102,7 @@ module.exports = [
   },
   {
     stock_id: "3212c",
-    art_title: "Heart #3: Kero's Nightmare",
+    art_title: "CCU",
     three_word_description: "abstract-demon-drawing",
     colours: "redblackwhite",
     completion: "2017-04-22",
@@ -4235,7 +4235,7 @@ module.exports = [
   },
   {
     stock_id: "3211b",
-    art_title: "Club #3: Downfall",
+    art_title: "CCU",
     three_word_description: "abstract-hexagon-flower",
     colours: "grey",
     completion: "2018-01-07",
@@ -4254,7 +4254,7 @@ module.exports = [
   },
   {
     stock_id: "3212b",
-    art_title: "Heart #3: Kero's Nightmare",
+    art_title: "CCU",
     three_word_description: "hallucinatory-nightmare-bint",
     colours: "redblackwhite",
     completion: "2018-02-14",
@@ -4292,7 +4292,7 @@ module.exports = [
   },
   {
     stock_id: "3212h",
-    art_title: "Heart #3: Kero's Nightmare",
+    art_title: "CCU",
     three_word_description: "cat-hexagons-drawing",
     colours: "redblackwhite",
     completion: "2018-05-12",
@@ -4387,7 +4387,7 @@ module.exports = [
   },
   {
     stock_id: "3212f",
-    art_title: "Heart #3: Kero's Nightmare",
+    art_title: "CCU",
     three_word_description: "",
     colours: "heart-wing-butterfly",
     completion: "2019-01-16",
@@ -4776,7 +4776,7 @@ module.exports = [
     series_id: 15,
     alt_text: "Three alters of Carlie Martece, plus the author dressed as a blue alien.",
     quote: "Cal sits at the parlour table ignoring his laptop, staring out a cracked window and failing to grasp Leandra’s latest utterance. “I struggle to process riddles,” he reminds his strange sister. If Cal understood surrealism or metaphors, he might say his hyper-feminine sibling was as logical as a bookcase made from syringes and jam.",
-    book_id: 5,
+    book_id: 3,
     made_from: "Autism and aliens",
     price: -1,
     self_ref: "5304",
@@ -4832,8 +4832,8 @@ module.exports = [
     category_id: 6,
     series_id: 16,
     alt_text: "Carlie Martece in a blond wig looking like a vaguely glamorous ghost.",
-    quote: "...the film presently hides from a world that would gladly tear its vulnerable starlet to pieces.",
-    book_id: 4,
+    quote: "So, your mind created a whole galaxy in which to entertain and hide itself.",
+    book_id: 3,
     made_from: "Blonde wig, make-up, aspiration, the usual.",
     price: -1,
     self_ref: "5305",
