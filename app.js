@@ -4,6 +4,7 @@ const app = express();
 const {
     getArt,
     getArtById,
+    getArtIds,
     getBookById,
     getBooks, 
     getCategories,
@@ -12,7 +13,7 @@ const {
     getSeries,
     getSeriesById,
     getSubjects,
-    getArtIds
+    getArtByTitle
 } = require('./controllers/portfolio.js');
 
 app.use(cors());
@@ -22,6 +23,7 @@ app.use(express.json());
 app.get('/api/art', getArt);
 app.get('/api/art/ids', getArtIds);
 app.get('/api/art/:art_id', getArtById);
+app.get('/api/art/collage/:art_title', getArtByTitle)
 
 app.get('/api/books', getBooks);
 app.get('/api/books/:book_id', getBookById);

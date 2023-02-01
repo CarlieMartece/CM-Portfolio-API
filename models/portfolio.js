@@ -111,6 +111,16 @@ exports.selectArtById = (art_id, extra) => {
     });
 };
 
+exports.selectArtByTitle = (art_title) => {
+  const queryString = `${artQuery} WHERE art.art_title = $1 ORDER BY art.stock_id ASC;`
+  return db
+    .query(queryString, [art_title])
+    .then((result) => {
+      return result.rows;
+    });
+
+};
+
 exports.selectArtBySeries = (series_id) => {
   return db
     .query(`SELECT art.art_id, art.stock_id, art.art_title, art.alt_text FROM art WHERE art.series_id = $1 ORDER BY art.stock_id ASC;`, [

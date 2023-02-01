@@ -3,6 +3,8 @@ const {
   selectArt,
   selectArtById,
   selectArtBySeries,
+  selectArtIds,
+  selectArtByTitle,
   selectBooks,
   selectBookById,
   selectBooksBySeries,
@@ -12,7 +14,6 @@ const {
   selectSeries,
   selectSeriesById,
   countSubjects,
-  selectArtIds,
 } = require("../models/portfolio");
 
 exports.getArt = (req, res, next) => {
@@ -74,6 +75,41 @@ exports.getArtById = (req, res, next) => {
         res.status(404).send({ msg: "Art not found" });
       } else {
         res.status(200).send({ art });
+      }
+    })
+    .catch((err) => {
+      next(err);
+    });
+};
+
+exports.getArtByTitle = (req, res, next) => {
+  const { art_title } = req.params;
+  selectArtByTitle(art_title)
+    .then((art) => {
+      return Promise.all([art, selectArtIds()]);
+    })
+    .then(([art, artIds]) => {
+      const artRef = createRef(artIds, "stock_id", "art_id");
+      let collage = {}
+      const firstObj = art[0].stock_id;
+      collage[firstObj] = art[0];
+      const closeUps = art[0].close_ups.split(',');
+      closeUps.forEach((stockId) => {
+        collage[stockId] = art[0]
+      })
+      art.forEach((item) => {
+        const key = item.stock_id;
+        if (item.self_ref === "TBC") {
+          item.self_ref = -1;
+        } else {
+          item.self_ref = artRef[item.self_ref];
+        }
+        collage[key] = item;
+      });
+      if (collage.length < 1) {
+        res.status(404).send({ msg: "Art not found" });
+      } else {
+        res.status(200).send({ collage });
       }
     })
     .catch((err) => {

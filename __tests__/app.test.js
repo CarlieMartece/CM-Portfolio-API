@@ -352,6 +352,34 @@ describe("/api/art/:art_id", () => {
   });
 });
 
+describe("/api/art/:art_title", () => {
+  test("GET: 200, Responds with array of art objects, labelled by stock_id", () => {
+    return request(app)
+      .get("/api/art/collage/Claireytale")
+      .expect(200)
+      .then((response) => {
+        const { collage } = response.body;
+        expect(collage["3101a"]).toEqual(artObj);
+      });
+  });
+  // test("GET: 400, Sends error message for invalid ID", () => {
+  //   return request(app)
+  //     .get("/api/art/emerge")
+  //     .expect(400)
+  //     .then((response) => {
+  //       expect(response.body.msg).toBe("Are you lost?");
+  //     });
+  // });
+  // test("GET: 404, Sends error message for valid but non-existent ID", () => {
+  //   return request(app)
+  //     .get("/api/art/3141")
+  //     .expect(404)
+  //     .then((response) => {
+  //       expect(response.body.msg).toBe("Art not found");
+  //     });
+  // });
+});
+
 describe("/api/art/ids", () => {
   test("GET: 200, Responds with an art id object", () => {
     return request(app)

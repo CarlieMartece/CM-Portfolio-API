@@ -75,7 +75,7 @@ module.exports = [
     quote: "Honeysuckle said the imagery was creepy...",
     book_id: 1,
     made_from: "61cm by 61cm by 3.5cm boxed canvas, watercolour paints...",
-    price: 950,
+    price: -1,
     self_ref: "TBC",
     close_ups: "6",
     is_close_up: false,
