@@ -56,17 +56,24 @@ exports.getArtIds = (req, res, next) => {
 
 exports.getArtById = (req, res, next) => {
   const { art_id } = req.params;
-  selectArtById(art_id)
+  const { extra } = req.query;
+  selectArtById(art_id, extra)
     .then((art) => {
-      if (art.self_ref === "TBC") {
-        art.self_ref = -1;
-        res.status(200).send({ art });
+      return Promise.all([art, selectArtIds()]);
+    })
+    .then(([art, artIds]) => {
+      const artRef = createRef(artIds, "stock_id", "art_id");
+      art.forEach((item) => {
+        if (item.self_ref === "TBC") {
+          item.self_ref = -1;
+        } else {
+          item.self_ref = artRef[item.self_ref];
+        }
+      });
+      if (art.length < 1) {
+        res.status(404).send({ msg: "Art not found" });
       } else {
-        selectArtIds().then((result) => {
-          artIds = createRef(result, "stock_id", "art_id");
-          art.self_ref = artIds[art.self_ref];
-          res.status(200).send({ art });
-        });
+        res.status(200).send({ art });
       }
     })
     .catch((err) => {

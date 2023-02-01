@@ -94,14 +94,20 @@ exports.selectArtIds = (title) => {
     });
 }
 
-exports.selectArtById = (art_id) => {
+exports.selectArtById = (art_id, extra) => {
+  let plus = "";
+  let queryValues = [art_id];
+  if (extra) {
+    plus = " OR art.art_id=$2";
+    queryValues.push(extra);
+  }
   return db
-    .query(`${artQuery} WHERE art.art_id = $1;`, [art_id])
-    .then(({ rows: [art] }) => {
-      if (!art) {
-        return Promise.reject({ status: 404, msg: "Art not found" });
-      }
-      return art;
+    .query(`${artQuery} WHERE art.art_id = $1${plus};`, queryValues)
+    .then((result) => {
+      // if (!art) {
+      //   return Promise.reject({ status: 404, msg: "Art not found" });
+      // }
+      return result.rows;
     });
 };
 

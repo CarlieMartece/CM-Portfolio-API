@@ -270,7 +270,17 @@ describe("/api/art/:art_id", () => {
       .get("/api/art/1")
       .expect(200)
       .then((response) => {
-        expect(response.body.art).toEqual(artObj);
+        expect(response.body.art[0]).toEqual(artObj);
+      });
+  });
+  test("GET: 200, Responds with two requested art objects", () => {
+    return request(app)
+      .get("/api/art/4?extra=2")
+      .expect(200)
+      .then((response) => {
+        const { art } = response.body;
+        expect(art).toEqual(expect.any(Array));
+        expect(art[1]).toEqual(artObj);
       });
   });
   test("GET: 400, Sends error message for invalid ID", () => {
