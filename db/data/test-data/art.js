@@ -16,12 +16,13 @@ module.exports = [
     price: 314,
     self_ref: "5001",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "L"
   },
   {
     stock_id: "3101g",
-    art_title: "CCU",
+    art_title: "Claireytale",
     three_word_description: "lamplit-brown-bear",
     colours: "brown, orange",
     subject: "toys",
@@ -35,12 +36,13 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "L"
   },
   {
     stock_id: "3101f",
-    art_title: "CCU",
+    art_title: "Claireytale",
     three_word_description: "bonfire-witch-watercolour",
     colours: "peach, purple",
     subject: "bpd",
@@ -55,6 +57,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "L"
   },
@@ -75,6 +78,7 @@ module.exports = [
     price: 950,
     self_ref: "TBC",
     close_ups: "6",
+    is_close_up: false,
     link: "TBC",
     shape: "L"
   },
@@ -94,12 +98,13 @@ module.exports = [
     price: -1,
     self_ref: "2002",
     close_ups: 0,
+    is_close_up: false,
     link: "TBC",
     shape: "L"
   },
   {
     stock_id: "3101d",
-    art_title: "CCU",
+    art_title: "Claireytale",
     three_word_description: "",
     colours: "fairy-sketch-collaged",
     subject: "fairies",
@@ -114,12 +119,13 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "L"
   },
   {
     stock_id: "3106f",
-    art_title: "CCU",
+    art_title: "Chaos Cumulus",
     three_word_description: "biro-drawing-glowbug",
     colours: "white, grey, black",
     subject: "toys",
@@ -134,6 +140,7 @@ module.exports = [
     price: 400,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "L"
   },
@@ -155,6 +162,7 @@ module.exports = [
     price: -1,
     self_ref: "3000b",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "L"
   },
@@ -177,6 +185,7 @@ module.exports = [
     price: -1,
     self_ref: "5115",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "L"
   },
@@ -197,6 +206,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "L"
   },
@@ -216,6 +226,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "L"
   },
@@ -236,6 +247,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "L"
   },
@@ -255,6 +267,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "L"
   },
@@ -275,6 +288,7 @@ module.exports = [
     price: -1,
     self_ref: "5122",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "L"
   },
@@ -294,6 +308,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "5",
+    is_close_up: false,
     link: "TBC",
     shape: "L"
   },
@@ -313,6 +328,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "",
+    is_close_up: false,
     link: "carliemartece.com",
     shape: "L"
   },

@@ -62,6 +62,7 @@ exports.createTables = () => {
             price FLOAT,
             self_ref VARCHAR,
             close_ups VARCHAR,
+            is_close_up BOOLEAN,
             link VARCHAR,
             shape VARCHAR
         );`);
