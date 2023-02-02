@@ -16,6 +16,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -37,6 +38,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -57,6 +59,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
 
@@ -79,6 +82,7 @@ module.exports = [
     price: 314.15,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -99,6 +103,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -118,6 +123,7 @@ module.exports = [
     price: 415.92,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "portrait"
   },
@@ -137,6 +143,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -158,6 +165,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/toxic-nursery",
     shape: "portrait"
   },
@@ -177,6 +185,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -197,6 +206,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -218,6 +228,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -238,6 +249,7 @@ module.exports = [
     price: 314.15,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -258,6 +270,7 @@ module.exports = [
     price: 200,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -278,6 +291,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -299,6 +313,7 @@ module.exports = [
     price: -1,
     self_ref: "3000b",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -319,6 +334,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -339,6 +355,7 @@ module.exports = [
     price: -1,
     self_ref: "6900",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -359,6 +376,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -380,6 +398,7 @@ module.exports = [
     price: -1,
     self_ref: "616-02",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -399,6 +418,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -420,6 +440,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -440,6 +461,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -461,6 +483,7 @@ module.exports = [
     price: -1,
     self_ref: "5001",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -481,6 +504,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -501,6 +525,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -522,6 +547,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -544,6 +570,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: 6,
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -564,6 +591,7 @@ module.exports = [
     price: -1,
     self_ref: "6003",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -585,6 +613,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: 6,
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -607,6 +636,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -628,6 +658,7 @@ module.exports = [
     price: 666,
     self_ref: "TBC",
     close_ups: 5,
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -650,6 +681,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -671,6 +703,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "4",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -690,6 +723,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -709,6 +743,7 @@ module.exports = [
     price: -1,
     self_ref: "5002",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -729,6 +764,7 @@ module.exports = [
     price: -1,
     self_ref: "5117",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -749,6 +785,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -768,6 +805,7 @@ module.exports = [
     price: -1,
     self_ref: "2002",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -789,6 +827,7 @@ module.exports = [
     price: -1,
     self_ref: "1014",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -809,6 +848,7 @@ module.exports = [
     price: -1,
     self_ref: "5003",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -829,6 +869,7 @@ module.exports = [
     price: -1,
     self_ref: "5004",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -850,6 +891,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -869,6 +911,7 @@ module.exports = [
     price: -1,
     self_ref: "2005",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -890,6 +933,7 @@ module.exports = [
     price: -1,
     self_ref: "2006",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -909,6 +953,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -930,6 +975,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -951,6 +997,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -971,6 +1018,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -991,6 +1039,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1012,6 +1061,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1033,6 +1083,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1052,6 +1103,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1071,6 +1123,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1090,6 +1143,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1109,6 +1163,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -1129,6 +1184,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -1148,6 +1204,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -1167,6 +1224,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -1186,6 +1244,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1207,6 +1266,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: 7,
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -1227,6 +1287,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1247,6 +1308,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -1268,6 +1330,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -1289,6 +1352,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -1309,6 +1373,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -1329,6 +1394,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -1350,6 +1416,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -1370,6 +1437,7 @@ module.exports = [
     price: -1,
     self_ref: "3211a",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -1390,6 +1458,7 @@ module.exports = [
     price: -1,
     self_ref: "3211a",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -1410,6 +1479,7 @@ module.exports = [
     price: -1,
     self_ref: "5005",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -1431,6 +1501,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -1451,6 +1522,7 @@ module.exports = [
     price: 89.97,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1470,6 +1542,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1490,6 +1563,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1509,6 +1583,7 @@ module.exports = [
     price: -1,
     self_ref: "1017",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1530,6 +1605,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: 4,
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -1549,6 +1625,7 @@ module.exports = [
     price: -1,
     self_ref: "5301",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1570,6 +1647,7 @@ module.exports = [
     price: -1,
     self_ref: "5108",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1590,6 +1668,7 @@ module.exports = [
     price: -1,
     self_ref: "5111",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1610,6 +1689,7 @@ module.exports = [
     price: -1,
     self_ref: "5117",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1630,6 +1710,7 @@ module.exports = [
     price: -1,
     self_ref: "5123",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1650,6 +1731,7 @@ module.exports = [
     price: -1,
     self_ref: "5119",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1670,6 +1752,7 @@ module.exports = [
     price: -1,
     self_ref: "5104",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1691,6 +1774,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "5",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -1710,6 +1794,7 @@ module.exports = [
     price: -1,
     self_ref: "5113",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1731,6 +1816,7 @@ module.exports = [
     price: -1,
     self_ref: "5112",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1750,6 +1836,7 @@ module.exports = [
     price: -1,
     self_ref: "5120",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1770,6 +1857,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1791,6 +1879,7 @@ module.exports = [
     price: -1,
     self_ref: "5106",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1812,6 +1901,7 @@ module.exports = [
     price: -1,
     self_ref: "5126",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1833,6 +1923,7 @@ module.exports = [
     price: -1,
     self_ref: "5103",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1855,6 +1946,7 @@ module.exports = [
     price: -1,
     self_ref: "5125",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1875,6 +1967,7 @@ module.exports = [
     price: -1,
     self_ref: "5118",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1897,6 +1990,7 @@ module.exports = [
     price: -1,
     self_ref: "5101",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1919,6 +2013,7 @@ module.exports = [
     price: -1,
     self_ref: "5115",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1939,6 +2034,7 @@ module.exports = [
     price: -1,
     self_ref: "5102",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1959,6 +2055,7 @@ module.exports = [
     price: -1,
     self_ref: "5109",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -1980,6 +2077,7 @@ module.exports = [
     price: -1,
     self_ref: "5121",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2002,6 +2100,7 @@ module.exports = [
     price: -1,
     self_ref: "5125",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2022,6 +2121,7 @@ module.exports = [
     price: -1,
     self_ref: "5122",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2043,6 +2143,7 @@ module.exports = [
     price: -1,
     self_ref: "5110",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2063,6 +2164,7 @@ module.exports = [
     price: -1,
     self_ref: "5007",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2083,6 +2185,7 @@ module.exports = [
     price: 314.15,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -2102,6 +2205,7 @@ module.exports = [
     price: -1,
     self_ref: "4115",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2121,6 +2225,7 @@ module.exports = [
     price: -1,
     self_ref: "5301",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2140,6 +2245,7 @@ module.exports = [
     price: -1,
     self_ref: "1019",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2159,6 +2265,7 @@ module.exports = [
     price: -1,
     self_ref: "4108",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2178,6 +2285,7 @@ module.exports = [
     price: -1,
     self_ref: "1005",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2197,6 +2305,7 @@ module.exports = [
     price: -1,
     self_ref: "4123",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2216,6 +2325,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -2235,6 +2345,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -2254,6 +2365,7 @@ module.exports = [
     price: -1,
     self_ref: "4119",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2273,6 +2385,7 @@ module.exports = [
     price: -1,
     self_ref: "4104",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2292,6 +2405,7 @@ module.exports = [
     price: -1,
     self_ref: "4126",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2311,6 +2425,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "6",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -2330,6 +2445,7 @@ module.exports = [
     price: 314.15,
     self_ref: "5124",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -2349,6 +2465,7 @@ module.exports = [
     price: -1,
     self_ref: "2102",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2368,6 +2485,7 @@ module.exports = [
     price: -1,
     self_ref: "4109",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2387,6 +2505,7 @@ module.exports = [
     price: -1,
     self_ref: "4101",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2406,6 +2525,7 @@ module.exports = [
     price: -1,
     self_ref: "4102",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2425,6 +2545,7 @@ module.exports = [
     price: -1,
     self_ref: "4122",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2444,6 +2565,7 @@ module.exports = [
     price: -1,
     self_ref: "1023",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2463,6 +2585,7 @@ module.exports = [
     price: 314.15,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -2482,6 +2605,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -2501,6 +2625,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -2520,6 +2645,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -2539,6 +2665,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "7",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2558,6 +2685,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2577,6 +2705,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2596,6 +2725,7 @@ module.exports = [
     price: -1,
     self_ref: "5201",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -2615,6 +2745,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -2634,6 +2765,7 @@ module.exports = [
     price: 314.15,
     self_ref: "5202",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -2653,6 +2785,7 @@ module.exports = [
     price: 10,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -2672,6 +2805,7 @@ module.exports = [
     price: 141.59,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -2691,6 +2825,7 @@ module.exports = [
     price: 10,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/toxic-nursery",
     shape: "portrait"
   },
@@ -2710,6 +2845,7 @@ module.exports = [
     price: -1,
     self_ref: "5201",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -2729,6 +2865,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "5",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -2748,6 +2885,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "",
+    is_close_up: false,
     link: "carliemartece.com",
     shape: "landscape"
   },
@@ -2767,6 +2905,7 @@ module.exports = [
     price: 92,
     self_ref: "TBC",
     close_ups: "3",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -2786,6 +2925,7 @@ module.exports = [
     price: 92,
     self_ref: "TBC",
     close_ups: "3",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -2805,6 +2945,7 @@ module.exports = [
     price: 666,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -2824,6 +2965,7 @@ module.exports = [
     price: 666,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -2843,6 +2985,7 @@ module.exports = [
     price: -1,
     self_ref: "5114",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2862,6 +3005,7 @@ module.exports = [
     price: -1,
     self_ref: "5107",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2881,6 +3025,7 @@ module.exports = [
     price: 314.15,
     self_ref: "TBC",
     close_ups: "5",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2900,6 +3045,7 @@ module.exports = [
     price: -1,
     self_ref: "5116",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2919,6 +3065,7 @@ module.exports = [
     price: -1,
     self_ref: "4103",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2938,6 +3085,7 @@ module.exports = [
     price: -1,
     self_ref: "4106",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2957,6 +3105,7 @@ module.exports = [
     price: -1,
     self_ref: "4107",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2976,6 +3125,7 @@ module.exports = [
     price: -1,
     self_ref: "4110",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -2995,6 +3145,7 @@ module.exports = [
     price: -1,
     self_ref: "4111",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3014,6 +3165,7 @@ module.exports = [
     price: -1,
     self_ref: "4112",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3033,6 +3185,7 @@ module.exports = [
     price: -1,
     self_ref: "3108b",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3052,6 +3205,7 @@ module.exports = [
     price: -1,
     self_ref: "4120",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3071,6 +3225,7 @@ module.exports = [
     price: -1,
     self_ref: "4121",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3090,6 +3245,7 @@ module.exports = [
     price: -1,
     self_ref: "5008",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3109,6 +3265,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3128,6 +3285,7 @@ module.exports = [
     price: -1,
     self_ref: "3109a",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3147,6 +3305,7 @@ module.exports = [
     price: -1,
     self_ref: "1101",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3166,6 +3325,7 @@ module.exports = [
     price: -1,
     self_ref: "2104",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3185,6 +3345,7 @@ module.exports = [
     price: -1,
     self_ref: "3005",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3204,6 +3365,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -3223,6 +3385,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "3",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3242,6 +3405,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "3",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3261,6 +3425,7 @@ module.exports = [
     price: 314.15,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -3280,6 +3445,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3299,6 +3465,7 @@ module.exports = [
     price: -1,
     self_ref: "4118",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3318,6 +3485,7 @@ module.exports = [
     price: -1,
     self_ref: "4125",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3337,6 +3505,7 @@ module.exports = [
     price: -1,
     self_ref: "3204e",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3356,6 +3525,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/vipdile-key",
     shape: "portrait"
   },
@@ -3375,6 +3545,7 @@ module.exports = [
     price: 314.15,
     self_ref: "5203",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -3394,6 +3565,7 @@ module.exports = [
     price: -1,
     self_ref: "1108",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3413,6 +3585,7 @@ module.exports = [
     price: -1,
     self_ref: "1108",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3432,6 +3605,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3451,6 +3625,7 @@ module.exports = [
     price: 314.15,
     self_ref: "TBC",
     close_ups: "5",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3470,6 +3645,7 @@ module.exports = [
     price: 141.59,
     self_ref: "5204",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -3489,6 +3665,7 @@ module.exports = [
     price: -1,
     self_ref: "1119",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3508,6 +3685,7 @@ module.exports = [
     price: 897.93,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "portrait"
   },
@@ -3527,6 +3705,7 @@ module.exports = [
     price: 666,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -3546,6 +3725,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3565,6 +3745,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "3",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3584,6 +3765,7 @@ module.exports = [
     price: 666,
     self_ref: "TBC",
     close_ups: "4",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3603,6 +3785,7 @@ module.exports = [
     price: 415.92,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -3622,6 +3805,7 @@ module.exports = [
     price: -1,
     self_ref: "5013",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3641,6 +3825,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/vipdile-key",
     shape: "portrait"
   },
@@ -3660,6 +3845,7 @@ module.exports = [
     price: 897.93,
     self_ref: "5205",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "portrait"
   },
@@ -3679,6 +3865,7 @@ module.exports = [
     price: -1,
     self_ref: "1201",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3698,6 +3885,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/vipdile-key",
     shape: "portrait"
   },
@@ -3717,6 +3905,7 @@ module.exports = [
     price: 897.93,
     self_ref: "5015",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "portrait"
   },
@@ -3736,6 +3925,7 @@ module.exports = [
     price: 897.93,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "portrait"
   },
@@ -3755,6 +3945,7 @@ module.exports = [
     price: 897.93,
     self_ref: "5016",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "portrait"
   },
@@ -3774,6 +3965,7 @@ module.exports = [
     price: -1,
     self_ref: "3209c",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3793,6 +3985,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/vipdile-key",
     shape: "portrait"
   },
@@ -3812,6 +4005,7 @@ module.exports = [
     price: 59.26,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3831,6 +4025,7 @@ module.exports = [
     price: 59.26,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3850,6 +4045,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -3869,6 +4065,7 @@ module.exports = [
     price: 897.93,
     self_ref: "TBC",
     close_ups: "7",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3888,6 +4085,7 @@ module.exports = [
     price: -1,
     self_ref: "5014",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -3907,6 +4105,7 @@ module.exports = [
     price: -1,
     self_ref: "3209b",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -3926,6 +4125,7 @@ module.exports = [
     price: -1,
     self_ref: "4126",
     close_ups: "4",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3945,6 +4145,7 @@ module.exports = [
     price: -1,
     self_ref: "3206d",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3964,6 +4165,7 @@ module.exports = [
     price: -1,
     self_ref: "3209e",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -3983,6 +4185,7 @@ module.exports = [
     price: -1,
     self_ref: "3209h",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -4002,6 +4205,7 @@ module.exports = [
     price: -1,
     self_ref: "5302",
     close_ups: "5",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -4021,6 +4225,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/vipdile-key",
     shape: "portrait"
   },
@@ -4040,6 +4245,7 @@ module.exports = [
     price: 415.92,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -4059,6 +4265,7 @@ module.exports = [
     price: 666,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "portrait"
   },
@@ -4078,6 +4285,7 @@ module.exports = [
     price: 415.92,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -4097,6 +4305,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "5",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -4116,6 +4325,7 @@ module.exports = [
     price: 415.92,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -4135,6 +4345,7 @@ module.exports = [
     price: 666,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "portrait"
   },
@@ -4154,6 +4365,7 @@ module.exports = [
     price: 666,
     self_ref: "TBC",
     close_ups: "4",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -4173,6 +4385,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "8",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -4192,6 +4405,7 @@ module.exports = [
     price: 415.92,
     self_ref: "TBC",
     close_ups: "4",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -4211,6 +4425,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -4230,6 +4445,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "5",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -4249,6 +4465,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -4268,6 +4485,7 @@ module.exports = [
     price: 415.92,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "landscape"
   },
@@ -4287,6 +4505,7 @@ module.exports = [
     price: 666,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "portrait"
   },
@@ -4306,6 +4525,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "5",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -4325,6 +4545,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "portrait"
   },
@@ -4344,6 +4565,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "8",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -4363,6 +4585,7 @@ module.exports = [
     price: 415.92,
     self_ref: "TBC",
     close_ups: "5",
+    is_close_up: false,
     link: "TBC",
     shape: "square"
   },
@@ -4382,6 +4605,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -4401,6 +4625,7 @@ module.exports = [
     price: 141.59,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -4420,6 +4645,7 @@ module.exports = [
     price: 666,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: true,
     link: "TBC",
     shape: "portrait"
   },
@@ -4439,6 +4665,8 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
+    is_close_up: false,
     link: "https://vimeo.com/manage/videos/783919713",
     shape: "landscape"
   },
@@ -4458,6 +4686,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://vimeo.com/manage/videos/783922574",
     shape: "landscape"
   },
@@ -4477,6 +4706,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://vimeo.com/manage/videos/783923740",
     shape: "landscape"
   },
@@ -4496,6 +4726,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -4515,6 +4746,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://vimeo.com/manage/videos/783924365",
     shape: "landscape"
   },
@@ -4534,6 +4766,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/chroma-calanooka",
     shape: "landscape"
   },
@@ -4553,6 +4786,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://vimeo.com/manage/videos/713451654",
     shape: "landscape"
   },
@@ -4572,6 +4806,7 @@ module.exports = [
     price: -1,
     self_ref: "4126",
     close_ups: "0",
+    is_close_up: false,
     link: "https://vimeo.com/manage/videos/707357802",
     shape: "landscape"
   },
@@ -4591,6 +4826,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://vimeo.com/manage/videos/701203621",
     shape: "landscape"
   },
@@ -4610,6 +4846,7 @@ module.exports = [
     price: 666,
     self_ref: "TBC",
     close_ups: "7",
+    is_close_up: false,
     link: "TBC",
     shape: "portrait"
   },
@@ -4629,6 +4866,7 @@ module.exports = [
     price: 200,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -4648,6 +4886,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/chroma-calanooka",
     shape: "portrait"
   },
@@ -4667,6 +4906,7 @@ module.exports = [
     price: -1,
     self_ref: "5305",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -4686,6 +4926,7 @@ module.exports = [
     price: -1,
     self_ref: "5303",
     close_ups: "0",
+    is_close_up: false,
     link: "https://vimeo.com/manage/videos/696966466",
     shape: "landscape"
   },
@@ -4705,6 +4946,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/vipdile-key",
     shape: "landscape"
   },
@@ -4724,6 +4966,7 @@ module.exports = [
     price: -1,
     self_ref: "5303",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -4743,6 +4986,7 @@ module.exports = [
     price: -1,
     self_ref: "6005",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -4762,6 +5006,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/chroma-calanooka",
     shape: "landscape"
   },
@@ -4781,6 +5026,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://www.patreon.com/CarlieMartece",
     shape: "landscape"
   },
@@ -4800,6 +5046,7 @@ module.exports = [
     price: -1,
     self_ref: "5304",
     close_ups: "0",
+    is_close_up: false,
     link: "https://vimeo.com/manage/videos/694022965",
     shape: "landscape"
   },
@@ -4819,6 +5066,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/chroma-calanooka",
     shape: "landscape"
   },
@@ -4838,6 +5086,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/chroma-calanooka",
     shape: "landscape"
   },
@@ -4857,6 +5106,7 @@ module.exports = [
     price: -1,
     self_ref: "5305",
     close_ups: "0",
+    is_close_up: false,
     link: "https://vimeo.com/manage/videos/721975830",
     shape: "landscape"
   },
@@ -4876,6 +5126,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/toxic-nursery",
     shape: "portrait"
   },
@@ -4895,6 +5146,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://mybook.to/toxic-nursery",
     shape: "portrait"
   },
@@ -4914,6 +5166,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -4933,6 +5186,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://www.patreon.com/CarlieMartece",
     shape: "landscape"
   },
@@ -4952,6 +5206,7 @@ module.exports = [
     price: 141,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "TBC",
     shape: "landscape"
   },
@@ -4971,6 +5226,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://www.patreon.com/CarlieMartece",
     shape: "landscape"
   },
@@ -4990,6 +5246,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://nookasnews.netlify.app/",
     shape: "landscape"
   },
@@ -5009,6 +5266,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://gone-for-a-bork.web.app/",
     shape: "portrait"
   },
@@ -5028,6 +5286,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://www.patreon.com/CarlieMartece",
     shape: "landscape"
   },
@@ -5047,6 +5306,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://carliemartece.com",
     shape: "landscape"
   },
@@ -5066,6 +5326,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://www.patreon.com/CarlieMartece",
     shape: "landscape"
   },
@@ -5085,6 +5346,7 @@ module.exports = [
     price: -1,
     self_ref: "TBC",
     close_ups: "0",
+    is_close_up: false,
     link: "https://carliemartece.com",
     shape: "landscape"
   },
@@ -5104,6 +5366,7 @@ module.exports = [
   //   price: -1,
   //   self_ref: "TBC",
   //   close_ups: "0",
-  //   link: "TBC",
+  //   is_close_up: false,
+    link: "TBC",
   // }
 ];
