@@ -60,7 +60,7 @@ describe("/api/art", () => {
         expect(response.body).toHaveLength(16);
         expect(response.body[0]).toEqual({
           art_id: 14,
-          art_title: "Futile",
+          three_word_description: "vain-hollow-beauty",
           close_ups: "",
           is_close_up: false,
           stock_id: "4122",
@@ -76,7 +76,7 @@ describe("/api/art", () => {
         expect(response.body).toHaveLength(4);
         expect(response.body[0]).toEqual({
           art_id: 4,
-          art_title: "Claireytale",
+          three_word_description: "disturbing-childhood-dreamscape",
           close_ups: "3101b,3101c,3101d,3101e,3101f,3101g",
           is_close_up: false,
           stock_id: "3101a",
@@ -92,7 +92,7 @@ describe("/api/art", () => {
         expect(response.body).toHaveLength(3);
         expect(response.body[0]).toEqual({
           art_id: 14,
-          art_title: "Futile",
+          three_word_description: "vain-hollow-beauty",
           close_ups: "",
           is_close_up: false,
           stock_id: "4122",
@@ -107,7 +107,7 @@ describe("/api/art", () => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body[0]).toEqual({
           art_id: 4,
-          art_title: "Claireytale",
+          three_word_description: "disturbing-childhood-dreamscape",
           close_ups: "3101b,3101c,3101d,3101e,3101f,3101g",
           is_close_up: false,
           stock_id: "3101a",
@@ -123,7 +123,7 @@ describe("/api/art", () => {
         expect(response.body).toHaveLength(13);
         expect(response.body[0]).toEqual({
           art_id: 14,
-          art_title: "Futile",
+          three_word_description: "vain-hollow-beauty",
           close_ups: "",
           is_close_up: false,
           stock_id: "4122",
@@ -139,7 +139,7 @@ describe("/api/art", () => {
         expect(response.body).toHaveLength(3);
         expect(response.body[0]).toEqual({
           art_id: 4,
-          art_title: "Claireytale",
+          three_word_description: "disturbing-childhood-dreamscape",
           close_ups: "3101b,3101c,3101d,3101e,3101f,3101g",
           is_close_up: false,
           stock_id: "3101a",
@@ -155,7 +155,7 @@ describe("/api/art", () => {
         expect(response.body).toHaveLength(8);
         expect(response.body[0]).toEqual({
           art_id: 13,
-          art_title: "Fallen Fairy",
+          three_word_description: "fairy-pentagram-painting",
           close_ups: "",
           is_close_up: false,
           stock_id: "2001",
@@ -171,7 +171,7 @@ describe("/api/art", () => {
         expect(response.body).toHaveLength(5);
         expect(response.body[0]).toEqual({
           art_id: 14,
-          art_title: "Futile",
+          three_word_description: "vain-hollow-beauty",
           close_ups: "",
           is_close_up: false,
           stock_id: "4122",

@@ -8,7 +8,7 @@ INNER JOIN series ON art.series_id = series.series_id
 INNER JOIN books ON art.book_id = books.book_id`;
 
 exports.selectArt = (queries) => {
-  let selectQuery = `SELECT art.art_id, art.stock_id, art.art_title, art.close_ups, art.is_close_up FROM art`;
+  let selectQuery = `SELECT art.art_id, art.stock_id, art.three_word_description, art.close_ups, art.is_close_up FROM art`;
   let filter = " ";
   let filterPlus = "";
   let orderQuery = `ORDER BY art.completion `;
