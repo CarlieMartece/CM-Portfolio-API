@@ -59,7 +59,9 @@ describe("/api/art", () => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(16);
         expect(response.body[0]).toEqual({
+          alt_text: "VAIN painted nails...",
           art_id: 14,
+          custom_link: "",
           three_word_description: "vain-hollow-beauty",
           close_ups: "",
           is_close_up: false,
@@ -75,8 +77,10 @@ describe("/api/art", () => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(4);
         expect(response.body[0]).toEqual({
+          alt_text: "Weird collage...",
           art_id: 4,
           three_word_description: "disturbing-childhood-dreamscape",
+          custom_link: "",
           close_ups: "3101b,3101c,3101d,3101e,3101f,3101g",
           is_close_up: false,
           stock_id: "3101a",
@@ -91,7 +95,9 @@ describe("/api/art", () => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(3);
         expect(response.body[0]).toEqual({
+          alt_text: "VAIN painted nails...",
           art_id: 14,
+          custom_link: "",
           three_word_description: "vain-hollow-beauty",
           close_ups: "",
           is_close_up: false,
@@ -106,8 +112,10 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body[0]).toEqual({
+          alt_text: "Weird collage...",
           art_id: 4,
           three_word_description: "disturbing-childhood-dreamscape",
+          custom_link: "",
           close_ups: "3101b,3101c,3101d,3101e,3101f,3101g",
           is_close_up: false,
           stock_id: "3101a",
@@ -122,7 +130,9 @@ describe("/api/art", () => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(13);
         expect(response.body[0]).toEqual({
+          alt_text: "VAIN painted nails...",
           art_id: 14,
+          custom_link: "",
           three_word_description: "vain-hollow-beauty",
           close_ups: "",
           is_close_up: false,
@@ -138,8 +148,10 @@ describe("/api/art", () => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(3);
         expect(response.body[0]).toEqual({
+          alt_text: "Weird collage...",
           art_id: 4,
           three_word_description: "disturbing-childhood-dreamscape",
+          custom_link: "",
           close_ups: "3101b,3101c,3101d,3101e,3101f,3101g",
           is_close_up: false,
           stock_id: "3101a",
@@ -154,8 +166,10 @@ describe("/api/art", () => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(8);
         expect(response.body[0]).toEqual({
+          "alt_text": "Fairy with torn-off wings.",
           art_id: 13,
           three_word_description: "fairy-pentagram-painting",
+          "custom_link": "",
           close_ups: "",
           is_close_up: false,
           stock_id: "2001",
@@ -170,7 +184,9 @@ describe("/api/art", () => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(5);
         expect(response.body[0]).toEqual({
+          alt_text: "VAIN painted nails...",
           art_id: 14,
+          custom_link: "",
           three_word_description: "vain-hollow-beauty",
           close_ups: "",
           is_close_up: false,
@@ -214,7 +230,7 @@ describe("/api/art", () => {
             "Depressed fairy with no mouth holding flowers that look like grapes.",
           made_from: "Lovely watercolours...",
           price: 314,
-          shape: "L",
+          shape: "portrait",
         });
         expect(art).toBeSortedBy("price", {
           ascending: true,
@@ -231,7 +247,7 @@ describe("/api/art", () => {
         expect(art).toHaveLength(3);
         expect(art[0]).toEqual({
           alt_text:
-            "Weird collage with dripping paint and disturbing childhood imagery.",
+            "Weird collage...",
           art_id: 4,
           art_title: "Claireytale",
           category_id: 3,
@@ -589,7 +605,7 @@ describe("/api/series/:series_id", () => {
         expect(series.items).toHaveLength(2);
         expect(series.items[0]).toEqual({
           alt_text:
-            "Weird collage with dripping paint and disturbing childhood imagery.",
+            "Weird collage...",
           art_id: 4,
           art_title: "Claireytale",
           stock_id: "3101a",
@@ -647,12 +663,13 @@ describe("/api/subjects", () => {
         const { subjects } = body;
         expect(subjects).toEqual([
           { subject: "toys", count: "4" },
-          { subject: "fairies", count: "4" },
+          { subject: "fairies", count: "3" },
           { subject: "nails", count: "2" },
           { subject: "bpd", count: "2" },
           { subject: "dissociative identity", count: "2" },
-          { subject: "Carlie Martece", count: "1" },
           { subject: "eyes", count: "1" },
+          { subject: "Carlie Martece", count: "1" },
+          { subject: "fantasy", count: "1" }
         ]);
       });
   });

@@ -50,6 +50,7 @@ exports.createTables = () => {
             stock_id VARCHAR NOT NULL,
             art_title VARCHAR NOT NULL,
             three_word_description VARCHAR NOT NULL,
+            custom_link VARCHAR,
             colours VARCHAR,
             completion DATE NOT NULL,
             subject VARCHAR,

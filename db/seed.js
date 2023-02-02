@@ -43,11 +43,12 @@ function seed({categoriesData, seriesData, bookData, artData, codeData}) {
             const bookList = bookResult.rows;
             const formattedArt = formatArt(artData);         
             const artQuery = format(
-                `INSERT INTO art (stock_id, art_title, three_word_description, colours, completion, subject, category_id, series_id, alt_text, quote, book_id, made_from, price, self_ref, close_ups, is_close_up, link, shape) VALUES %L RETURNING*;`,
+                `INSERT INTO art (stock_id, art_title, three_word_description, custom_link, colours, completion, subject, category_id, series_id, alt_text, quote, book_id, made_from, price, self_ref, close_ups, is_close_up, link, shape) VALUES %L RETURNING*;`,
                 formattedArt.map((art) => [
                     art.stock_id,
                     art.art_title,
                     art.three_word_description,
+                    art.custom_link,
                     art.colours,
                     art.completion,
                     art.subject,
