@@ -3169,7 +3169,7 @@ module.exports = [
     made_from: "51cm by 1cm stretched canvas, paper, photo prints, polyester thread, acid free glue, acrylic paint, biro, pencil, a reflective bear, gelatine capsules, a match, a euro, a card reader, a calculator, a key, a knuckleduster, some fingernails, some broken earphones, some broken jewellery, plastic cutlery, and a Green Scapular.",
     price: 314.15,
     self_ref: "TBC",
-    close_ups: "5",
+    close_ups: "4",
     is_close_up: false,
     link: "TBC",
     shape: "square"
