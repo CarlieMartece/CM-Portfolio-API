@@ -2980,7 +2980,7 @@ module.exports = [
     made_from: "76cm by 51cm by 3.5cm boxed canvas, paper, photographs, mount board, acrylic paint, permanent ink, acid-free glue, polyester thread, an acrylic frame, metal screws, an NHS trainee ID card, a U key, a space key, an electronic key fob, a Stanley knife blade, foundation, nail varnish, a brass key, metal alloy pendants, a silver plated chain, a metal alloy and pinstripe denim chain, a floral hair decoration and a tiny silver spoon.",
     price: -1,
     self_ref: "5201",
-    close_ups: "0",
+    close_ups: "6",
     is_close_up: false,
     link: "TBC",
     shape: "landscape"
