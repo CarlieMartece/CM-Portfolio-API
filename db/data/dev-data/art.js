@@ -5367,6 +5367,7 @@ module.exports = [
   //   self_ref: "TBC",
   //   close_ups: "0",
   //   is_close_up: false,
-    link: "TBC",
+  //   link: "TBC",
+  //   shape: "landscape"
   // }
 ];
