@@ -352,10 +352,10 @@ describe("/api/art/:art_id", () => {
   });
 });
 
-describe("/api/art/:art_title", () => {
+describe("/api/art/collage/:three_word_description", () => {
   test("GET: 200, Responds with array of art objects, labelled by stock_id", () => {
     return request(app)
-      .get("/api/art/collage/Claireytale")
+      .get("/api/art/collage/disturbing-childhood-dreamscape")
       .expect(200)
       .then((response) => {
         const { collage } = response.body;

@@ -4,7 +4,6 @@ const {
   selectArtById,
   selectArtBySeries,
   selectArtIds,
-  selectArtByTitle,
   selectBooks,
   selectBookById,
   selectBooksBySeries,
@@ -14,6 +13,7 @@ const {
   selectSeries,
   selectSeriesById,
   countSubjects,
+  selectArtBy3Words,
 } = require("../models/portfolio");
 
 exports.getArt = (req, res, next) => {
@@ -82,9 +82,9 @@ exports.getArtById = (req, res, next) => {
     });
 };
 
-exports.getArtByTitle = (req, res, next) => {
-  const { art_title } = req.params;
-  selectArtByTitle(art_title)
+exports.getArtBy3Words = (req, res, next) => {
+  const { three_word_description } = req.params;
+  selectArtBy3Words(three_word_description)
     .then((art) => {
       return Promise.all([art, selectArtIds()]);
     })

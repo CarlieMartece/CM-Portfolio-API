@@ -13,7 +13,7 @@ const {
     getSeries,
     getSeriesById,
     getSubjects,
-    getArtByTitle
+    getArtBy3Words
 } = require('./controllers/portfolio.js');
 
 app.use(cors());
@@ -23,7 +23,7 @@ app.use(express.json());
 app.get('/api/art', getArt);
 app.get('/api/art/ids', getArtIds);
 app.get('/api/art/:art_id', getArtById);
-app.get('/api/art/collage/:art_title', getArtByTitle)
+app.get('/api/art/collage/:three_word_description', getArtBy3Words)
 
 app.get('/api/books', getBooks);
 app.get('/api/books/:book_id', getBookById);

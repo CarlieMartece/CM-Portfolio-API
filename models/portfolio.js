@@ -111,10 +111,10 @@ exports.selectArtById = (art_id, extra) => {
     });
 };
 
-exports.selectArtByTitle = (art_title) => {
-  const queryString = `${artQuery} WHERE art.art_title = $1 ORDER BY art.stock_id ASC;`
+exports.selectArtBy3Words = (three_word_description) => {
+  const queryString = `${artQuery} WHERE art.three_word_description = $1 ORDER BY art.stock_id ASC;`
   return db
-    .query(queryString, [art_title])
+    .query(queryString, [three_word_description])
     .then((result) => {
       return result.rows;
     });

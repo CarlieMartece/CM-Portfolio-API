@@ -23,7 +23,7 @@ module.exports = [
   {
     stock_id: "3101g",
     art_title: "Claireytale",
-    three_word_description: "lamplit-brown-bear",
+    three_word_description: "disturbing-childhood-dreamscape",
     colours: "brown, orange",
     subject: "toys",
     completion: "2001-09-26",
@@ -43,7 +43,7 @@ module.exports = [
   {
     stock_id: "3101f",
     art_title: "Claireytale",
-    three_word_description: "bonfire-witch-watercolour",
+    three_word_description: "disturbing-childhood-dreamscape",
     colours: "peach, purple",
     subject: "bpd",
     completion: "2003-02-14",
@@ -75,7 +75,7 @@ module.exports = [
     quote: "Honeysuckle said the imagery was creepy...",
     book_id: 1,
     made_from: "61cm by 61cm by 3.5cm boxed canvas, watercolour paints...",
-    price: -1,
+    price: 950,
     self_ref: "TBC",
     close_ups: "6",
     is_close_up: false,
@@ -105,7 +105,7 @@ module.exports = [
   {
     stock_id: "3101d",
     art_title: "Claireytale",
-    three_word_description: "",
+    three_word_description: "disturbing-childhood-dreamscape",
     colours: "fairy-sketch-collaged",
     subject: "fairies",
     completion: "2005-04-15",
