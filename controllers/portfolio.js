@@ -63,12 +63,17 @@ exports.getArtById = (req, res, next) => {
       return Promise.all([art, selectArtIds()]);
     })
     .then(([art, artIds]) => {
-      const artRef = createRef(artIds, "stock_id", "art_id");
+      const idRef = createRef(artIds, "stock_id", "art_id");
+      const wordRef = createRef(artIds, "stock_id", "three_word_description");
       art.forEach((item) => {
         if (item.self_ref === "TBC") {
-          item.self_ref = -1;
+          item.self_ref = [];
         } else {
-          item.self_ref = artRef[item.self_ref];
+          const refArray =[]
+          refArray.push(item.self_ref);
+          refArray.push(idRef[item.self_ref]);
+          refArray.push(wordRef[item.self_ref]);
+          item.self_ref = refArray;
         }
       });
       if (art.length < 1) {
@@ -89,7 +94,6 @@ exports.getArtBy3Words = (req, res, next) => {
       return Promise.all([art, selectArtIds()]);
     })
     .then(([art, artIds]) => {
-      const artRef = createRef(artIds, "stock_id", "art_id");
       let collage = {}
       const firstObj = art[0].stock_id;
       collage[firstObj] = art[0];
@@ -97,12 +101,18 @@ exports.getArtBy3Words = (req, res, next) => {
       closeUps.forEach((stockId) => {
         collage[stockId] = art[0]
       })
+      const idRef = createRef(artIds, "stock_id", "art_id");
+      const wordRef = createRef(artIds, "stock_id", "three_word_description");
       art.forEach((item) => {
         const key = item.stock_id;
         if (item.self_ref === "TBC") {
-          item.self_ref = -1;
+          item.self_ref = [];
         } else {
-          item.self_ref = artRef[item.self_ref];
+          const refArray =[]
+          refArray.push(item.self_ref);
+          refArray.push(idRef[item.self_ref]);
+          refArray.push(wordRef[item.self_ref]);
+          item.self_ref = refArray;
         }
         collage[key] = item;
       });

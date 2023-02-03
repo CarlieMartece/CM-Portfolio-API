@@ -86,7 +86,7 @@ exports.selectArtIds = (title) => {
     filter = ` WHERE art.art_title=$1`
     queryValues.push(title);
   }
-  const queryString = `SELECT art.art_id, art.stock_id FROM art${filter};`
+  const queryString = `SELECT art.art_id, art.stock_id, art.three_word_description FROM art${filter};`
   return db
     .query(queryString, queryValues)
     .then((result) => {

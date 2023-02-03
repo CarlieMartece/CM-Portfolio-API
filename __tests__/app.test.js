@@ -29,7 +29,7 @@ const artObj = expect.objectContaining({
   book_title: expect.any(String),
   made_from: expect.any(String),
   price: expect.any(Number),
-  self_ref: expect.any(Number),
+  self_ref: expect.any(Array),
   close_ups: expect.any(String),
   link: expect.any(String),
   shape: expect.any(String),
