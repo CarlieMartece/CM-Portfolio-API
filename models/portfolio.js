@@ -58,7 +58,8 @@ exports.selectArt = (queries) => {
     orderQuery = `ORDER BY art.price `;
     queryValues.push(-1);
   }
-  if (queries.year && !queries.category) {
+  if (queries.year && !queries.category ||
+      queries.year && queries.category === '314') {
     filter = ` WHERE date_part('year', art.completion) = $1 `;
     if (queries.year === 'now') {
       queryValues.push(new Date().getFullYear());
