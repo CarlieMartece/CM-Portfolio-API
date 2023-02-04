@@ -17,7 +17,7 @@ exports.selectArt = (queries) => {
   if (queries.colour) {
     selectQuery = `SELECT art.stock_id, art.colours FROM art`;
   }
-  if (queries.category) {
+  if (queries.category && queries.category !== "314") {
     let value = "$2"
     if (queries.category === "13" || queries.category === "46") {
       const clause = ` art.category_id = `;
@@ -33,13 +33,11 @@ exports.selectArt = (queries) => {
     } else if (queries.category === "16") {
       filter = ` WHERE art.category_id != 7 AND art.category_id != 9 AND art.category_id != 10 `;
       value = '$1'
-    } else if (queries.category === "314") {
-      filter = ` `;
     } else {
       filter = ` WHERE art.category_id = $1 `;
       queryValues.push(queries.category);
     }
-    if (queries.year) {
+    if (queries.year && queries.year !== "314") {
       filterPlus = `AND date_part('year', art.completion) = ${value} `;
       if (queries.year === 'now') {
         queryValues.push(new Date().getFullYear());
