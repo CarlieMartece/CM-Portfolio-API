@@ -33,6 +33,8 @@ exports.selectArt = (queries) => {
     } else if (queries.category === "16") {
       filter = ` WHERE art.category_id != 7 AND art.category_id != 9 AND art.category_id != 10 `;
       value = '$1'
+    } else if (queries.category === "314") {
+      filter = ` `;
     } else {
       filter = ` WHERE art.category_id = $1 `;
       queryValues.push(queries.category);

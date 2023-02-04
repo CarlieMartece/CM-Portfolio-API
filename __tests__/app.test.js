@@ -194,6 +194,24 @@ describe("/api/art", () => {
         });
       });
   });
+  test("GET: 200, Responds with a non-filtered array of all digital art stock_ids for category 314", () => {
+    return request(app)
+      .get("/api/art?category=314")
+      .expect(200)
+      .then((response) => {
+        expect(response.body).toEqual(expect.any(Array));
+        expect(response.body).toHaveLength(16);
+        expect(response.body[0]).toEqual({
+          alt_text: "VAIN painted nails...",
+          art_id: 14,
+          custom_link: "",
+          three_word_description: "vain-hollow-beauty",
+          close_ups: "",
+          is_close_up: false,
+          stock_id: "4122",
+        });
+      });
+  });
   test("GET: 200, Responds with an array of art stock_ids filtered by subject", () => {
     return request(app)
       .get("/api/art?subject=toys")

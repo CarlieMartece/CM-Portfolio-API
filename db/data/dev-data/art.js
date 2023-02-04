@@ -155,7 +155,7 @@ module.exports = [
     shape: "landscape"
   },
   {
-    stock_id: "5301a",
+    stock_id: "701a",
     art_title: "Beautiful Car Crash (Constructed Sanity Poem Pt1)",
     three_word_description: "prescient-teenage-poem",
     custom_link: "/books/1",
@@ -555,7 +555,7 @@ module.exports = [
     shape: "landscape"
   },
   {
-    stock_id: "5301b",
+    stock_id: "701b",
     art_title: "Emerge (Toxic Nursery's initial form)",
     three_word_description: "self-indulgent-nonsense",
     custom_link: "/books/1",
@@ -2860,7 +2860,7 @@ module.exports = [
     shape: "landscape"
   },
   {
-    stock_id: "5301c",
+    stock_id: "701c",
     art_title: "Toxic Nursery's First Draft",
     three_word_description: "first-literary-assault",
     custom_link: "/books/1",
@@ -2944,7 +2944,7 @@ module.exports = [
     shape: "landscape"
   },
   {
-    stock_id: "5301d",
+    stock_id: "701d",
     art_title: "Toxic Nursery",
     three_word_description: "first-finished-book",
     custom_link: "/books/1",
@@ -3679,7 +3679,7 @@ module.exports = [
     shape: "square"
   },
   {
-    stock_id: "5302a",
+    stock_id: "702a",
     art_title: "Deragon Hex Worldbuilding",
     three_word_description: "brutal-subterranean-dystopia",
     custom_link: "/books/2",
@@ -3994,7 +3994,7 @@ module.exports = [
     shape: "portrait"
   },
   {
-    stock_id: "5302b",
+    stock_id: "702b",
     art_title: "First Deragon Vipdile Words",
     three_word_description: "deragon-vipdile-begins",
     custom_link: "/books/2",
@@ -4162,7 +4162,7 @@ module.exports = [
     shape: "portrait"
   },
   {
-    stock_id: "5302c",
+    stock_id: "702c",
     art_title: "Deragon Vipdile's First Draft",
     three_word_description: "deragon-vipdile-continues",
     custom_link: "/books/2",
@@ -4435,7 +4435,7 @@ module.exports = [
     shape: "landscape"
   },
   {
-    stock_id: "5302d",
+    stock_id: "702d",
     art_title: "Deragon Hex: The Vipdile Key, first edition",
     three_word_description: "first-deragon-vipdile",
     custom_link: "/books/2",
@@ -4520,7 +4520,7 @@ module.exports = [
   },
   {
     stock_id: "913-170304a",
-    art_title: "2017 MS Charity Photoshoot by Ray Snell, Head Full of Photos and Andy Harris",
+    art_title: "2017 MS Charity Photoshoot by Ray Snell, Head Full of Photos, and Andy Harris",
     three_word_description: "red-wig-model",
     custom_link: "",
     colours: "red, silver",
@@ -4834,7 +4834,7 @@ module.exports = [
     shape: "square"
   },
   {
-    stock_id: "5304a",
+    stock_id: "704a",
     art_title: "Chroma Worldbuilding",
     three_word_description: "world-building-chroma",
     custom_link: "/books/3",
@@ -4996,14 +4996,14 @@ module.exports = [
     book_id: 3,
     made_from: "Autistic hyper-memory and vengeance.",
     price: -1,
-    self_ref: "5302",
+    self_ref: "913-160924a",
     close_ups: "0",
     is_close_up: false,
     link: "https://vimeo.com/manage/videos/783924365",
     shape: "landscape"
   },
   {
-    stock_id: "5304b",
+    stock_id: "704b",
     art_title: "Chroma: Calanooka's First Draft",
     three_word_description: "messy-alien-adventure",
     custom_link: "/books/3",
@@ -5129,7 +5129,7 @@ module.exports = [
     shape: "landscape"
   },
   {
-    stock_id: "5304c",
+    stock_id: "704c",
     art_title: "Chroma: Calanooka re-writes",
     three_word_description: "complex-composition-crafting",
     custom_link: "/books/3",
@@ -5255,7 +5255,7 @@ module.exports = [
     shape: "landscape"
   },
   {
-    stock_id: "5304d",
+    stock_id: "704d",
     art_title: "Chroma: Calanooka further editing",
     three_word_description: "must-perfect-lunacy",
     custom_link: "/books/3",
@@ -5339,7 +5339,7 @@ module.exports = [
     shape: "landscape"
   },
   {
-    stock_id: "5304e",
+    stock_id: "704e",
     art_title: "Chroma: Calanooka",
     three_word_description: "lizards-ate-breadcrumbs",
     custom_link: "/books/3",
@@ -5402,7 +5402,7 @@ module.exports = [
     shape: "portrait"
   },
   {
-    stock_id: "5305a",
+    stock_id: "705a",
     art_title: "Toxic Nursery, Second Edition",
     three_word_description: "dissociative-identity-disorder",
     custom_link: "/books/4",
@@ -5423,7 +5423,7 @@ module.exports = [
     shape: "portrait"
   },
   {
-    stock_id: "5303a",
+    stock_id: "703a",
     art_title: "Deragon Hex: The Vipdile Key, Second Edition",
     three_word_description: "cyberpunk-literary-hatred",
     custom_link: "/books/5",
