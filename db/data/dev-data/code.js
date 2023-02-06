@@ -8,7 +8,7 @@ module.exports = [
     last_update: "2023-01-12",
     tech_stack: "JavaScript, Node, React, CSS3, HTML5, PostgreSQL",
     description: "Artist, writer and coder portfolio",
-    further_info: "This is where my coding journey began. Years ago, I created an online artist portfolio using basic HTML and CSS. With my visual art skills I made the site look good, but struggled to make it interactive. About once a year I'd try teaching myself code but it wouldn't click. Then I did a software engineering bootcamp that changed everything. Since graduating I've gone back through the course notes, applying new skills to what is now an artist, writer and coder portfolio. I'm particularly pleased with the Art gallery's new search functionality. Code is my art now, and my favourite thing to write. I couldn't be more pleased with my creative journey's progression."
+    further_info: "This is where my coding journey began. Years ago, I created an online artist portfolio using basic HTML and CSS. With my visual art skills, I made the site look good but struggled to make it interactive. About once a year I'd try teaching myself code, but it wouldn't click. Then a software engineering bootcamp changed everything. Since graduating I've applied new skills in JavaScript, React and SQL to what is now an artist, writer and coder portfolio. I'm particularly pleased with the new Art gallery's search functionality. Code is my art now, and my favourite thing to write. I couldn't be more pleased with my creative journey's progression."
   },
   {
     stock_id: "10x002",
@@ -19,7 +19,7 @@ module.exports = [
     last_update: null,
     tech_stack: "JavaScript, Node, React, CSS3, HTML5, PostgreSQL",
     description: "Totally real news website",
-    further_info: "My first finished app! During the bootcamp's solo project phase, this portfolio was still static, and NC News was my first use of JavaScript to make an interactive site. I was pleased to create something functional and well-presented to such a tight deadline. If I find time to return to this project, I'd like to add a user login component and update the styling for improved accessibility.",
+    further_info: "My first finished app! During the bootcamp's solo project phase, this portfolio was still static, and NC News was my first use of JavaScript, React and SQL to make an interactive site. I was glad I managed to create a functional and well-presented site to such a tight deadline. If I ever return to this project, I'll add a user login component and update the styling for improved accessibility.",
   },
   {
     stock_id: "10x003",
