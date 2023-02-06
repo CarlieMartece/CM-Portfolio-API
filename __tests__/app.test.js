@@ -40,9 +40,15 @@ const object4122 = {
   art_id: 14,
   custom_link: "",
   three_word_description: "vain-hollow-beauty",
-  close_ups: "",
-  is_close_up: false,
   stock_id: "4122",
+}
+
+const object3101a = {
+  alt_text: "Weird collage...",
+  art_id: 4,
+  three_word_description: "disturbing-childhood-dreamscape",
+  custom_link: "",
+  stock_id: "3101a",
 }
 
 afterAll(() => {
@@ -78,15 +84,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(4);
-        expect(response.body[0]).toEqual({
-          alt_text: "Weird collage...",
-          art_id: 4,
-          three_word_description: "disturbing-childhood-dreamscape",
-          custom_link: "",
-          close_ups: "3101b,3101c,3101d,3101e,3101f,3101g",
-          is_close_up: false,
-          stock_id: "3101a",
-        });
+        expect(response.body[0]).toEqual(object3101a);
       });
   });
   test("GET: 200, Responds with an array of objects for this year", () => {
@@ -105,15 +103,7 @@ describe("/api/art", () => {
       .expect(200)
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
-        expect(response.body[0]).toEqual({
-          alt_text: "Weird collage...",
-          art_id: 4,
-          three_word_description: "disturbing-childhood-dreamscape",
-          custom_link: "",
-          close_ups: "3101b,3101c,3101d,3101e,3101f,3101g",
-          is_close_up: false,
-          stock_id: "3101a",
-        });
+        expect(response.body[0]).toEqual(object3101a);
       });
   });
   test("GET: 200, Responds with an array of all visual art stock_ids (filtering out book, model, code) for category 16", () => {
@@ -133,15 +123,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(3);
-        expect(response.body[0]).toEqual({
-          alt_text: "Weird collage...",
-          art_id: 4,
-          three_word_description: "disturbing-childhood-dreamscape",
-          custom_link: "",
-          close_ups: "3101b,3101c,3101d,3101e,3101f,3101g",
-          is_close_up: false,
-          stock_id: "3101a",
-        });
+        expect(response.body[0]).toEqual(object3101a);
       });
   });
   test("GET: 200, Responds with an array of all traditional art stock_ids for category 13", () => {
@@ -156,8 +138,6 @@ describe("/api/art", () => {
           art_id: 13,
           three_word_description: "fairy-pentagram-painting",
           "custom_link": "",
-          close_ups: "",
-          is_close_up: false,
           stock_id: "2001",
         });
       });
@@ -197,11 +177,7 @@ describe("/api/art", () => {
       .expect(200)
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
-        expect(response.body[0]).toEqual({
-          art_id: 14,
-          three_word_description: 'vain-hollow-beauty',
-          alt_text: 'VAIN painted nails...'
-        });
+        expect(response.body[0]).toEqual(object4122);
         expect(response.body).toHaveLength(5);
       });
   });
@@ -213,11 +189,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(5);
-        expect(response.body[0]).toEqual({
-          art_id: 14,
-          three_word_description: 'vain-hollow-beauty',
-          alt_text: 'VAIN painted nails...'
-        });
+        expect(response.body[0]).toEqual(object4122);
       });
   });
   test("GET: 200, Responds with an array of art objects, each item for sale, price ascending", () => {

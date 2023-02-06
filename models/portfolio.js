@@ -7,14 +7,14 @@ INNER JOIN series ON art.series_id = series.series_id
 INNER JOIN books ON art.book_id = books.book_id`;
 
 exports.selectArt = (queries) => {
-  let selectQuery = `SELECT art.art_id, art.stock_id, art.three_word_description, art.custom_link, art.alt_text, art.close_ups, art.is_close_up FROM art`;
+  let selectQuery = `SELECT art.art_id, art.stock_id, art.three_word_description, art.custom_link, art.alt_text FROM art`;
   let filter = " ";
   let filterPlus = "";
   let orderQuery = `ORDER BY art.completion `;
   let ascOrDesc = queries.order_by || `DESC`;
   let queryValues = [];
   if (queries.colour) {
-    selectQuery = `SELECT art.art_id, art.colours, art.three_word_description, art.alt_text FROM art`;
+    selectQuery = `SELECT art.art_id, art.stock_id, art.colours, art.three_word_description, art.custom_link, art.alt_text FROM art`;
   }
   if (queries.category && queries.category !== "314") {
     let value = "$2";
