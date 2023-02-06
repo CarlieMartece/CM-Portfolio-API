@@ -1,6 +1,5 @@
 const db = require("../db/index.js");
 
-
 const artQuery = `SELECT art.art_id, art.stock_id, art.art_title, art.three_word_description, art.colours, art.completion, categories.category_name, series.series_name, art.alt_text, art.quote, books.book_title, art.made_from, art.price, art.self_ref, art.close_ups, art.link, art.shape  
 FROM art
 INNER JOIN categories ON art.category_id = categories.category_id
@@ -18,11 +17,11 @@ exports.selectArt = (queries) => {
     selectQuery = `SELECT art.stock_id, art.colours FROM art`;
   }
   if (queries.category && queries.category !== "314") {
-    let value = "$2"
+    let value = "$2";
     if (queries.category === "13" || queries.category === "46") {
       const clause = ` art.category_id = `;
       filter = ` WHERE${clause}$1 OR${clause}$2 OR${clause}$3 `;
-      value = "$4"
+      value = "$4";
       for (
         let i = Number(queries.category.charAt(0));
         i < Number(queries.category.charAt(1)) + 1;
@@ -32,14 +31,14 @@ exports.selectArt = (queries) => {
       }
     } else if (queries.category === "16") {
       filter = ` WHERE art.category_id != 7 AND art.category_id != 9 AND art.category_id != 10 `;
-      value = '$1'
+      value = "$1";
     } else {
       filter = ` WHERE art.category_id = $1 `;
       queryValues.push(queries.category);
     }
     if (queries.year && queries.year !== "314") {
       filterPlus = `AND date_part('year', art.completion) = ${value} `;
-      if (queries.year === 'now') {
+      if (queries.year === "now") {
         queryValues.push(new Date().getFullYear());
       } else {
         queryValues.push(queries.year);
@@ -56,10 +55,13 @@ exports.selectArt = (queries) => {
     orderQuery = `ORDER BY art.price `;
     queryValues.push(-1);
   }
-  if (queries.year && !queries.category ||
-      queries.year && queries.category === '314') {
+  if (
+    ((queries.year && !queries.category) ||
+      (queries.year && queries.category === "314")) &&
+    queries.year !== "314"
+  ) {
     filter = ` WHERE date_part('year', art.completion) = $1 `;
-    if (queries.year === 'now') {
+    if (queries.year === "now") {
       queryValues.push(new Date().getFullYear());
     } else {
       queryValues.push(queries.year);
@@ -84,16 +86,14 @@ exports.selectArtIds = (title) => {
   let filter = "";
   let queryValues = [];
   if (title) {
-    filter = ` WHERE art.art_title=$1`
+    filter = ` WHERE art.art_title=$1`;
     queryValues.push(title);
   }
-  const queryString = `SELECT art.art_id, art.stock_id, art.three_word_description FROM art${filter};`
-  return db
-    .query(queryString, queryValues)
-    .then((result) => {
-      return result.rows;
-    });
-}
+  const queryString = `SELECT art.art_id, art.stock_id, art.three_word_description FROM art${filter};`;
+  return db.query(queryString, queryValues).then((result) => {
+    return result.rows;
+  });
+};
 
 exports.selectArtById = (art_id, extra) => {
   let plus = "";
@@ -113,20 +113,18 @@ exports.selectArtById = (art_id, extra) => {
 };
 
 exports.selectArtBy3Words = (three_word_description) => {
-  const queryString = `${artQuery} WHERE art.three_word_description = $1 ORDER BY art.stock_id ASC;`
-  return db
-    .query(queryString, [three_word_description])
-    .then((result) => {
-      return result.rows;
-    });
-
+  const queryString = `${artQuery} WHERE art.three_word_description = $1 ORDER BY art.stock_id ASC;`;
+  return db.query(queryString, [three_word_description]).then((result) => {
+    return result.rows;
+  });
 };
 
 exports.selectArtBySeries = (series_id) => {
   return db
-    .query(`SELECT art.art_id, art.stock_id, art.art_title, art.alt_text FROM art WHERE art.series_id = $1 ORDER BY art.stock_id ASC;`, [
-      series_id,
-    ])
+    .query(
+      `SELECT art.art_id, art.stock_id, art.art_title, art.alt_text FROM art WHERE art.series_id = $1 ORDER BY art.stock_id ASC;`,
+      [series_id]
+    )
     .then(({ rows: items }) => {
       return items;
     });
@@ -181,7 +179,11 @@ exports.selectCategories = () => {
 //////////////
 
 exports.selectCode = () => {
-  return db.query("SELECT project_id, stock_id, name, first_launched, last_update, tech_stack FROM code;").then((result) => result.rows);
+  return db
+    .query(
+      "SELECT project_id, stock_id, name, first_launched, last_update, tech_stack FROM code;"
+    )
+    .then((result) => result.rows);
 };
 
 exports.selectCodeById = (project_id) => {
@@ -226,7 +228,10 @@ exports.selectSeriesById = (series_id) => {
 
 exports.countSubjects = () => {
   return db
-    .query(`SELECT subject, count(subject) FROM art GROUP by subject ORDER BY count DESC`).then((result) => {
+    .query(
+      `SELECT subject, count(subject) FROM art GROUP by subject ORDER BY count DESC`
+    )
+    .then((result) => {
       return result.rows;
     });
 };

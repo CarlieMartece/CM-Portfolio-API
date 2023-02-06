@@ -28,10 +28,10 @@ app.get('/api/art/collage/:three_word_description', getArtBy3Words)
 app.get('/api/books', getBooks);
 app.get('/api/books/:book_id', getBookById);
 
+app.get('/api/categories', getCategories);
+
 app.get('/api/code', getCode);
 app.get('/api/code/:project_id', getCodeById);
-
-app.get('/api/categories', getCategories);
 
 app.get('/api/series', getSeries);
 app.get('/api/series/:series_id', getSeriesById);

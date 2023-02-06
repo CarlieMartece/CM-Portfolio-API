@@ -231,6 +231,17 @@ describe("/api/art", () => {
         expect(response.body).toHaveLength(5);
       });
   });
+  test
+  ("GET: 200, Colour filter works with 314 year and category values", () => {
+    return request(app)
+      .get("/api/art?year=314&category=314&colour=purple")
+      .expect(200)
+      .then((response) => {
+        expect(response.body).toEqual(expect.any(Array));
+        expect(response.body[0]).toBe("4122");
+        expect(response.body).toHaveLength(5);
+      });
+  });
   test("GET: 200, Responds with an array of art objects, each item for sale, price ascending", () => {
     return request(app)
       .get("/api/art?sort_by=price&order_by=asc")
@@ -336,7 +347,7 @@ describe("/api/art", () => {
         expect(response.body.msg).toBe("Art not found");
       });
   });
-  test("GET: 404, Sends error response for valid but non-existent subject", () => {
+  test("GET: 404, Sends error response for valid but non-existent colour", () => {
     return request(app)
       .get("/api/art?colour=i-dont-see-colour")
       .expect(404)

@@ -8,7 +8,7 @@ module.exports = [
     last_update: "2023-01-12",
     tech_stack: "JavaScript, Node, React, CSS3, HTML5, PostgreSQL",
     description: "Artist, writer and coder portfolio",
-    further_info: "This is where my coding journey began. I first created an online artist portfolio using HTML and CSS. With my visual art skills, I made the site look good, but with my lack of programming ability, it didn't do anything. About once a year I'd try to teach myself code, but it wouldn't click. Then I did a software engineering bootcamp that changed everything. Since graduating, I've gone back through the course notes, finishing uncompleted tasks, then applying new skills to what is now an artist, writer and coder portfolio. Code is my art now, and my favourite thing to write. I couldn't be more pleased with my creative journey's progression."
+    further_info: "This is where my coding journey began. Years ago, I created an online artist portfolio using basic HTML and CSS. With my visual art skills I made the site look good, but struggled to make it interactive. About once a year I'd try teaching myself code but it wouldn't click. Then I did a software engineering bootcamp that changed everything. Since graduating I've gone back through the course notes, applying new skills to what is now an artist, writer and coder portfolio. I'm particularly pleased with the Art gallery's new search functionality. Code is my art now, and my favourite thing to write. I couldn't be more pleased with my creative journey's progression."
   },
   {
     stock_id: "10x002",
@@ -19,7 +19,7 @@ module.exports = [
     last_update: null,
     tech_stack: "JavaScript, Node, React, CSS3, HTML5, PostgreSQL",
     description: "Totally real news website",
-    further_info: "My first finished app! During the bootcamp's solo project phase, this portfolio was still static, and NC News was my first use of JavaScript to make an interactive site. I was pleased with myself for creating something functional and well-presented to such a tight deadline. If I get time to return to this project, I'd like to add a user login component and update the styling for improved accessibility.",
+    further_info: "My first finished app! During the bootcamp's solo project phase, this portfolio was still static, and NC News was my first use of JavaScript to make an interactive site. I was pleased to create something functional and well-presented to such a tight deadline. If I find time to return to this project, I'd like to add a user login component and update the styling for improved accessibility.",
   },
   {
     stock_id: "10x003",
@@ -30,6 +30,6 @@ module.exports = [
     last_update: null,
     tech_stack: "JavaScript, Node, React_Native, Expo_Camera, CSS3, HTML5",
     description: "Gameified dog matching app",
-    further_info: "My first group coding project. We were encouraged to use new tech, so I quickly learned React Native and Expo Camera. React Native took some adjustment with the differences in styling, but I overcame this to craft the navigation bar and Gallery screen. The contribution I'm most proud of is the Camera screen. I was ecstatic once I got a picture taken my my phone's camera held in state. After I pushed this code, my colleagues working on the image recognition could stop running hardcoded pictures and now run photos direct from the app. We were pleased with how it all came together."
+    further_info: "My first group coding project. We were encouraged to use new tech, so I quickly learned React Native and Expo Camera. React Native took some adjustment with the differences in styling, but I overcame this to craft the Navigation bar and Gallery. The contribution I'm most proud of is the Camera screen. I was ecstatic once I got a picture taken on my phone's camera held in state. After I pushed this code, my colleagues working on the image recognition could run photos direct from the app. We were pleased with how it all came together."
   },
 ];
