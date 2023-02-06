@@ -14,7 +14,7 @@ exports.selectArt = (queries) => {
   let ascOrDesc = queries.order_by || `DESC`;
   let queryValues = [];
   if (queries.colour) {
-    selectQuery = `SELECT art.stock_id, art.colours FROM art`;
+    selectQuery = `SELECT art.art_id, art.colours, art.three_word_description, art.alt_text FROM art`;
   }
   if (queries.category && queries.category !== "314") {
     let value = "$2";
@@ -83,13 +83,14 @@ exports.selectArt = (queries) => {
 };
 
 exports.selectArtIds = (title) => {
+  let query = "SELECT art.art_id, art.stock_id, art.three_word_description FROM art";
   let filter = "";
   let queryValues = [];
   if (title) {
     filter = ` WHERE art.art_title=$1`;
     queryValues.push(title);
   }
-  const queryString = `SELECT art.art_id, art.stock_id, art.three_word_description FROM art${filter};`;
+  const queryString = `${query}${filter};`;
   return db.query(queryString, queryValues).then((result) => {
     return result.rows;
   });
@@ -99,15 +100,16 @@ exports.selectArtById = (art_id, extra) => {
   let plus = "";
   let queryValues = [art_id];
   if (extra) {
-    plus = " OR art.art_id=$2 ORDER BY art.art_id DESC";
+    plus = " OR art.art_id=$2";
     queryValues.push(extra);
   }
+  const queryString = `${artQuery} WHERE art.art_id = $1${plus} ORDER BY art.art_id DESC;`
   return db
-    .query(`${artQuery} WHERE art.art_id = $1${plus};`, queryValues)
+    .query(queryString, queryValues)
     .then((result) => {
-      // if (!art) {
-      //   return Promise.reject({ status: 404, msg: "Art not found" });
-      // }
+      if (!result.rows) {
+        return Promise.reject({ status: 404, msg: "Art not found" });
+      }
       return result.rows;
     });
 };

@@ -35,6 +35,16 @@ const artObj = expect.objectContaining({
   shape: expect.any(String),
 });
 
+const object4122 = {
+  alt_text: "VAIN painted nails...",
+  art_id: 14,
+  custom_link: "",
+  three_word_description: "vain-hollow-beauty",
+  close_ups: "",
+  is_close_up: false,
+  stock_id: "4122",
+}
+
 afterAll(() => {
   if (db.end) db.end();
 });
@@ -58,15 +68,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(16);
-        expect(response.body[0]).toEqual({
-          alt_text: "VAIN painted nails...",
-          art_id: 14,
-          custom_link: "",
-          three_word_description: "vain-hollow-beauty",
-          close_ups: "",
-          is_close_up: false,
-          stock_id: "4122",
-        });
+        expect(response.body[0]).toEqual(object4122);
       });
   });
   test("GET: 200, Responds with an array of objects for selected year", () => {
@@ -94,15 +96,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(3);
-        expect(response.body[0]).toEqual({
-          alt_text: "VAIN painted nails...",
-          art_id: 14,
-          custom_link: "",
-          three_word_description: "vain-hollow-beauty",
-          close_ups: "",
-          is_close_up: false,
-          stock_id: "4122",
-        });
+        expect(response.body[0]).toEqual(object4122);
       });
   });
   test("GET: 200, Responds with an array of objects for selected category", () => {
@@ -129,15 +123,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(13);
-        expect(response.body[0]).toEqual({
-          alt_text: "VAIN painted nails...",
-          art_id: 14,
-          custom_link: "",
-          three_word_description: "vain-hollow-beauty",
-          close_ups: "",
-          is_close_up: false,
-          stock_id: "4122",
-        });
+        expect(response.body[0]).toEqual(object4122);
       });
   });
   test("GET: 200, Responds with an array of all visual art stock_ids filtered by year", () => {
@@ -183,15 +169,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(5);
-        expect(response.body[0]).toEqual({
-          alt_text: "VAIN painted nails...",
-          art_id: 14,
-          custom_link: "",
-          three_word_description: "vain-hollow-beauty",
-          close_ups: "",
-          is_close_up: false,
-          stock_id: "4122",
-        });
+        expect(response.body[0]).toEqual(object4122);
       });
   });
   test("GET: 200, Responds with a non-filtered array of all digital art stock_ids for category 314", () => {
@@ -201,15 +179,7 @@ describe("/api/art", () => {
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body).toHaveLength(16);
-        expect(response.body[0]).toEqual({
-          alt_text: "VAIN painted nails...",
-          art_id: 14,
-          custom_link: "",
-          three_word_description: "vain-hollow-beauty",
-          close_ups: "",
-          is_close_up: false,
-          stock_id: "4122",
-        });
+        expect(response.body[0]).toEqual(object4122);
       });
   });
   test("GET: 200, Responds with an array of art stock_ids filtered by subject", () => {
@@ -227,7 +197,11 @@ describe("/api/art", () => {
       .expect(200)
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
-        expect(response.body[0]).toBe("4122");
+        expect(response.body[0]).toEqual({
+          art_id: 14,
+          three_word_description: 'vain-hollow-beauty',
+          alt_text: 'VAIN painted nails...'
+        });
         expect(response.body).toHaveLength(5);
       });
   });
@@ -238,8 +212,12 @@ describe("/api/art", () => {
       .expect(200)
       .then((response) => {
         expect(response.body).toEqual(expect.any(Array));
-        expect(response.body[0]).toBe("4122");
         expect(response.body).toHaveLength(5);
+        expect(response.body[0]).toEqual({
+          art_id: 14,
+          three_word_description: 'vain-hollow-beauty',
+          alt_text: 'VAIN painted nails...'
+        });
       });
   });
   test("GET: 200, Responds with an array of art objects, each item for sale, price ascending", () => {

@@ -18,38 +18,40 @@ const {
 
 exports.getArt = (req, res, next) => {
   const queries = req.query;
-  selectArt(queries)
-    .then((response) => {
-      if (queries.sort_by === "price") {
-        res.status(200).send(response);
-      }
-      let stockArray = [];
-      if (queries.colour) {
-        response.forEach((item) => {
-          const coloursArray = item.colours.split(", ");
-          if (coloursArray.indexOf(queries.colour) !== -1) {
-            stockArray.push(item.stock_id);
-          }
-        });
-      } else {
-        response.forEach((item) => {
-          stockArray.push(item);
-        });
-      }
-      if (stockArray.length < 1) {
-        res.status(404).send({ msg: "Art not found" });
-      } else {
-        res.status(200).send(stockArray);
-      }
-    })
-    .catch((err) => {
-      next(err);
-    });
+    selectArt(queries)
+      .then((response) => {
+        if (queries.sort_by === "price") {
+          res.status(200).send(response);
+        }
+        let stockArray = [];
+        if (queries.colour) {
+          response.forEach((item) => {
+            const coloursArray = item.colours.split(", ");
+            if (coloursArray.indexOf(queries.colour) !== -1) {
+              stockArray.push(item);
+            }
+            delete item.colours;
+          });
+        } else {
+          response.forEach((item) => {
+            stockArray.push(item);
+          });
+        }
+        if (stockArray.length < 1) {
+          res.status(404).send({ msg: "Art not found" });
+        } else {
+          res.status(200).send(stockArray);
+        }
+      })
+      .catch((err) => {
+        next(err);
+      });
+  
 };
 
 exports.getArtIds = (req, res, next) => {
-  const { title } = req.query;
-  selectArtIds(title).then((result) => {
+  const { queries } = req.query;
+  selectArtIds(queries).then((result) => {
     artIds = createRef(result, "stock_id", "art_id");
     res.status(200).send({ artIds });
   });
@@ -69,7 +71,7 @@ exports.getArtById = (req, res, next) => {
         if (item.self_ref === "TBC") {
           item.self_ref = [];
         } else {
-          const refArray =[]
+          const refArray = [];
           refArray.push(item.self_ref);
           refArray.push(idRef[item.self_ref]);
           refArray.push(wordRef[item.self_ref]);
@@ -94,13 +96,13 @@ exports.getArtBy3Words = (req, res, next) => {
       return Promise.all([art, selectArtIds()]);
     })
     .then(([art, artIds]) => {
-      let collage = {}
+      let collage = {};
       const firstObj = art[0].stock_id;
       collage[firstObj] = art[0];
-      const closeUps = art[0].close_ups.split(',');
+      const closeUps = art[0].close_ups.split(",");
       closeUps.forEach((stockId) => {
-        collage[stockId] = art[0]
-      })
+        collage[stockId] = art[0];
+      });
       const idRef = createRef(artIds, "stock_id", "art_id");
       const wordRef = createRef(artIds, "stock_id", "three_word_description");
       art.forEach((item) => {
@@ -108,7 +110,7 @@ exports.getArtBy3Words = (req, res, next) => {
         if (item.self_ref === "TBC") {
           item.self_ref = [];
         } else {
-          const refArray =[]
+          const refArray = [];
           refArray.push(item.self_ref);
           refArray.push(idRef[item.self_ref]);
           refArray.push(wordRef[item.self_ref]);
