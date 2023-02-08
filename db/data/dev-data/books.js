@@ -55,7 +55,7 @@ module.exports = [
   {
     book_title: "666 Days of Sobriety",
     edition_no: 1,
-    cover_stock_id: "TBC",
+    cover_stock_id: "706",
     release_date: "2022-12-26",
     series_id: 17,
     sequence_no: 1,
@@ -65,7 +65,7 @@ module.exports = [
   {
     book_title: "DarkStar Vale",
     edition_no: 1,
-    cover_stock_id: "TBC",
+    cover_stock_id: "707",
     release_date: "2023-12-25",
     series_id: 18,
     sequence_no: 1,
