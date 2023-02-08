@@ -60,7 +60,7 @@ module.exports = [
     series_id: 17,
     sequence_no: 1,
     sales_url: "https://www.patreon.com/CarlieMartece",
-    blurb: "TBC",
+    blurb: "Our dark comedy addiction recovery memoir. Presently only available on Patreon.",
   },
   {
     book_title: "DarkStar Vale",
@@ -70,6 +70,6 @@ module.exports = [
     series_id: 18,
     sequence_no: 1,
     sales_url: "https://www.patreon.com/CarlieMartece",
-    blurb: "TBC",
+    blurb: "Our latest dark comedy science fiction novel. Presently only available on Patreon.",
   }
 ];

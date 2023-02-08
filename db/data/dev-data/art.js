@@ -1379,7 +1379,7 @@ module.exports = [
     art_title: "Triskele Moonlight",
     three_word_description: "triskele-butterfly-cat",
     custom_link: "",
-    colours: "purple, pink, red",
+    colours: "purple, pink",
     completion: "2009-08-30",
     subject: "butterflies",
     category_id: 1,
@@ -1888,7 +1888,7 @@ module.exports = [
     art_title: "Choices",
     three_word_description: "life-nails-tablets",
     custom_link: "",
-    colours: "redblackwhite, peach",
+    colours: "redblackwhite",
     completion: "2010-10-23",
     subject: "bpd",
     category_id: 4,
@@ -4061,7 +4061,7 @@ module.exports = [
     art_title: "Deragon Vipdile's First Cover",
     three_word_description: "vipdile-cover-one",
     custom_link: "",
-    colours: "black, green, blue",
+    colours: "black, green",
     completion: "2015-11-22",
     subject: "cyberpunk",
     category_id: 7,
@@ -5049,7 +5049,7 @@ module.exports = [
     art_title: "1000 Pi: Nailed Retrospective",
     three_word_description: "pi-recital-nails",
     custom_link: "",
-    colours: "peach, pink, grey",
+    colours: "pink, grey",
     completion: "2019-05-23",
     subject: "autism",
     category_id: 6,
@@ -5276,7 +5276,7 @@ module.exports = [
     shape: "landscape"
   },
   {
-    stock_id: "913-130314a",
+    stock_id: "706a",
     art_title: "666 Days of Sobriety, Days 0-10, first draft",
     three_word_description: "sofa-based-delusion",
     custom_link: "/books/6",
@@ -5285,7 +5285,7 @@ module.exports = [
     subject: "hallucination",
     category_id: 7,
     series_id: 17,
-    alt_text: "Purple wig placeholder pic.",
+    alt_text: "Placeholder pic.",
     quote: "Why am I choking on a tree? This isn't a forest?",
     book_id: 6,
     made_from: "Indulgence and regret.",
@@ -5444,7 +5444,7 @@ module.exports = [
     shape: "landscape"
   },
   {
-    stock_id: "913-130314a",
+    stock_id: "707a",
     art_title: "DarkStar Vale, First Draft",
     three_word_description: "farming-game-aliens",
     custom_link: "/books/7",
@@ -5453,7 +5453,7 @@ module.exports = [
     subject: "aliens",
     category_id: 7,
     series_id: 18,
-    alt_text: "Purple wig placeholder pic.",
+    alt_text: "Placeholder pic.",
     quote: "My next publication, Darkstar Vale, will be an actual novel. Although my autobiography's bound to bleed into its margins.",
     book_id: 6,
     made_from: "Farming game addition and Chroma backstory.",
@@ -5462,7 +5462,7 @@ module.exports = [
     close_ups: "0",
     is_close_up: false,
     link: "https://www.patreon.com/CarlieMartece",
-    shape: "landscape"
+    shape: "portrait"
   },
   {
     stock_id: "1104",
@@ -5486,7 +5486,7 @@ module.exports = [
     shape: "landscape"
   },
   {
-    stock_id: "913-130314a",
+    stock_id: "706b",
     art_title: "666 Days of Sobriety, Days 11-375, first draft",
     three_word_description: "constant-awful-chaos",
     custom_link: "/books/6",
@@ -5495,7 +5495,7 @@ module.exports = [
     subject: "autism",
     category_id: 7,
     series_id: 17,
-    alt_text: "Purple wig placeholder pic.",
+    alt_text: "Placeholder pic.",
     quote: "Could I publish this diary first, instead of Darkstar? It would mean editing this story while still living it… Meta as fuck!",
     book_id: 6,
     made_from: "Poverty and determination.",
@@ -5549,7 +5549,7 @@ module.exports = [
     shape: "portrait"
   },
   {
-    stock_id: "913-130314a",
+    stock_id: "706c",
     art_title: "666 Days of Sobriety, Days 376-666, first draft",
     three_word_description: "666-days-sobriety",
     custom_link: "/books/6",
@@ -5558,7 +5558,7 @@ module.exports = [
     subject: "autism",
     category_id: 7,
     series_id: 17,
-    alt_text: "Purple wig placeholder pic.",
+    alt_text: "Placeholder pic.",
     quote: "I did my 666 days, like a good demon's pawn. I never aimed to inspire anyone.",
     book_id: 6,
     made_from: "Self-construction despite autistic overwhelm.",
@@ -5591,7 +5591,7 @@ module.exports = [
     shape: "landscape"
   },
   {
-    stock_id: "913-130314a",
+    stock_id: "706d",
     art_title: "666 Days of Sobriety, re-write, proofread and Patreon publish",
     three_word_description: "666-days-sobriety",
     custom_link: "/books/6",
@@ -5600,7 +5600,7 @@ module.exports = [
     subject: "autism",
     category_id: 7,
     series_id: 17,
-    alt_text: "Purple wig placeholder pic.",
+    alt_text: "Placeholder pic.",
     quote: "Got an email saying Patreon had approved my page! Yay! But also Aaargh! But mostly yay! Shared the link on my socials then concocted a Welcome post. This artist slash writer business finally resembles a real job.",
     book_id: 6,
     made_from: "Word, InDesign, Patreon and hope.",
@@ -5631,6 +5631,27 @@ module.exports = [
     is_close_up: false,
     link: "https://carliemartece.com",
     shape: "landscape"
+  },
+  {
+    stock_id: "707b",
+    art_title: "DarkStar Vale, Beta Version, Weekly Releases",
+    three_word_description: "farming-game-aliens",
+    custom_link: "/books/7",
+    colours: "green?",
+    completion: "2023-12-25",
+    subject: "aliens, addiction",
+    category_id: 7,
+    series_id: 18,
+    alt_text: "Placeholder pic.",
+    quote: "",
+    book_id: 7,
+    made_from: "",
+    price: -1,
+    self_ref: "TBC",
+    close_ups: "0",
+    is_close_up: false,
+    link: "https://www.patreon.com/CarlieMartece",
+    shape: "portrait"
   },
   // {
   //   stock_id: "",
