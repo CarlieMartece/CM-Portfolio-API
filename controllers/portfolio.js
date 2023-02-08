@@ -104,7 +104,8 @@ exports.getArtBy3Words = (req, res, next) => {
         const newObj = {
           alt_text: art[0].alt_text,
           made_from: art[0].made_from,
-          stock_id: stockId
+          stock_id: stockId,
+          self_ref: "TBC"
         }
         collage[stockId] = newObj;
       });
