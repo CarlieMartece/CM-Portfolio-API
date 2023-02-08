@@ -101,11 +101,12 @@ exports.getArtBy3Words = (req, res, next) => {
       collage[firstObj] = art[0];
       const closeUps = art[0].close_ups.split(",");
       closeUps.forEach((stockId) => {
-        collage[stockId] = art[0];
-        collage[stockId].quote = "";
-        collage[stockId].book_title = "";
-        collage[stockId].self_ref = "TBC";
-
+        const newObj = {
+          alt_text: art[0].alt_text,
+          made_from: art[0].made_from,
+          stock_id: stockId
+        }
+        collage[stockId] = newObj;
       });
       const idRef = createRef(artIds, "stock_id", "art_id");
       const wordRef = createRef(artIds, "stock_id", "three_word_description");
