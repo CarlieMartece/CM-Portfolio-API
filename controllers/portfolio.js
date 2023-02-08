@@ -104,7 +104,8 @@ exports.getArtBy3Words = (req, res, next) => {
         collage[stockId] = art[0];
         collage[stockId].quote = "";
         collage[stockId].book_title = "";
-        
+        collage[stockId].self_ref = "TBC";
+
       });
       const idRef = createRef(artIds, "stock_id", "art_id");
       const wordRef = createRef(artIds, "stock_id", "three_word_description");
