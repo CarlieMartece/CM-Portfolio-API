@@ -102,6 +102,8 @@ exports.getArtBy3Words = (req, res, next) => {
       const closeUps = art[0].close_ups.split(",");
       closeUps.forEach((stockId) => {
         collage[stockId] = art[0];
+        collage[stockId].quote = "";
+        collage[stockId].book_title = "";
       });
       const idRef = createRef(artIds, "stock_id", "art_id");
       const wordRef = createRef(artIds, "stock_id", "three_word_description");

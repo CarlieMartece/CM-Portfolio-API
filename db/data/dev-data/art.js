@@ -4831,7 +4831,7 @@ module.exports = [
     close_ups: "8",
     is_close_up: false,
     link: "TBC",
-    shape: "landscape"
+    shape: "square"
   },
   {
     stock_id: "3211a",
