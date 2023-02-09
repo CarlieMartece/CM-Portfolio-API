@@ -103,6 +103,7 @@ exports.getArtBy3Words = (req, res, next) => {
       closeUps.forEach((stockId) => {
         const newObj = {
           alt_text: art[0].alt_text,
+          completion: art[0].completion,
           made_from: art[0].made_from,
           stock_id: stockId,
           self_ref: []
