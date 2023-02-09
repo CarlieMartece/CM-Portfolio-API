@@ -5192,7 +5192,7 @@ module.exports = [
     shape: "square"
   },
   {
-    stock_id: "1013",
+    stock_id: "1113",
     art_title: "Mushland Myopia",
     three_word_description: "rainbow-mushroom-wonderland",
     custom_link: "",
