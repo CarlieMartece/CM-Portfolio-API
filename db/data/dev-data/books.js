@@ -56,7 +56,7 @@ module.exports = [
     book_title: "666 Days of Sobriety",
     edition_no: 1,
     cover_stock_id: "706",
-    release_date: "2022-12-26",
+    release_date: "2022-01-07",
     series_id: 17,
     sequence_no: 1,
     sales_url: "https://www.patreon.com/CarlieMartece",
@@ -66,10 +66,10 @@ module.exports = [
     book_title: "DarkStar Vale",
     edition_no: 1,
     cover_stock_id: "707",
-    release_date: "2023-12-25",
+    release_date: "2023-01-09",
     series_id: 18,
     sequence_no: 1,
     sales_url: "https://www.patreon.com/CarlieMartece",
-    blurb: "Our latest dark comedy science fiction novel. Presently only available on Patreon.",
+    blurb: "Our latest dark comedy science fiction novel. Cover designed by MiblArt. Presently only available on Patreon.",
   }
 ];

@@ -5,7 +5,7 @@ module.exports = [
     location: "https://carliemartece.com",
     view: "hybrid",
     first_launched: "2013-03-14",
-    last_update: "2023-01-12",
+    last_update: "2023-02-21",
     tech_stack: "JavaScript, Node, React, CSS3, HTML5, PostgreSQL",
     description: "Artist, writer and coder portfolio",
     further_info: "This is where my coding journey began. Years ago, I created an online artist portfolio using basic HTML and CSS. With my visual art skills, I made the site look good but struggled to make it interactive. About once a year I'd try teaching myself code, but it wouldn't click. Then a software engineering bootcamp changed everything. Since graduating I've applied new skills in JavaScript, React and SQL to what is now an artist, writer and coder portfolio. I'm particularly pleased with the new Art gallery's search functionality. Code is my art now, and my favourite thing to write. I couldn't be more pleased with my creative journey's progression."
