@@ -23,6 +23,7 @@ const artObj = expect.objectContaining({
   colours: expect.any(String),
   completion: expect.any(String),
   category_name: expect.any(String),
+  series_id: expect.any(Number),
   series_name: expect.any(String),
   alt_text: expect.any(String),
   quote: expect.any(String),

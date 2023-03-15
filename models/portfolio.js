@@ -1,6 +1,6 @@
 const db = require("../db/index.js");
 
-const artQuery = `SELECT art.art_id, art.stock_id, art.art_title, art.three_word_description, art.colours, art.completion, categories.category_name, series.series_name, art.alt_text, art.quote, books.book_title, art.made_from, art.price, art.self_ref, art.close_ups, art.link, art.shape  
+const artQuery = `SELECT art.art_id, art.stock_id, art.art_title, art.three_word_description, art.colours, art.completion, categories.category_name, art.series_id, series.series_name, art.alt_text, art.quote, books.book_title, art.made_from, art.price, art.self_ref, art.close_ups, art.link, art.shape  
 FROM art
 INNER JOIN categories ON art.category_id = categories.category_id
 INNER JOIN series ON art.series_id = series.series_id
