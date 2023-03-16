@@ -589,6 +589,7 @@ describe("/api/series/:series_id", () => {
           art_id: 4,
           art_title: "Claireytale",
           stock_id: "3101a",
+          three_word_description: 'disturbing-childhood-dreamscape'
         });
         expect(series.items).toBeSortedBy("stock_id", {
           ascending: true,

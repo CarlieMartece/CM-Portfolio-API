@@ -3939,7 +3939,7 @@ module.exports = [
     completion: "2015-08-22",
     subject: "chaos",
     category_id: 3,
-    series_id: 1,
+    series_id: 12,
     alt_text: "Broken girl lost in junkyard of brutal delusion.",
     quote: "\"I told you, I only did this because I thought it would save her.\"",
     book_id: 5,
