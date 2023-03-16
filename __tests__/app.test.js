@@ -10,6 +10,7 @@ const bookObj = expect.objectContaining({
   art_id: expect.any(Number),
   release_date: expect.any(String),
   series_name: expect.any(String),
+  series_id: expect.any(Number),
   sequence_no: expect.any(Number),
   sales_url: expect.any(String),
   blurb: expect.any(Object),

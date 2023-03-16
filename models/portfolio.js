@@ -134,7 +134,7 @@ exports.selectArtBySeries = (series_id) => {
 
 //////////////
 
-const bookQuery = `SELECT books.book_id, books.book_title, books.edition_no, books.cover_stock_id, book_cover_ref.art_id, books.release_date, series.series_name, books.sequence_no, books.sales_url, books.blurb  
+const bookQuery = `SELECT books.book_id, books.book_title, books.edition_no, books.cover_stock_id, book_cover_ref.art_id, books.release_date, books.series_id, series.series_name, books.sequence_no, books.sales_url, books.blurb  
 FROM books
 INNER JOIN series ON books.series_id = series.series_id
 INNER JOIN book_cover_ref ON books.book_id = book_cover_ref.book_id`;
