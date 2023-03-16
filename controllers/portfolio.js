@@ -220,7 +220,7 @@ exports.getSeriesById = (req, res, next) => {
           }
         });
         series.items = customRemoved;
-      } else {
+      } else if (series.category_name === "Book") {
         series.items.forEach((item) => {
           const blurbArray = item.blurb.split("\n");
           item.blurb = blurbArray;
