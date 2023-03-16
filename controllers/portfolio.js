@@ -211,7 +211,7 @@ exports.getSeriesById = (req, res, next) => {
     })
     .then(([series, selectItems]) => {
       series.items = createFilteredList(selectItems);
-      if (series.category_name !== "Book") {
+      if (series.category_name !== "Book" && series.category_name !== "Code" && series.category_name !== "Mixed") {
         const customRemoved = [];
         series.items.map((item) => {
           if (item.custom_link === "") {

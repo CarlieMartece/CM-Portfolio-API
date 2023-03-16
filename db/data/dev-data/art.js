@@ -5515,7 +5515,7 @@ module.exports = [
     completion: "2021-04-30",
     subject: "Honeysuckle Martece",
     category_id: 6,
-    series_id: 16,
+    series_id: 15,
     alt_text: "Carlie Martece in a blond wig looking like a vaguely glamorous ghost.",
     quote: "So, your mind created a whole galaxy in which to entertain and hide itself.",
     book_id: 3,
