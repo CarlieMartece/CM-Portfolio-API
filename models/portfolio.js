@@ -124,7 +124,7 @@ exports.selectArtBy3Words = (three_word_description) => {
 exports.selectArtBySeries = (series_id) => {
   return db
     .query(
-      `SELECT art.art_id, art.stock_id, art.art_title, art.alt_text, art.three_word_description FROM art WHERE art.series_id = $1 ORDER BY art.stock_id ASC;`,
+      `SELECT art.art_id, art.stock_id, art.art_title, art.custom_link, art.alt_text, art.three_word_description FROM art WHERE art.series_id = $1 ORDER BY art.stock_id ASC;`,
       [series_id]
     )
     .then(({ rows: items }) => {

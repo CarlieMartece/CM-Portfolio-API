@@ -18,35 +18,34 @@ const {
 
 exports.getArt = (req, res, next) => {
   const queries = req.query;
-    selectArt(queries)
-      .then((response) => {
-        if (queries.sort_by === "price") {
-          res.status(200).send(response);
-        }
-        let stockArray = [];
-        if (queries.colour) {
-          response.forEach((item) => {
-            const coloursArray = item.colours.split(", ");
-            if (coloursArray.indexOf(queries.colour) !== -1) {
-              stockArray.push(item);
-            }
-            delete item.colours;
-          });
-        } else {
-          response.forEach((item) => {
+  selectArt(queries)
+    .then((response) => {
+      if (queries.sort_by === "price") {
+        res.status(200).send(response);
+      }
+      let stockArray = [];
+      if (queries.colour) {
+        response.forEach((item) => {
+          const coloursArray = item.colours.split(", ");
+          if (coloursArray.indexOf(queries.colour) !== -1) {
             stockArray.push(item);
-          });
-        }
-        if (stockArray.length < 1) {
-          res.status(404).send({ msg: "Art not found" });
-        } else {
-          res.status(200).send(stockArray);
-        }
-      })
-      .catch((err) => {
-        next(err);
-      });
-  
+          }
+          delete item.colours;
+        });
+      } else {
+        response.forEach((item) => {
+          stockArray.push(item);
+        });
+      }
+      if (stockArray.length < 1) {
+        res.status(404).send({ msg: "Art not found" });
+      } else {
+        res.status(200).send(stockArray);
+      }
+    })
+    .catch((err) => {
+      next(err);
+    });
 };
 
 exports.getArtIds = (req, res, next) => {
@@ -106,7 +105,7 @@ exports.getArtBy3Words = (req, res, next) => {
           completion: art[0].completion,
           made_from: art[0].made_from,
           stock_id: stockId,
-          self_ref: []
+          self_ref: [],
         };
         collage[stockId] = newObj;
       });
@@ -212,12 +211,21 @@ exports.getSeriesById = (req, res, next) => {
     })
     .then(([series, selectItems]) => {
       series.items = createFilteredList(selectItems);
-      if (series.category_name === "Book") {
+      if (series.category_name !== "Book") {
+        const customRemoved = [];
+        series.items.map((item) => {
+          if (item.custom_link === "") {
+            delete item.custom_link;
+            customRemoved.push(item);
+          }
+        });
+        series.items = customRemoved;
+      } else {
         series.items.forEach((item) => {
           const blurbArray = item.blurb.split("\n");
           item.blurb = blurbArray;
         });
-      }
+      };
       res.status(200).send({ series });
     })
     .catch((err) => {

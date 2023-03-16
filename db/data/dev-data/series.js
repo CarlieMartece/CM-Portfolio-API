@@ -47,7 +47,7 @@ module.exports = [
   },
   {
     series_name: "Hexas and Elementals",
-    category_id: 1,
+    category_id: 8,
     quote: null,
   },
   {
