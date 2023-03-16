@@ -215,7 +215,6 @@ exports.getSeriesById = (req, res, next) => {
         const customRemoved = [];
         series.items.map((item) => {
           if (item.custom_link === "") {
-            delete item.custom_link;
             customRemoved.push(item);
           }
         });

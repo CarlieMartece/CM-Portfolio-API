@@ -568,7 +568,7 @@ describe("/api/series", () => {
 });
 
 describe("/api/series/:series_id", () => {
-  test("GET: 200, Responds with requested series object plus array of linked artwork with close-ups removed", () => {
+  test("GET: 200, Responds with requested series object plus array of linked artwork with close-ups and custom link duplicates removed", () => {
     return request(app)
       .get("/api/series/1")
       .expect(200)
@@ -588,34 +588,7 @@ describe("/api/series/:series_id", () => {
             "Weird collage...",
           art_id: 4,
           art_title: "Claireytale",
-          stock_id: "3101a",
-          three_word_description: 'disturbing-childhood-dreamscape'
-        });
-        expect(series.items).toBeSortedBy("stock_id", {
-          ascending: true,
-        });
-      });
-  });
-  test("GET: 200, Removes custom links from series request", () => {
-    return request(app)
-      .get("/api/series/1")
-      .expect(200)
-      .then(({ body }) => {
-        const { series } = body;
-        expect(series).toEqual(
-          expect.objectContaining({
-            series_id: expect.any(Number),
-            series_name: expect.any(String),
-            category_name: expect.any(String),
-            items: expect.any(Object),
-          })
-        );
-        expect(series.items).toHaveLength(2);
-        expect(series.items[0]).toEqual({
-          alt_text:
-            "Weird collage...",
-          art_id: 4,
-          art_title: "Claireytale",
+          custom_link: "",
           stock_id: "3101a",
           three_word_description: 'disturbing-childhood-dreamscape'
         });
