@@ -28,9 +28,12 @@
     "pg-format": "^1.0.4"
   },
   "devDependencies": {
+    "cookiejar": "^2.1.4",
     "husky": "^8.0.2",
     "jest-sorted": "^1.0.14",
-    "supertest": "^6.3.3"
+    "json5": "^2.2.3",
+    "supertest": "^6.3.3",
+    "webpack": "^5.78.0"
   },
   "jest": {
     "setupFilesAfterEnv": [
