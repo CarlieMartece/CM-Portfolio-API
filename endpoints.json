@@ -1,0 +1,308 @@
+{
+    "GET /api/": {
+        "description": "serves a JSON representation of this API's available endpoints. The representaion you're reading now. This representation."
+    },
+    "GET /api/art": {
+        "description": "serves a reverse-chronological array of artwork preview objects",
+        "queries": [
+            "year",
+            "category",
+            "subject",
+            "colour",
+            "sort_by",
+            "order"
+        ],
+        "exampleResponse": [
+            {
+                "art_id": 269,
+                "stock_id": "10x001",
+                "three_word_description": "artist-writer-portfolio",
+                "custom_link": "/code/1",
+                "alt_text": "Screenshot of this portfolio site's front page. I am self-reference incarnate."
+            }
+        ]
+    },
+    "GET /api/art/:art_id": {
+        "description": "serves one or two requested artwork objects",
+        "queries": [
+            "extra"
+        ],
+        "exampleResponse": {
+            "art": [
+                {
+                    "art_id": 201,
+                    "stock_id": "3206a",
+                    "art_title": "Diamond #2: Red Zero",
+                    "three_word_description": "zero-cats-chaos",
+                    "colours": "redblackwhite, grey",
+                    "completion": "2016-07-21T00:00:00.000Z",
+                    "category_name": "Collage",
+                    "series_id": 12,
+                    "series_name": "The Second Deal",
+                    "alt_text": "Cats and strange flying creatures glued onto massive Nailed photo.",
+                    "quote": "\"I charged him precisely zero cash digits,\" replies Estana. “But don't worry, he will pay!\"",
+                    "book_title": "Deragon Hex: The Vipdile key",
+                    "made_from": "54cm by 54cm by 2cm wooden frame, mount board, paper, large Engel print, small Phoenix print, keyring prints from nailed series, acid free glue, double sided tape, acrylic paint, biro pen, pencil, printer ink, a jewellery box, ribbon, a necklace, a playing card, a resealable plastic bag, matches.",
+                    "price": -1,
+                    "self_ref": [
+                        "5126",
+                        114,
+                        "zero-nails-crucifix"
+                    ],
+                    "close_ups": "3206b,3206c,3206d,3206e",
+                    "link": "TBC",
+                    "shape": "square"
+                }
+            ]
+        }
+    },
+    "GET /api/art/collage/:three_word_description": {
+        "description": "serves an object of objects relating to a collage artwork, each labelled by stock_id and containing full or partial info for each image",
+        "exampleResponse": {
+            "collage": {
+                "3201a": {
+                    "art_id": 139,
+                    "stock_id": "3201a",
+                    "art_title": "Spade #1",
+                    "three_word_description": "abstract-card-chaos",
+                    "colours": "brown",
+                    "completion": "2013-04-07T00:00:00.000Z",
+                    "category_name": "Collage",
+                    "series_id": 12,
+                    "series_name": "The Second Deal",
+                    "alt_text": "Collage and painting on board. Everything was about to disintegrate further.",
+                    "quote": "\"I get this sick sense of foreboding when I picture it though... as though everything is fragmenting and I'm losing mental coherence. I fear I'm walking into a trap, but my feet are moving of their own accord and won't let me turn back.\"",
+                    "book_title": "Deragon Hex: The Vipdile key",
+                    "made_from": "30cm by 20cm backing board, mount board, photographs, School Friend Annual 1955, silver enamel, Prismacolor pencils, Sharpie pen, Biro pen, acrylic paint, a handmade necklace, the Ace of Spades.",
+                    "price": 90,
+                    "self_ref": [],
+                    "close_ups": "3201b,3201c,3201d",
+                    "link": "TBC",
+                    "shape": "portrait"
+                },
+                "3201b": {
+                    "alt_text": "Collage and painting on board. Everything was about to disintegrate further.",
+                    "completion": "2013-04-07T00:00:00.000Z",
+                    "made_from": "30cm by 20cm backing board, mount board, photographs, School Friend Annual 1955, silver enamel, Prismacolor pencils, Sharpie pen, Biro pen, acrylic paint, a handmade necklace, the Ace of Spades.",
+                    "stock_id": "3201b",
+                    "self_ref": []
+                },
+                "3201c": {
+                    "art_id": 9,
+                    "stock_id": "3201c",
+                    "art_title": "Spade #1",
+                    "three_word_description": "abstract-card-chaos",
+                    "colours": "peach",
+                    "completion": "2001-06-05T00:00:00.000Z",
+                    "category_name": "Photography",
+                    "series_id": 12,
+                    "series_name": "The Second Deal",
+                    "alt_text": "Strange photo of toys and skin.",
+                    "quote": "The children were awake.",
+                    "book_title": "Toxic Nursery",
+                    "made_from": "Photo of dolls and disturbance for an art foundation project",
+                    "price": 90,
+                    "self_ref": [],
+                    "close_ups": "",
+                    "link": "TBC",
+                    "shape": "landscape"
+                },
+                "3201d": {
+                    "alt_text": "Collage and painting on board. Everything was about to disintegrate further.",
+                    "completion": "2013-04-07T00:00:00.000Z",
+                    "made_from": "30cm by 20cm backing board, mount board, photographs, School Friend Annual 1955, silver enamel, Prismacolor pencils, Sharpie pen, Biro pen, acrylic paint, a handmade necklace, the Ace of Spades.",
+                    "stock_id": "3201d",
+                    "self_ref": []
+                }
+            }
+        }
+    },
+    "GET /api/art/ids": {
+        "description": "serves a reference object for finding art_id from stock_id",
+        "exampleResponse": {
+            "artIds": {
+                "1001": 12,
+                "1002": 13,
+                "1003": 20,
+                "1004": 35,
+                "1005": 36,
+                "1006": 56
+            }
+        }
+    },
+    "GET /api/books": {
+        "description": "serves reverse chronological array of book objects",
+        "exampleResponse": {
+            "books": [
+                {
+                    "book_id": 7,
+                    "book_title": "DarkStar Vale",
+                    "edition_no": 1,
+                    "cover_stock_id": "707",
+                    "art_id": 3,
+                    "release_date": "2023-01-09T00:00:00.000Z",
+                    "series_id": 18,
+                    "series_name": "Ghexa Canyon",
+                    "sequence_no": 1,
+                    "sales_url": "https://www.patreon.com/CarlieMartece",
+                    "blurb": [
+                        "Our latest dark comedy science fiction novel. Cover designed by MiblArt. Presently only available on Patreon."
+                    ]
+                }
+            ]
+        }
+    },
+    "GET /api/books/:book_id": {
+        "description": "serves the requested book object",
+        "exampleResponse": {
+            "book": {
+                "book_id": 3,
+                "book_title": "Chroma: Calanooka",
+                "edition_no": 1,
+                "cover_stock_id": "5304",
+                "art_id": 255,
+                "release_date": "2021-03-14T00:00:00.000Z",
+                "series_id": 3,
+                "series_name": "Constructed Sanity Sequence",
+                "sequence_no": 3,
+                "sales_url": "https://mybook.to/chroma-calanooka",
+                "blurb": [
+                    "Glamorous, melodramatic Leandra yearns to continue “modelling”, but her limbs ache and lizards ate her breadcrumbs. Shy, autistic Cal wants gainful employment. These lonely, mismatched siblings live a suffocating existence in the isolated desert city of Summerton. When a blue space captain called Kalakai arrives, offering Chroman army recruitment, their reality becomes increasingly intangible. Local news stations warn of an uncaptured murderer. Leandra applies lip gloss, models custard, and plans her birthday celebrations. Cal hyper-focuses on Calanooka.com, his online guide to the Chroma Sphere System. The strange pair cling to shreds of sanity while people around them disappear.",
+                    "The third book in the Constructed Sanity series combines the terrifying honesty of Toxic Nursery with the complex yet captivating plot of The Vipdile Key.",
+                    "Could intergalactic battle training save these troubled siblings?",
+                    "Will they solve Summerton's mysteries or be consumed by demonic forces?",
+                    "Where are they?",
+                    "When are they?",
+                    "And why does a vengeful witch haunt their cryptic dreams?",
+                    "Rescue is not coming."
+                ]
+            }
+        }
+    },
+    "GET /api/categories": {
+        "description": "serves a reference object for finding category_name by category_id",
+        "exampleResponse": {
+            "categories": {
+                "1": "Drawing",
+                "2": "Painting",
+                "3": "Collage",
+                "4": "Photography",
+                "5": "Digital",
+                "6": "Film",
+                "7": "Book",
+                "8": "Mixed",
+                "9": "Model",
+                "10": "Code"
+            }
+        }
+    },
+    "GET /api/code": {
+        "description": "serves a reverse chronological array of code project preview objects",
+        "exampleResponse": {
+            "code": [
+                {
+                    "project_id": 1,
+                    "stock_id": "10x001",
+                    "name": "Carlie Martece",
+                    "last_update": "2023-02-21T00:00:00.000Z",
+                    "tech_stack": [
+                        "JavaScript",
+                        "Node",
+                        "React",
+                        "CSS3",
+                        "HTML5",
+                        "PostgreSQL"
+                    ]
+                }
+            ]
+        }
+    },
+    "GET ./api/code/:project_id": {
+        "description": "serves the requested code project object",
+        "exampleResponse": {
+            "project": {
+                "project_id": 1,
+                "stock_id": "10x001",
+                "name": "Carlie Martece",
+                "location": "https://carliemartece.com",
+                "view": "hybrid",
+                "first_launched": "2013-03-14T00:00:00.000Z",
+                "last_update": "2023-02-21T00:00:00.000Z",
+                "tech_stack": [
+                    "JavaScript",
+                    "Node",
+                    "React",
+                    "CSS3",
+                    "HTML5",
+                    "PostgreSQL"
+                ],
+                "description": "Artist, writer and coder portfolio",
+                "further_info": "This is where my coding journey began. Years ago, I created an online artist portfolio using basic HTML and CSS. With my visual art skills, I made the site look good but struggled to make it interactive. About once a year I'd try teaching myself code, but it wouldn't click. Then a software engineering bootcamp changed everything. Since graduating I've applied new skills in JavaScript, React and SQL to what is now an artist, writer and coder portfolio. I'm particularly pleased with the new Art gallery's search functionality. Code is my art now, and my favourite thing to write. I couldn't be more pleased with my creative journey's progression."
+            }
+        }
+    },
+    "GET /api/series": {
+        "description": "serves a reference object for finding series_name by series_id",
+        "exampleResponse": {
+            "series": {
+                "1": "Kindergore",
+                "2": "Miscellaneous Drawings",
+                "3": "Constructed Sanity Sequence",
+                "4": "Miscellaneous Paintings",
+                "5": "Miscellaneous Mashups",
+                "6": "The Uni Films "
+            }
+        }
+    },
+    "GET /api/series/:series_id": {
+        "description": "serves the requested series object containing array of series projects",
+        "exampleResponse": {
+            "series": {
+                "series_id": 11,
+                "series_name": "The NookaBet",
+                "category_name": "Drawing",
+                "items": [
+                    {
+                        "art_id": 132,
+                        "stock_id": "1101",
+                        "art_title": "Addiction Loves Company",
+                        "custom_link": "",
+                        "alt_text": "Women made of absinth with glasses for hands beside wounds and weaponry.",
+                        "three_word_description": "green-absinth-women"
+                    }
+                ]
+            }
+        }
+    },
+    "GET /api/subjects": {
+        "description": "serves array of subjects with subject_name and frequency count",
+        "exampleResponse": {
+            "subjects": [
+                {
+                    "subject": "fantasy",
+                    "count": "28"
+                },
+                {
+                    "subject": "bpd",
+                    "count": "27"
+                },
+                {
+                    "subject": "nails",
+                    "count": "24"
+                },
+                {
+                    "subject": "autism",
+                    "count": "23"
+                },
+                {
+                    "subject": "dissociative identity",
+                    "count": "19"
+                },
+                {
+                    "subject": "chaos",
+                    "count": "19"
+                }
+            ]
+        }
+    }
+}
