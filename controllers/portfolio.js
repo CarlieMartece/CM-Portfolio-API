@@ -1,3 +1,4 @@
+const apiEndpoints = require('../endpoints.json');
 const { createRef, createFilteredList } = require("../db/utils");
 const {
   selectArt,
@@ -15,6 +16,10 @@ const {
   countSubjects,
   selectArtBy3Words,
 } = require("../models/portfolio");
+
+exports.getApi = (req, res, next) => {
+  res.status(200).send({ apiEndpoints });
+}
 
 exports.getArt = (req, res, next) => {
   const queries = req.query;

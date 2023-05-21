@@ -1,5 +1,5 @@
 {
-    "GET /api/": {
+    "GET /api": {
         "description": "serves a JSON representation of this API's available endpoints. The representaion you're reading now. This representation."
     },
     "GET /api/art": {
@@ -217,7 +217,7 @@
             ]
         }
     },
-    "GET ./api/code/:project_id": {
+    "GET /api/code/:project_id": {
         "description": "serves the requested code project object",
         "exampleResponse": {
             "project": {

@@ -2,6 +2,7 @@ const cors = require('cors');
 const express = require('express');
 const app = express();
 const {
+    getApi,
     getArt,
     getArtById,
     getArtIds,
@@ -19,6 +20,7 @@ const {
 app.use(cors());
 app.use(express.json());
 
+app.get('/api', getApi);
 
 app.get('/api/art', getArt);
 app.get('/api/art/ids', getArtIds);

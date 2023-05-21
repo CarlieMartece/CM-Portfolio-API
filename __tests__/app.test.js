@@ -68,6 +68,34 @@ describe("handles all bad URLs", () => {
   });
 });
 
+describe("/api", () => {
+  test("GET: 200 serves JSON object describing all available endpoints", () => {
+    return request(app)
+      .get("/api")
+      .expect(200)
+      .then(({body}) => {
+        const { apiEndpoints } = body;
+        expect(apiEndpoints).toEqual(
+          expect.objectContaining({
+            "GET /api": expect.any(Object),
+            "GET /api/art": expect.any(Object),
+            "GET /api/art/:art_id": expect.any(Object),
+            "GET /api/art/collage/:three_word_description": expect.any(Object),
+            "GET /api/art/ids": expect.any(Object),
+            "GET /api/books": expect.any(Object),
+            "GET /api/books/:book_id": expect.any(Object),
+            "GET /api/categories": expect.any(Object),
+            "GET /api/code": expect.any(Object),
+            "GET /api/code/:project_id": expect.any(Object),
+            "GET /api/series": expect.any(Object),
+            "GET /api/series/:series_id": expect.any(Object),
+            "GET /api/subjects": expect.any(Object),
+          })
+        )
+      })
+  });
+});
+
 describe("/api/art", () => {
   test("GET: 200, Responds with an array of objects with art ids and stock_ids, most recent first", () => {
     return request(app)
@@ -350,7 +378,7 @@ describe("/api/art/:art_id", () => {
 });
 
 describe("/api/art/collage/:three_word_description", () => {
-  test("GET: 200, Responds with array of art objects, labelled by stock_id", () => {
+  test("GET: 200, Responds with object of art objects, labelled by stock_id", () => {
     return request(app)
       .get("/api/art/collage/disturbing-childhood-dreamscape")
       .expect(200)
@@ -569,7 +597,7 @@ describe("/api/series", () => {
 });
 
 describe("/api/series/:series_id", () => {
-  test("GET: 200, Responds with requested series object plus array of linked artwork with close-ups and custom link duplicates removed", () => {
+  test("GET: 200, Responds with requested series object containing array of artwork with close-ups and custom link duplicates removed", () => {
     return request(app)
       .get("/api/series/1")
       .expect(200)
@@ -598,7 +626,7 @@ describe("/api/series/:series_id", () => {
         });
       });
   });
-  test("GET: 200, Responds with requested series object plus array of linked books with duplicate editions removed", () => {
+  test("GET: 200, Responds with requested series object plus array of books with duplicate editions removed", () => {
     return request(app)
       .get("/api/series/4")
       .expect(200)

@@ -919,7 +919,7 @@ module.exports = [
     art_title: "Winter Fairy",
     three_word_description: "watercolour-winter-fairy",
     custom_link: "",
-    colours: "blue, white, pruple",
+    colours: "blue, white, purple",
     completion: "2006-12-01",
     subject: "fantasy",
     category_id: 2,
