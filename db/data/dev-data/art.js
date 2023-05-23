@@ -1019,7 +1019,7 @@ module.exports = [
     book_id: 4,
     made_from: "Oil paint on canvas.",
     price: -1,
-    self_ref: "TBC",
+    self_ref: "10x004",
     close_ups: "0",
     is_close_up: false,
     link: "TBC",
@@ -5800,6 +5800,27 @@ module.exports = [
     link: "https://www.patreon.com/CarlieMartece",
     shape: "portrait"
   },
+  {
+    stock_id: "10x004",
+    art_title: "Triskele Healing",
+    three_word_description: "triskele-healing-site",
+    custom_link: "/code/4",
+    colours: "",
+    completion: "2023-05-08",
+    subject: "spiritual",
+    category_id: 10,
+    series_id: 19,
+    alt_text: "Screenshot of a complementary therapist's website I designed. It says Triskele Healing in swirling writing and has some waterlily-themed art.",
+    quote: "We were lucky to have somewhere to go.",
+    book_id: 3,
+    made_from: "Vue, SCSS, JavaScript, HTML",
+    price: -1,
+    self_ref: "2009",
+    close_ups: "0",
+    is_close_up: false,
+    link: "https://https://triskele-healing.com",
+    shape: "landscape"
+  }
   // {
   //   stock_id: "",
   //   art_title: "",
