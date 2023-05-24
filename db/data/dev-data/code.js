@@ -17,7 +17,7 @@ module.exports = [
     view: "hybrid",
     first_launched: "2022-08-26",
     last_update: null,
-    tech_stack: "PostgreSQL, Express, React, Node.JS, CSS, HTML",
+    tech_stack: "PostgreSQL, Express, React, Node_JS, CSS, HTML",
     description: "Totally real news website",
     further_info: "My first finished app! During the bootcamp's solo project phase, this portfolio was still static, and NC News was my first use of JavaScript, React and SQL to make an interactive site. I was glad I managed to create a functional and well-presented site to such a tight deadline. If I ever return to this project, I'll add a user login component and update the styling for improved accessibility.",
   },
@@ -35,12 +35,12 @@ module.exports = [
   {
     stock_id: "10x004",
     name: "Triskele Healing",
-    location: "https://https://triskele-healing.com",
+    location: "https://triskele-healing.com",
     view: "hybrid",
     first_launched: "2023-05-08",
     last_update: "2023-05-23",
-    tech_stack: "Vue, SCSS, JavaScript, HTML",
+    tech_stack: "Vue, SCSS, HTML, JavaScript, Node",
     description: "Complementary therapist's website",
     further_info: "My first site using Vue.JS. I love React, but thought I should try other front-end frameworks before deciding it's my favourite. Also my first time using SCSS. Who knew CSS could look so tidy? I'm definitely an SCSS convert, but still not sure if I prefer Vue to React. This small, static site was much improved with Vue's reusable components, replacing the previous HTML-only repeated navigation. I also added semantic HMTL for improved accessibility, and CSS responsive design so it looks great on different screen sizes."
-  },
+  }
 ];
