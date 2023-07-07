@@ -132,8 +132,10 @@ describe("/api/art", () => {
       .get("/api/art?category=3")
       .expect(200)
       .then((response) => {
+        console.log(response.body)
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body[0]).toEqual(object3101a);
+        expect(response.body).toHaveLength(1);
       });
   });
   test("GET: 200, Responds with an array of all visual art stock_ids (filtering out book, model, code) for category 16", () => {

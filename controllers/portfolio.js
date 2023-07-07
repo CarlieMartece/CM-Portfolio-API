@@ -38,7 +38,7 @@ exports.getArt = (req, res, next) => {
           delete item.colours;
         });
       } else {
-        if (queries.category && queries.category === 3) {
+        if (queries.category && queries.category === "3") {
           response = createFilteredList(response);
         }
         response.forEach((item) => {
