@@ -46,8 +46,8 @@ exports.createFilteredList = (array) => {
   let filteredItems = [];
   array.forEach((item) => {
     let searchKey = "";
-    item.blurb ? searchKey = "book_title" : searchKey = "art_title";
-    const searchItem = item[searchKey]
+    item.blurb ? searchKey = "book_title" : searchKey = "three_word_description";
+    const searchItem = item[searchKey];
     if (!collectObj.hasOwnProperty(searchItem) ||
     collectObj[searchItem].edition_no < item.edition_no ||
     collectObj[searchItem].stock_id > item.stock_id  

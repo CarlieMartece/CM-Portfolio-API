@@ -148,6 +148,22 @@ const art = [
   },
 ];
 
+const collageList = [
+  {art_id: 238, stock_id: '3212a', three_word_description: "Heart #3: Kero's Nightmare"},
+  {art_id: 228, stock_id: '3212f', three_word_description: "Heart #3: Kero's Nightmare"},
+  {art_id: 225, stock_id: '3211a', three_word_description: "Club #3: Downfall"},
+  {art_id: 221, stock_id: '3212b', three_word_description: "Heart #3: Kero's Nightmare"},
+  {art_id: 216, stock_id: '3207a', three_word_description: "Club #2: Cold Summer"},
+  {art_id: 213, stock_id: '3210a', three_word_description: "Diamond #3: Hollow Candy"}
+]
+
+const expectedCollageList = [
+  {art_id: 238, stock_id: '3212a', three_word_description: "Heart #3: Kero's Nightmare"},
+  {art_id: 225, stock_id: '3211a', three_word_description: "Club #3: Downfall"},
+  {art_id: 216, stock_id: '3207a', three_word_description: "Club #2: Cold Summer"},
+  {art_id: 213, stock_id: '3210a', three_word_description: "Diamond #3: Hollow Candy"}
+]
+
 describe("multi-purpose createRef function", () => {
   test("Function accepts an array and returns an object", () => {
     const actual = createRef(categories);
@@ -241,8 +257,7 @@ describe("createFilteredList", () => {
     expect(actual[0].edition_no).toBe(2);
   });
   test("Function returns list with duplicate art shots filtered, showing only first shots", () => {
-    const actual = createFilteredList(art);
-    expect(actual).toHaveLength(3);
-    expect(actual[0].stock_id).toBe('3101a');
+    const actual = createFilteredList(collageList);
+    expect(actual).toEqual(expectedCollageList);
   });
 });
