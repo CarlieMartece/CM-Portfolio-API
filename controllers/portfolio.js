@@ -38,6 +38,9 @@ exports.getArt = (req, res, next) => {
           delete item.colours;
         });
       } else {
+        if (queries.category && queries.category === 3) {
+          response = createFilteredList(response);
+        }
         response.forEach((item) => {
           stockArray.push(item);
         });
