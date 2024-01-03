@@ -1253,7 +1253,7 @@ module.exports = [
     completion: "2008-03-14",
     subject: "flowers",
     category_id: 1,
-    series_id: 2,
+    series_id: 4,
     alt_text: "It's a flower that's shaped a bit like a star.",
     quote: "We kept stoically persevering with attempts at normality...",
     book_id: 4,

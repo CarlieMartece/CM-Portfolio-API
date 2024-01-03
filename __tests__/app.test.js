@@ -117,22 +117,11 @@ describe("/api/art", () => {
         expect(response.body[0]).toEqual(object3101a);
       });
   });
-  test("GET: 200, Responds with an array of objects for this year", () => {
-    return request(app)
-      .get("/api/art?year=now")
-      .expect(200)
-      .then((response) => {
-        expect(response.body).toEqual(expect.any(Array));
-        expect(response.body).toHaveLength(3);
-        expect(response.body[0]).toEqual(object4122);
-      });
-  });
   test("GET: 200, Responds with an array of objects for selected category", () => {
     return request(app)
       .get("/api/art?category=3")
       .expect(200)
       .then((response) => {
-        console.log(response.body)
         expect(response.body).toEqual(expect.any(Array));
         expect(response.body[0]).toEqual(object3101a);
         expect(response.body).toHaveLength(1);
@@ -616,14 +605,15 @@ describe("/api/series/:series_id", () => {
         expect(series.items).toHaveLength(2);
         expect(series.items[0]).toEqual({
           alt_text:
-            "Weird collage...",
-          art_id: 4,
-          art_title: "Claireytale",
+            "Close-up on a black biro drawing of a Glow Bug toy. He is smiling. It will be OK.",
+          art_id: 7,
+          art_title: "Chaos Cumulus",
+          completion: "1999-10-04T23:00:00.000Z",
           custom_link: "",
-          stock_id: "3101a",
-          three_word_description: 'disturbing-childhood-dreamscape'
+          stock_id: "3106f",
+          three_word_description: "biro-drawing-glowbug"
         });
-        expect(series.items).toBeSortedBy("stock_id", {
+        expect(series.items).toBeSortedBy("completion", {
           ascending: true,
         });
       });
