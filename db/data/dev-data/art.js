@@ -5820,6 +5820,27 @@ module.exports = [
     is_close_up: false,
     link: "https://https://triskele-healing.com",
     shape: "landscape"
+  },
+  {
+    stock_id: "1211",
+    art_title: "Quinsy",
+    three_word_description: "floral-biro-abscess",
+    custom_link: "",
+    colours: "white, grey",
+    completion: "2023-07-17",
+    subject: "illness",
+    category_id: 1,
+    series_id: 2,
+    alt_text: "Abstract depiction of throat pain. Like a jagged, floral explosion.",
+    quote: "Proctra stutters a broken laugh that catches in her throat like glass. ",
+    book_id: 7,
+    made_from: "Black biro",
+    price: -1,
+    self_ref: "TBC",
+    close_ups: "0",
+    is_close_up: false,
+    link: "TBC",
+    shape: "portrait"
   }
   // {
   //   stock_id: "",
@@ -5841,5 +5862,5 @@ module.exports = [
   //   is_close_up: false,
   //   link: "TBC",
   //   shape: "landscape"
-  // }
+  // },
 ];
